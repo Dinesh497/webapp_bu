@@ -1,5 +1,0 @@
-<?
-
-print "john is the best, not!!";
-
-?>
