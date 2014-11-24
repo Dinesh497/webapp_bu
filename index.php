@@ -1,19 +1,20 @@
-
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
 <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
 <tr>
 <form name="form1" method="post" action="checklogin.php">
 <td>
-<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+<table class='table' width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 <tr>
-<img src="images\logo.png" alt="Mountain View">
+<img src="images\logo.png">
 </tr>
 <tr>
-<td width="78">Username</td>
+<td style="font-family:'calibri'" width="78">Username</td>
 <td width="6">:</td>
 <td width="294"><input name="username" type="text" id="username"></td>
 </tr>
 <tr>
-<td>Password</td>
+<td style="font-family:'calibri'">Password</td>
 <td>:</td>
 <td><input name="password" type="text" id="password"></td>
 </tr>
@@ -27,3 +28,4 @@
 </form>
 </tr>
 </table>
+</body>
