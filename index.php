@@ -1,5 +1,8 @@
+<!doctype html>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <body>
+  <div ID="id1">
 <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
 <tr>
 <form name="form1" method="post" action="checklogin.php">
@@ -21,11 +24,17 @@
 <tr>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td><input type="submit" name="Submit" value="Login"></td>
+<td><button type="submit" class="pure-button pure-button-primary">Sign in</button></td>
+
 </tr>
 </table>
 </td>
 </form>
 </tr>
 </table>
+</div>
 </body>
+<div id="footer">
+To be or not to be, that is the question
+</div>
+</html>
