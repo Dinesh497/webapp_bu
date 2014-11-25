@@ -18,7 +18,9 @@
 	$count = mysql_num_rows($result);
 	
 	if($count==1){
-	header("location:homepage.php");
+		//$seconds = 120 + time();
+		//setcookie(
+		header("location:homepage.php");
 	} else{
 		echo 'Incorrect Username or password';
 	}
