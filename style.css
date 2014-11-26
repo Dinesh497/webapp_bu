@@ -3,6 +3,10 @@ body {
     background-repeat: no-repeat;
 	font-family: calibri;
 }
+ul,li {
+ margin: 0;
+ padding: 0;
+ }
 
 div.img {
     margin-top: 244px;
