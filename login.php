@@ -24,7 +24,7 @@
 	if(!$count==1){
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
-		header("location:homepage.php");
+		header("location:phpinfo.php");
 	} else{
 		echo 'Incorrect username or password';
 	}
