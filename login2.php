@@ -1,9 +1,9 @@
 <?php
 	session_start(); // Starting Session
 
-	$hostname = "localhost";
+	$hostname = "";
 	$database = "webdb";
-	$username = "root";
+	$username = "Beheerder";
 	$password = "P@ssword"
 
 	$dbcon = mysql_connect($hostname, $username, $password) or die (" could not connect to database");
