@@ -5,23 +5,23 @@
 <body>
  
 
-  <div ID="id1">
-<table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+ 
+<table class='table'  >
 <tr>
 <form name="form1"  action="login.php" method="POST">
 	<td>
-	<table class='table' width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+	<table class='table'  >
 	<tr>
 	<img src="images\logo.png">
 	</tr>
 
 	<tr>
-	<td style="font-family:'calibri'" width="78">Username</td>
+	<td>Username</td>
 	<td width="6">:</td>
 	<td width="294"><input name="username" type="text" id="username"></td>
 	</tr>
 	<tr>
-	<td style="font-family:'calibri'">Password</td>
+	<td>Password</td>
 	<td>:</td>
 	<td><input name="password" type="password" id="password"></td>
 	</tr>
@@ -36,7 +36,7 @@
 </form>
 </tr>
 </table>
-</div>
+
 
 </body>
 <div id="footer">

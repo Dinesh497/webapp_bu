@@ -1,14 +1,58 @@
 body {
     background-image: url("images/westcord.jpg");
     background-repeat: no-repeat;
+	font-family: calibri;
 }
 
-table {
+div.img {
+    margin-top: 244px;
+	margin-bottom: 187px;
+	margin-right: 436px;
+	margin-left: 244px;
+	padding: 5px;
+	border: ;
+	height: auto;
+	width: auto;
+	float: right;
+	text-align: center;
+	background-color: #FE2EC8;
+}
+
+div.img2 {
+	margin-top: -451px;
+	margin-bottom: 141px;
+	margin-right: 378px;
+	margin-left: 263px;
+	padding: 5px;
+	border: ;
+	height: auto;
+	width: auto;
+	float: right;
+	text-align: center;
+	background-color: #FE2EC8;
+}
+div.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 120px;
+    margin: 5px;
+}
+
+.table {
     background: rgba(255,255,255,0.5);
     margin: 20px;
     width: 300px;
     line-height:40px;
     padding:5px;
+}
+
+.logout {
+    background: rgba(255,255,255,0.5);
+    margin: 10px;
+    width: 270px;
+    line-height:20px;
+    padding:3px;
+	float:right;
 }
 #footer {
 	background:rgba(255,255,255,0.5);
