@@ -1,5 +1,5 @@
 <?php
-	session_start(); // Starting Session
+	#session_start(); // Starting Session
 
 	$hostname = "107.189.33.148:3306";
 	$database = "webdb";
@@ -7,7 +7,6 @@
 	$password = "P@ssword"
 
 	$dbcon = mysql_connect($hostname, $username, $password) or die (" could not connect to database");
-	echo "WRDSADS ASD ";
 	$selectdb = mysql_select_db($database, $dbcon);
 	
 	$gebruiker = $_POST['username'];
@@ -21,11 +20,10 @@
 	$result = mysql_query($query);
 	$count = mysql_num_rows($result);
 	
-	echo "waarom doet ie het niet";
+	
 	if(!$count==1){
-		echo "warom doet ie het niet";
-		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
-		$_SESSION['gebruiker'] = $gebruiker;
+		['gebruiker'] = mysql_fetch_assoc($result);
+		['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
 	} else{
 		echo 'Incorrect username or password';
