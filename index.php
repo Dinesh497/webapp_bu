@@ -8,7 +8,7 @@
   <div ID="id1">
 <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
 <tr>
-<form name="form1"  action="login2.php" method="POST">
+<form name="form1"  action="phpinfo.php" method="POST">
 	<td>
 	<table class='table' width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 	<tr>
