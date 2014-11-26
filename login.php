@@ -1,7 +1,7 @@
 <?php
 	session_start(); // Starting Session
 
-	$hostname = "107.189.33.148:3306";
+	$hostname = "107.189.33.148";
 	$database = "webdb";
 	$username = "Beheerder";
 	$password = "P@ssword"
@@ -25,7 +25,7 @@
 		$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
 	} else{
-		echo 'Incorrect Username or password';
+		echo 'Incorrect username or password';
 	}
 	
 	
