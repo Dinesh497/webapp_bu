@@ -1,5 +1,5 @@
 <?php
-	#session_start(); // Starting Session
+	session_start(); // Starting Session
 
 	$hostname = "107.189.33.148:3306";
 	$database = "webdb";
@@ -22,8 +22,8 @@
 	
 	
 	if(!$count==1){
-		['gebruiker'] = mysql_fetch_assoc($result);
-		['gebruiker'] = $gebruiker;
+		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
+		$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
 	} else{
 		echo 'Incorrect username or password';
