@@ -16,7 +16,7 @@
 	$wachtwoord = stripslashes($wachtwoord);
 	$passencrypt = sha1($wachtwoord);
 	
-	$query = "SELECT * FROM users WHERE username='$gebruiker' and password='$wachtwoord'";
+	$query = "SELECT * FROM users WHERE username='$gebruiker' and password='$passencrypt'";
 	$result = mysql_query($query);
 	$count = mysql_num_rows($result);
 	
