@@ -3,7 +3,7 @@
 
 	$hostname = "localhost";
 	$database = "webdb";
-	$username = "Beheerder";
+	$username = "root";
 	$password = "P@ssword"
 
 	$dbcon = mysql_connect($hostname, $username, $password) or die (" could not connect to database");
@@ -24,7 +24,7 @@
 	if(!$count==1){
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
-		header("location:phpinfo.php");
+		header("location:homepage.php");
 	} else{
 		echo 'Incorrect username or password';
 	}
