@@ -16,12 +16,11 @@
 	$wachtwoord = stripslashes($wachtwoord);
 	$passencrypt = sha1($wachtwoord);
 	
-	$query = "SELECT * FROM users WHERE username='$gebruiker' and password='$passencrypt'";
+	$query = "SELECT * FROM users WHERE username='$gebruiker' and password='$wachtwoord'";
 	$result = mysql_query($query);
 	$count = mysql_num_rows($result);
 	
 	if($count==1){
-		echo "DIT zie IK ASD ASF ";
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
