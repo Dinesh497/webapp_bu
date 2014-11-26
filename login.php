@@ -7,6 +7,7 @@
 	$password = "P@ssword"
 
 	$dbcon = mysql_connect($hostname, $username, $password) or die (" could not connect to database");
+	echo "WRDSADS ASD ";
 	$selectdb = mysql_select_db($database, $dbcon);
 	
 	$gebruiker = $_POST['username'];
