@@ -1,10 +1,26 @@
 <?php
 	session_start(); // Starting Session
 
+	$hostname = "107.189.33.148:3306";
 	$database = "webdb";
+	$username = "Beheerder";
+	$password = "P@ssword"
 
-	$dbcon = mysql_connect("107.189.33.148:3306", "Beheerder", "P@ssw0rd") or die (" could not connect to database". mysql_error());
+	$dbcon = mysql_connect($hostname, $username, $password)/* or die (" could not connect to database")*/;
+	if (!$dbcon) {
+		die('Connection failed: ' . mysql_error());
+	}
+	else{
+    	 echo "Connection to MySQL server " .$hostname . " successful!
+	" . PHP_EOL;
+	}
 	$selectdb = mysql_select_db($database, $dbcon);
+	if (!$selectdb) {
+    	die ('Can\'t select database: ' . mysql_error());
+	}
+	else {
+    	echo 'Database ' . $database . ' successfully selected!';
+	}	
 	
 	$gebruiker = $_POST['username'];
 	$wachtwoord = $_POST['password'];
