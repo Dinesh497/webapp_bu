@@ -6,21 +6,8 @@
 	$username = "Beheerder";
 	$password = "P@ssword"
 
-	$dbcon = mysql_connect($hostname, $username, $password)/* or die (" could not connect to database")*/;
-	if (!$dbcon) {
-		die('Connection failed: ' . mysql_error());
-	}
-	else{
-    	 echo "Connection to MySQL server " .$hostname . " successful!
-	" . PHP_EOL;
-	}
+	$dbcon = mysql_connect($hostname, $username, $password) or die (" could not connect to database");
 	$selectdb = mysql_select_db($database, $dbcon);
-	if (!$selectdb) {
-    	die ('Can\'t select database: ' . mysql_error());
-	}
-	else {
-    	echo 'Database ' . $database . ' successfully selected!';
-	}	
 	
 	$gebruiker = $_POST['username'];
 	$wachtwoord = $_POST['password'];
