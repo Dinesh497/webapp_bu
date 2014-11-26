@@ -1,8 +1,11 @@
 <!doctype html>
 <?php
-	if(!isset($_COOKIE['lol'])){
-		echo 'lolol';
-	}
+include ("login.php");
+	if( ! isset($_SESSION['gebruiker']))
+{
+	header('Location:index.php');
+	exit;
+}
 ?>
 <title>Westcord Fashion Hotel</title>
 <link rel="stylesheet" type="text/css" href="style.css">

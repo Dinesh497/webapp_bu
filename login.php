@@ -1,9 +1,8 @@
 <?php
-	$username = "root";
-	$password = "P@ssw0rd";
-	$hostname = "localhost";
+	session_start(); // Starting Session
+
 	
-	$dbcon = mysql_connect($hostname, $username, $password) or die (" could not connect to database");
+	$dbcon = mysql_connect("localhost", "root", "P@ssw0rd") or die (" could not connect to database");
 	$selectdb = mysql_select_db("webapp", $dbcon);
 	
 	$gebruiker = $_POST['username'];
@@ -18,8 +17,8 @@
 	$count = mysql_num_rows($result);
 	
 	if($count==1){
-		//$seconds = 120 + time();
-		//setcookie(
+		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
+		$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
 	} else{
 		echo 'Incorrect Username or password';
