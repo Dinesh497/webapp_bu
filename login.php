@@ -2,7 +2,7 @@
 	session_start(); // Starting Session
 
 	
-	$dbcon = mysql_connect("107.189.33.148:3306", "Beheerder", "P@ssw0rd") or die (" could not connect to database");
+	$dbcon = mysql_connect("127.0.0.1", "Beheerder", "P@ssw0rd") or die (" could not connect to database");
 	$selectdb = mysql_select_db("webdb", $dbcon);
 	
 	$gebruiker = $_POST['username'];
