@@ -14,7 +14,7 @@ include ("session.php");
 <body>
 
 <tr>
-<form name="form1"  action="logout.php" method="POST">
+<form name="session"  action="logout.php" method="POST">
 	<td>
 	<table class='logout' >
 		<tr>
@@ -29,8 +29,9 @@ include ("session.php");
 </form>
 </tr>
 
-<form name="htmlform" method="post" action="html_form_send.php">
-<table width="450px">
+
+<form name="problem" method="post" action="submit.php">
+<table width="450px" class='table'>
 </tr>
 <tr>
  <td valign="top">
