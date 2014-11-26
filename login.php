@@ -21,6 +21,7 @@
 	$count = mysql_num_rows($result);
 	
 	if($count==1){
+		echo "DIT zie IK ASD ASF ";
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
