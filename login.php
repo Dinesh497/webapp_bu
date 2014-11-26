@@ -3,7 +3,7 @@
 
 	$hostname = "107.189.33.148:3306";
 	$database = "webdb";
-	$username = "root";
+	$username = "Beheerder";
 	$password = "P@ssword"
 
 	$dbcon = mysql_connect($hostname, $username, $password) or die (" could not connect to database");
@@ -20,7 +20,7 @@
 	$result = mysql_query($query);
 	$count = mysql_num_rows($result);
 	
-	if($count==1){
+	if(!$count==1){
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
