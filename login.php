@@ -1,7 +1,7 @@
 <?php
 	session_start(); // Starting Session
 
-	$hostname = "107.189.33.148:3306";
+	$hostname = "localhost";
 	$database = "webdb";
 	$username = "Beheerder";
 	$password = "P@ssword"
