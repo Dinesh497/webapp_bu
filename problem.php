@@ -13,6 +13,24 @@ include ("session.php");
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <body>
 
+<tr>
+<form name="form1"  action="logout.php" method="POST">
+	<td>
+	<table class='logout' >
+		<tr>
+		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
+		<tr>
+		
+		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
+
+		</tr>
+	</table>
+	</td>
+</form>
+</tr>
+
+
+
 
 
 
