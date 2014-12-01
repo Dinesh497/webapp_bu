@@ -1,9 +1,9 @@
 <!doctype html>
 <title>Westcord Fashion Hotel</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-<link rel="stylesheet" media="screen and (max-device-width: 800px)" href="style.css" />
-<link rel="stylesheet" media="screen and (max-device-width: 360px)" href="mobile.css" />
+<link rel='stylesheet' href='style.css' />
 
 <body>
  
