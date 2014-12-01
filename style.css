@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
  body {
     background-image: url("images/westcord.jpg");
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@ ul{
 div.img {
 margin-top: 71px;
 margin-bottom: 190px;
-margin-right: -69px;
+margin-right: -124px;
 	padding: 5px;
 	border: ;
 	height: auto;
@@ -24,7 +24,7 @@ margin-right: -69px;
 
 div.img2 {
 	margin-top: -139px;
-	margin-right: 219px;
+	margin-right: 168px;
 	padding: 5px;
 	border: ;
 	height: auto;
