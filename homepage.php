@@ -37,11 +37,7 @@ include ("session.php");
 </form>
 </tr>
 
-<div class="container">
-      <h2>Image</h2>
-      <p>The .img-responsive class makes the image scale nicely to the parent element:</p>                  
-      <img src="cinqueterre.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236"> 
-    </div>
+
 <!--<div class="img">
   <a target="_blank" href="settings.php">
 	<img src="images\task.png" width="220" height="200">
