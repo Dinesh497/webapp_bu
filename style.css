@@ -149,7 +149,7 @@ div.desc {
 }
 }
 
-@media screen and (min-width: 956px) {
+@media screen and (min-width: 938px) {
  body {
     background-image: url("images/westcord.jpg");
     background-repeat: no-repeat;
