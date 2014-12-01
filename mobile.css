@@ -1,4 +1,4 @@
- body {
+body {
     background-image: url("images/westcord.jpg");
     background-repeat: no-repeat;
 	font-family: calibri;
@@ -33,7 +33,7 @@ div.img2 {
 	width: auto;
 	float: right;
 	text-align: center;
-	background-color: ;
+	background-color: #e0ffff ;
 }
 div.desc {
     text-align: center;
