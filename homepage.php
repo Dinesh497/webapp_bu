@@ -10,8 +10,9 @@ include ("session.php");
 ?>
 <title>Westcord Fashion Hotel</title>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-<link rel="stylesheet" media="screen and (min-device-width: 800px)" href="style.css" />
-<link rel="stylesheet" media="screen and (min-device-width: 480px)" href="mobile.css" />
+<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='style.css' />
+<link rel='stylesheet' media='screen and (min-width: 480px) and (max-width: 600px)' href='mobile.css' />
+
 <body>
 
 
