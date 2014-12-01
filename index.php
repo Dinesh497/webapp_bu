@@ -3,7 +3,7 @@
 
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='style.css' />
-<link rel='stylesheet' media='screen and (min-width: 300px) and (max-width: 700px)' href='mobile.css' />
+<link rel='stylesheet' media='screen and (min-width: 300px) and (max-width: 500px)' href='mobile.css' />
 <body>
  
 
