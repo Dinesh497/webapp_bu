@@ -71,7 +71,5 @@ include ("session.php");
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 </body>
-<div id="footer">
-To be or not to be, that is the question
-</div>
+
 </html>
