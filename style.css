@@ -1,4 +1,3 @@
-@media screen and (min-width: 955px) {
 
  body {
     background-image: url("images/westcord.jpg");
@@ -67,8 +66,8 @@ div.desc {
 	left:0;
 	text-align:center;
 }
-}
-@media screen and (min-width: 800px) {
+
+/*@media screen and (min-width: 800px) {
  body {
     background-image: url("images/westcord.jpg");
     background-repeat: no-repeat;
@@ -137,3 +136,4 @@ div.desc {
 	text-align:center;
 }
 }
+*/
