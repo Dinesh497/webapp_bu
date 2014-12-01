@@ -21,14 +21,12 @@ div.img {
 	width: auto;
 	float: right;
 	text-align: center;
-	background-color: #e0ffff;
+	background-color: #C0C0C0; 
 }
 
 div.img2 {
 	margin-top: -451px;
-	
 	margin-right: 378px;
-	
 	padding: 5px;
 	border: ;
 	height: auto;
@@ -96,15 +94,15 @@ div.img {
 }
 
 div.img2 {
-margin-top: -451px;
-margin-right: 199px;
-padding: 5px;
-border: ;
-height: auto;
-width: auto;
-float: right;
-text-align: center;
-background-color: ;
+	margin-top: -451px;
+	margin-right: 199px;
+	padding: 5px;
+	border: ;
+	height: auto;
+	width: auto;
+	float: right;
+	text-align: center;
+	background-color: ;
 }
 div.desc {
     text-align: center;
