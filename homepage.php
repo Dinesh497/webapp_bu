@@ -37,7 +37,12 @@ include ("session.php");
 </form>
 </tr>
 
-<div class="img">
+<div class="container">
+      <h2>Image</h2>
+      <p>The .img-responsive class makes the image scale nicely to the parent element:</p>                  
+      <img src="cinqueterre.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236"> 
+    </div>
+<!--<div class="img">
   <a target="_blank" href="settings.php">
 	<img src="images\task.png" width="220" height="200">
 
@@ -51,9 +56,15 @@ include ("session.php");
   </a>
  <div class="desc">Add a description of the image here</div>
 </div>
+-->
+<div class="container">
+      <h2>Image</h2>
+      <p>The .img-responsive class makes the image scale nicely to the parent element:</p>                  
+      <img src="images\gear.png" class="img-responsive" alt="Cinque Terre" width="220" height="200"> 
+    </div>
 
-
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 </body>
 <div id="footer">
