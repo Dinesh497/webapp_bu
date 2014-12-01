@@ -1,3 +1,5 @@
+@media screen and (max-width: 900px) {
+
  body {
     background-image: url("images/westcord.jpg");
     background-repeat: no-repeat;
@@ -66,4 +68,5 @@ div.desc {
 	bottom:0;
 	left:0;
 	text-align:center;
+}
 }
