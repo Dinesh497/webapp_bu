@@ -67,7 +67,7 @@ div.desc {
 	text-align:center;
 }
 
-/*@media screen and (min-width: 800px) {
+@media screen and (min-width: 955px) {
  body {
     background-image: url("images/westcord.jpg");
     background-repeat: no-repeat;
@@ -136,4 +136,3 @@ div.desc {
 	text-align:center;
 }
 }
-*/
