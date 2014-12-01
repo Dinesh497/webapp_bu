@@ -10,16 +10,16 @@ ul{
  padding: 0;
  }
 div.img {
-    margin-top: 244px;
-	margin-bottom: 187px;
-	margin-right: 436px;
-	padding: 5px;
-	border: ;
-	height: auto;
-	width: auto;
-	float: right;
-	text-align: center;
-	background-color:  #e0ffff;
+		top: 50%; /* IMPORTANT */
+        left: 50%; /* IMPORTANT */
+        display: block;
+        position: absolute;
+        background: url(images/background.png) no-repeat center center;
+        width: 750px;
+        height: 417px;
+
+        margin-top: -208.5px; /* HALF OF THE HEIGHT */
+        margin-left: -375px; /* HALF OF THE WIDTH */
 }
 
 div.img2 {
