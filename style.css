@@ -10,9 +10,9 @@ ul{
  padding: 0;
  }
 div.img {
-margin-top: 29px;
-margin-bottom: 185px;
-margin-right: 107px;
+margin-top: 71px;
+margin-bottom: 190px;
+margin-right: -69px;
 	padding: 5px;
 	border: ;
 	height: auto;
@@ -23,9 +23,8 @@ margin-right: 107px;
 }
 
 div.img2 {
-margin-top: -139px;
-margin-right: 108px;
-
+	margin-top: -139px;
+	margin-right: 219px;
 	padding: 5px;
 	border: ;
 	height: auto;
