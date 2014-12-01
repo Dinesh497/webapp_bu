@@ -54,10 +54,10 @@ include ("session.php");
 </div>
 -->
 <div class="img">
-      <h2>Image</h2>
-      <p>The .img-responsive class makes the image scale nicely to the parent element:</p>                  
+                   
       <img src="images\gear.png" class="img-responsive" alt="Cinque Terre" width="220" height="200"> 
-    </div>
+	  <div class="desc">Add a description of the image here</div>
+</div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
