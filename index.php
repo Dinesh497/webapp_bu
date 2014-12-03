@@ -16,7 +16,7 @@
 	<td>
 	<table class='table'  >
 	<tr>
-	<img src="images\logo.png">
+	<img src="images\logo.png" class="img-responsive" width="220" height="200">
 	</tr>
 
 	<tr>
@@ -44,6 +44,6 @@
 
 </body>
 <div id="footer">
-To be or not to be, that is the question
+
 </div>
 </html>
