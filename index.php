@@ -16,7 +16,7 @@
 	<td>
 	<table class='table'  >
 	<tr>
-	<img src="images\logo.png" class="img-responsive" width="220">
+	<img src="images\logo.png" class="img-responsive" width="320">
 	</tr>
 
 	<tr>
