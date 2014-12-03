@@ -10,15 +10,13 @@
  
 
  
-<table class='table'>
+<table class='table'  >
 <tr>
-<img src="images\logo.png" class="img-responsive" width="320">
 <form name="form1"  action="login.php" method="POST">
 	<td>
-	</table>
 	<table class='table'  >
 	<tr>
-	
+	<img src="images\logo.png" class="img-responsive" width="320">
 	</tr>
 
 	<tr>
@@ -41,7 +39,7 @@
 	</td>
 </form>
 </tr>
-
+</table>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
