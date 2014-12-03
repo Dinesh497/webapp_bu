@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <link rel='stylesheet' href='style.css' />
-
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 <body>
  
@@ -16,7 +16,7 @@
 	<td>
 	<table class='table'  >
 	<tr>
-	<img src="images\logo.png" class="img-responsive" >
+	<img src="images\logo.png" class="img-responsive" width="320">
 	</tr>
 
 	<tr>
