@@ -15,7 +15,7 @@
 
 <form name="form1"  action="login.php" method="POST">
 	<td>
-	<img src="images\logo.png" class="img-responsive" width="320">
+	<img src="images\logo.png" class="img-responsive" width="340">
 	<table class='table'  >
 	<tr>
 	
