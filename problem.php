@@ -56,7 +56,7 @@ include ("session.php");
 	<td><script>
 	var tD = new Date();
 	var datestr = tD.getDate() + "/" + (tD.getMonth()+ 1) + "/" + tD.getFullYear();
-	document.write("<input type='date' name='date' value='"+datestr+"' readonly>");
+	document.write("<input type='text' name='date' value='"+datestr+"'>");
 	</script></td>
 	</tr>
 	<tr>
@@ -67,6 +67,7 @@ include ("session.php");
 	<td>status :</td>
 	<td>
 	<select name="status">
+	<option value=""></option>
 	<option value="open">Open</option>
 	<option value="pending">Pending</option>
 	<option value="closed">Closed</option>
@@ -76,7 +77,8 @@ include ("session.php");
 	<tr>
 	<td>Priority :</td>
 	<td>
-	<select name="Priority">
+	<select name="priority">
+	<option value=""></option>
 	<option value="High">High</option>
 	<option value="Medium">Medium</option>
 	<option value="Low">Low</option>
@@ -95,16 +97,16 @@ include ("session.php");
 	<td>Known Problems :</td>
 	<td>
 	<select name="Known">
-	<option value="Lamp">Lamp</option>
-	<option value="Desk">Desk</option>
-	<option value="Wall">Wall</option>
-	<option value="Remote">Remote control</option>
-	<option value="TV">Television</option>
-	<option value="Sink">Sink</option>
-	<option value="Shower">Shower</option>
-	<option value="Bathtub">Bathtub</option>
-	<option value="Window">Window</option>
-	<option value="Chair">Chair/couch</option>
+	<option value="lamp">Lamp</option>
+	<option value="desk">Desk</option>
+	<option value="wall">Wall</option>
+	<option value="remote">Remote control</option>
+	<option value="Television">Television</option>
+	<option value="sink">Sink</option>
+	<option value="shower">Shower</option>
+	<option value="bathtub">Bathtub</option>
+	<option value="window">Window</option>
+	<option value="chair/couch">Chair/couch</option>
 	</select>
 	</tr>
 	<tr>
@@ -112,7 +114,7 @@ include ("session.php");
 	Description:
 	</td>
 	<td>
-	<textarea  name="Description" maxlength="1000" cols="25" rows="6"></textarea>
+	<textarea  name="description" maxlength="1000" cols="25" rows="6"></textarea>
 	</td>
 	</tr>
 	<tr>
