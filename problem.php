@@ -94,7 +94,7 @@ include ("session.php");
 	<tr>
 	<td>Known Problems :</td>
 	<td>
-	<select name="Known problems">
+	<select name="Known">
 	<option value="Lamp">Lamp</option>
 	<option value="Desk">Desk</option>
 	<option value="Wall">Wall</option>
@@ -117,7 +117,7 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Handle before :</td>
-	<td><input type="date" name="handledate" id="date" value=""  /></td>
+	<td><input type="date" name="hdate" value=""  /></td>
 	</tr>
 	
 	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>

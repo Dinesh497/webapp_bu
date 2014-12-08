@@ -8,9 +8,9 @@
 	$priority = $_POST['priority'];
 	$location = $_POST['location'];
 	$room = $_POST['room'];
-	$KP = $_POST['Known problems'];
+	$KP = $_POST['Known'];
 	$description = $_POST['description'];
-	$handledate = $_POST['handle date'];
+	$handledate = $_POST['hdate'];
 	
 	
 	// room map moet er nog bij
