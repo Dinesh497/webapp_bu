@@ -1,8 +1,6 @@
 <?php
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
-	$connection = mysql_connect("localhost", "Beheerder", "P@ssw0rd");
-// Selecting Database
-	$db = mysql_select_db("webdb", $connection);
+	require ("connection.php");
 	session_start();// Starting Session
 // Storing Session
 	$user_check=$_SESSION['gebruiker'];
