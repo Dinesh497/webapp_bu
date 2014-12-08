@@ -43,7 +43,11 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Date :</td>
-	<td><name = "date"></td>
+	<td><script>
+	var tD = new Date();
+	var datestr = tD.getDate() + "/" + (tD.getMonth()+ 1) + "/" + tD.getFullYear();
+	document.write("<input type='text' name='textField' value='"+datestr+"'>");
+	</script></td>
 	</tr>
 	<tr>
 	<td>User :</td>
