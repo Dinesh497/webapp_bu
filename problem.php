@@ -61,7 +61,7 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>User :</td>
-	<td><input name="username" type='text'><?php echo $_SESSION['gebruiker']; ?></td>
+	<td><?php echo $_SESSION['gebruiker']; ?></td>
 	</tr>
 	<tr>
 	<td>status :</td>
