@@ -42,7 +42,7 @@ include ("session.php");
 	<tr>
 	<td>User</td>
 	<td width="6">:</td>
-	<td><input name="username"><?php echo $_SESSION['gebruiker']; ?></td>
+	<td><name="username"><?php echo $_SESSION['gebruiker']; ?></td>
 	</tr>
 	<tr>
 	<td>status</td>
