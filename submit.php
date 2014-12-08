@@ -18,11 +18,18 @@
 	$sSQL = 'INSERT INTO tickets (ticket_id, user, status, priority, location, room_type, known_problems, description, handle_before, date) 
 VALUES (\'' . $ticket .'\', \'' . $user .'\', \'' . $status .'\', \'' . $priority .'\', \'' . $location .'\', \'' . $room .'\', \'' . $KP .'\', \'' . $description .'\',\'' . $handledate .'\', \'' . $date .'\')';
 					
-if ($dbcon->query($sSQL) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sSQL . "<br>" . $dbcon->error;
-}
+@mysql_query($sSQL);
+	if(!mysql_error())
+						{
+						
+							echo '<br><br><br>You are now registerd.';
+							
+						}
+						else
+						{
+							echo 'An SQL error occured ';
+							
+						}
 
 $conn->close();					
 ?>
