@@ -46,7 +46,7 @@ include ("session.php");
 	<td><script>
 	var tD = new Date();
 	var datestr = tD.getDate() + "/" + (tD.getMonth()+ 1) + "/" + tD.getFullYear();
-	document.write("<input type='text' name='textField' value='"+datestr+"'>");
+	document.write("name='date' value='"+datestr+"'>");
 	</script></td>
 	</tr>
 	<tr>
