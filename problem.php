@@ -49,7 +49,7 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Ticket ID :</td>
-	<td><input name="ticket-id" type="text"></td>
+	<td><input name="ticket" type="text"></td>
 	</tr>
 	<tr>
 	<td>Date :</td>
