@@ -64,14 +64,34 @@ include ("session.php");
 	</td>
 	</tr>
 	<tr>
-
-	
+	<td>Location :</td>
+	</tr>
+	<tr>
+	<td>Room type :</td>
+	</tr>
+	<tr>
+	<td>Known problems :</td>
+	<td>
+	<select name="Known problems">
+	<option value="Lamp">Lamp</option>
+	<option value="tafel">Tafel</option>
+	<option value="muur">Muur</option>
+	</select>
+	</tr>
+	<tr>
 	<td>
 	<label for="comments">Description</label>
 	</td>
 	<td>
 	<textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
 	</td>
+	</tr>
+	<tr>
+	<td>Handle before :</td>
+	<td><name = "tododate"></td>
+	</tr>
+	<td>Date :</td>
+	<td><name = "date"></td>
 	</tr>
 	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
 	</table>
