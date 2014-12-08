@@ -13,6 +13,15 @@ include ("session.php");
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <link rel='stylesheet' href='style.css' />
 <link rel="stylesheet" media="(max-width: 400px)" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
+  <script src="jQuery.ui.datepicker.js"></script>
+  <script>
+  //reset type=date inputs to text
+  $( document ).bind( "mobileinit", function(){
+    $.mobile.page.prototype.options.degradeInputs.date = true;
+  });	
+  </script>
+  <script src="jquery.ui.datepicker.mobile.js"></script>
 <body>
 
 <tr>
@@ -98,7 +107,7 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Handle before :</td>
-	<td><name = "tododate"></td>
+	<td><input type="date" name="date" id="date" value=""  /></td>
 	</tr>
 	
 	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
