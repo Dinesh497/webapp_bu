@@ -48,7 +48,7 @@ include ("session.php");
 	
 	</tr>
 	<tr>
-	<div id="formtext"><td>Ticket ID :</td></div>
+	<td>Ticket ID :</td>
 	</tr>
 	<tr>
 	<td>Date :</td>
