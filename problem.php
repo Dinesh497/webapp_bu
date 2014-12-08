@@ -70,7 +70,7 @@ include ("session.php");
 	<td>Room type :</td>
 	</tr>
 	<tr>
-	<td>Known problems :</td>
+	<td>Known Problems :</td>
 	<td>
 	<select name="Known problems">
 	<option value="Lamp">Lamp</option>
