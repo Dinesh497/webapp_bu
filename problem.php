@@ -56,7 +56,7 @@ include ("session.php");
 	<td><script>
 	var tD = new Date();
 	var datestr = tD.getDate() + "/" + (tD.getMonth()+ 1) + "/" + tD.getFullYear();
-	document.write("<input type='text' name='date' value='"+datestr+"' readonly>");
+	document.write("<input type='date' name='date' value='"+datestr+"' readonly>");
 	</script></td>
 	</tr>
 	<tr>
@@ -67,9 +67,9 @@ include ("session.php");
 	<td>status :</td>
 	<td>
 	<select name="status">
-	<option value="Open">Open</option>
-	<option value="Pending">Pending</option>
-	<option value="Closed">Closed</option>
+	<option value="open">Open</option>
+	<option value="pending">Pending</option>
+	<option value="closed">Closed</option>
 	</select>
 	</td>
 	</tr>
