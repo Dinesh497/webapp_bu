@@ -9,8 +9,10 @@ include ("session.php");
 
 ?>
 <title>Westcord Fashion Hotel</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<link rel='stylesheet' href='style.css' />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <body>
 
 <tr>
@@ -30,60 +32,52 @@ include ("session.php");
 </tr>
 
 
-<form name="problem" method="post" action="submit.php">
-<table width="450px" class='table'>
-</tr>
-<tr>
- <td valign="top">
-  <label for="first_name">First Name </label>
- </td>
- <td valign="top">
-  <input  type="text" name="first_name" maxlength="50" size="30">
- </td>
-</tr>
- 
-<tr>
- <td valign="top">
-	<label for="last_name">Last Name </label>
- </td>
- <td valign="top">
-  <input  type="text" name="last_name" maxlength="50" size="30">
- </td>
-</tr>
+<form name="form1"  action="submit.php" method="POST">
+	
+	<table class='table'  >
+	<tr>
+	
+	</tr>
 
-<tr>
- <td valign="top">
-  <label for="email">Email Address </label>
- </td>
- <td valign="top">
-  <input  type="text" name="email" maxlength="80" size="30">
- </td>
- 
-</tr>
-<tr>
- <td valign="top">
-  <label for="telephone">Telephone Number</label>
- </td>
- <td valign="top">
-  <input  type="text" name="telephone" maxlength="30" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments">Descprition</label>
- </td>
- <td valign="top">
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- </td>
- 
-</tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">   ( <a href="http://www.freecontactform.com/html_form.php">HTML Form</a> )
- </td>
+	<tr>
+	<td>User</td>
+	<td width="6">:</td>
+	<td width="320"><?php echo $_SESSION['gebruiker']; ?></td>
+	</tr>
+	<tr>
+	<td>status</td>
+	<td>:</td>
+	<select name="status">
+	<option value="Open">Open</option>
+	<option value="Pending">Pending</option>
+	<option value="Closed">Closed</option>
+	</select>
+	</tr>
+	<tr>
+	<td>Priority</td>
+	<td>:</td>
+	<select name="Priority">
+	<option value="High">High</option>
+	<option value="Medium">Medium</option>
+	<option value="Low">Low</option>
+	</select>
+	</tr>
+	<tr>
+
+	
+	<td valign="top">
+	<label for="comments">Description</label>
+	</td>
+	<td valign="top">
+	<textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+	</td>
+	</tr>
+	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
+	</table>
+	</td>
+</form>
 </tr>
 </table>
-</form>
 
 
 
