@@ -1,5 +1,6 @@
-<?php	
-
+<?php
+	session_start(); // Starting Session	
+	require ("connection.php");
 	$ticket = $_POST['ticket'];
 	$date = $_POST['date'];
 	$user = $_POST['username'];
