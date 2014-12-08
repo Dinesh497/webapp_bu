@@ -42,12 +42,12 @@ include ("session.php");
 	<tr>
 	<td>User</td>
 	<td width="6">:</td>
-	<td width="320"><?php echo $_SESSION['gebruiker']; ?></td>
+	<td><input name="username"><?php echo $_SESSION['gebruiker']; ?></td>
 	</tr>
 	<tr>
 	<td>status</td>
 	<td>:</td>
-	<td valign="top">
+	<td>
 	<select name="status">
 	<option value="Open">Open</option>
 	<option value="Pending">Pending</option>
@@ -58,7 +58,7 @@ include ("session.php");
 	<tr>
 	<td>Priority</td>
 	<td>:</td>
-	<td valign="top">
+	<td>
 	<select name="Priority">
 	<option value="High">High</option>
 	<option value="Medium">Medium</option>
@@ -69,10 +69,10 @@ include ("session.php");
 	<tr>
 
 	
-	<td valign="top">
+	<td>
 	<label for="comments">Description</label>
 	</td>
-	<td valign="top">
+	<td>
 	<textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
 	</td>
 	</tr>
