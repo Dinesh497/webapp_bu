@@ -34,7 +34,7 @@ include ("session.php");
 
 <form name="submitform"  action="submit.php" method="POST">
 	
-	<table class='table'  >
+	<table class='submittable'  >
 	<tr>
 	
 	</tr>
@@ -112,7 +112,5 @@ include ("session.php");
 
 
 </body>
-<div id="footer">
-To be or not to be, that is the question
-</div>
+
 </html>
