@@ -1,8 +1,7 @@
 <?php
 	session_start(); // Starting Session
+	require ('connection.php');
 
-	$dbcon = mysql_connect("localhost", "Beheerder", "P@ssw0rd") or die ("could not connect to database");
-	$selectdb = mysql_select_db("webdb", $dbcon);
 	
 	$gebruiker = $_POST['username'];
 	$wachtwoord = $_POST['password'];
