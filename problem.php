@@ -47,7 +47,7 @@ include ("session.php");
 	<tr>
 	<td>status</td>
 	<td>:</td>
-	<td>
+	<td valign="top">
 	<select name="status">
 	<option value="Open">Open</option>
 	<option value="Pending">Pending</option>
@@ -58,7 +58,7 @@ include ("session.php");
 	<tr>
 	<td>Priority</td>
 	<td>:</td>
-	<td>
+	<td valign="top">
 	<select name="Priority">
 	<option value="High">High</option>
 	<option value="Medium">Medium</option>
