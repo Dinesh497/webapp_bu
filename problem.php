@@ -96,11 +96,11 @@ include ("session.php");
 	<tr>
 	<td>Known Problems :</td>
 	<td>
-	<select name="Known">
+	<select name="known">
+	<option value=""></option>
 	<option value="lamp">Lamp</option>
-	<option value="desk">Desk</option>
-	<option value="wall">Wall</option>
-	<option value="remote">Remote control</option>
+	<option value="mini-bar">minibar</option>
+	<option value="remote control">Remote control</option>
 	<option value="Television">Television</option>
 	<option value="sink">Sink</option>
 	<option value="shower">Shower</option>
