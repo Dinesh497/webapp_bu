@@ -4,7 +4,7 @@
 	
 	$ticket = $_POST['ticket'];
 	$date = $_POST['date'];
-	$user = $_POST['username'];
+	$user = $_SESSION['gebruiker'];
 	$status = $_POST['status'];
 	$priority = $_POST['priority'];
 	$location = $_POST['location'];
