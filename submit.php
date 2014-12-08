@@ -9,7 +9,7 @@
 	$priority = $_POST['priority'];
 	$location = $_POST['location'];
 	$room = $_POST['room'];
-	$KP = $_POST['Known'];
+	$KP = $_POST['known'];
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
 	
