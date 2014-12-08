@@ -48,7 +48,7 @@ include ("session.php");
 	
 	</tr>
 	<tr>
-	<td>Ticket ID :</td>
+	<div id="formtext"><td>Ticket ID :</td></div>
 	</tr>
 	<tr>
 	<td>Date :</td>
@@ -93,8 +93,15 @@ include ("session.php");
 	<td>
 	<select name="Known problems">
 	<option value="Lamp">Lamp</option>
-	<option value="tafel">Tafel</option>
-	<option value="muur">Muur</option>
+	<option value="Desk">Desk</option>
+	<option value="Wall">Wall</option>
+	<option value="Remote">Remote control</option>
+	<option value="TV">Television</option>
+	<option value="Sink">Sink</option>
+	<option value="Shower">Shower</option>
+	<option value="Bathtub">Bathtub</option>
+	<option value="Window">Window</option>
+	<option value="Chair">Chair/couch</option>
 	</select>
 	</tr>
 	<tr>

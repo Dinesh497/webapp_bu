@@ -339,7 +339,9 @@ div.desc {
     line-height:40px;
     padding:5px;
 }
-
+#formtext{
+	text-align: right;
+}
 .logout {
     background: rgba(255,255,255,0.5);
     margin: 10px;
