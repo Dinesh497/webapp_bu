@@ -56,11 +56,13 @@ include ("session.php");
 	<tr>
 	<td>Priority</td>
 	<td>:</td>
+	<td>
 	<select name="Priority">
 	<option value="High">High</option>
 	<option value="Medium">Medium</option>
 	<option value="Low">Low</option>
 	</select>
+	</td>
 	</tr>
 	<tr>
 
@@ -74,10 +76,9 @@ include ("session.php");
 	</tr>
 	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
 	</table>
-	</td>
+	
 </form>
 </tr>
-</table>
 
 
 
@@ -88,6 +89,7 @@ include ("session.php");
 
 
 
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 
 </body>
