@@ -38,7 +38,13 @@ include ("session.php");
 	<tr>
 	
 	</tr>
-
+	<tr>
+	<td>Ticket ID :</td>
+	</tr>
+	<tr>
+	<td>Date :</td>
+	<td><name = "date"></td>
+	</tr>
 	<tr>
 	<td>User :</td>
 	<td><name="username"><?php echo $_SESSION['gebruiker']; ?></td>
@@ -90,9 +96,7 @@ include ("session.php");
 	<td>Handle before :</td>
 	<td><name = "tododate"></td>
 	</tr>
-	<td>Date :</td>
-	<td><name = "date"></td>
-	</tr>
+	
 	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
 	</table>
 	
