@@ -32,7 +32,7 @@ include ("session.php");
 </tr>
 
 
-<form name="form1"  action="submit.php" method="POST">
+<form name="submitform"  action="submit.php" method="POST">
 	
 	<table class='table'  >
 	<tr>
