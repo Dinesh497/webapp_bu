@@ -1,6 +1,7 @@
 <?php
 	session_start(); // Starting Session	
 	require ("connection.php");
+	
 	$ticket = $_POST['ticket'];
 	$date = $_POST['date'];
 	$user = $_POST['username'];
@@ -16,5 +17,12 @@
 	// room map moet er nog bij
 	$sSQL = 'INSERT INTO tickets (ticket_id, user, status, priority, location, room_type, known_problems, description, handle_before, date) 
 VALUES (\'' . $ticket .'\', \'' . $user .'\', \'' . $status .'\', \'' . $priority .'\', \'' . $location .'\', \'' . $room .'\', \'' . $KP .'\', \'' . $description .'\',\'' . $handledate .'\', \'' . $date .'\')';
-						 
+					
+if ($dbcon->query($sSQL) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sSQL . "<br>" . $dbcon->error;
+}
+
+$conn->close();					
 ?>
