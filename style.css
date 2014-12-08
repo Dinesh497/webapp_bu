@@ -339,7 +339,7 @@ div.desc {
     line-height:40px;
     padding:5px;
 }
-#formtext{
+.formtext{
 	text-align: right;
 }
 .logout {
