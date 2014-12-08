@@ -49,6 +49,7 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Ticket ID :</td>
+	<td><input name="ticket-id" type="text"></td>
 	</tr>
 	<tr>
 	<td>Date :</td>
@@ -84,9 +85,11 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Location :</td>
+	<td><input name="location" type="text"></td>
 	</tr>
 	<tr>
 	<td>Room type :</td>
+	<td><input name="room" type="text"></td>
 	</tr>
 	<tr>
 	<td>Known Problems :</td>
