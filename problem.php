@@ -106,15 +106,15 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>
-	<label for="comments">Description</label>
+	Description:
 	</td>
 	<td>
-	<textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+	<textarea  name="Description" maxlength="1000" cols="25" rows="6"></textarea>
 	</td>
 	</tr>
 	<tr>
 	<td>Handle before :</td>
-	<td><input type="date" name="date" id="date" value=""  /></td>
+	<td><input type="date" name="handledate" id="date" value=""  /></td>
 	</tr>
 	
 	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
