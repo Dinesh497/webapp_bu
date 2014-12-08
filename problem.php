@@ -40,13 +40,11 @@ include ("session.php");
 	</tr>
 
 	<tr>
-	<td>User</td>
-	<td width="6">:</td>
+	<td>User :</td>
 	<td><name="username"><?php echo $_SESSION['gebruiker']; ?></td>
 	</tr>
 	<tr>
-	<td>status</td>
-	<td>:</td>
+	<td>status :</td>
 	<td>
 	<select name="status">
 	<option value="Open">Open</option>
@@ -56,8 +54,7 @@ include ("session.php");
 	</td>
 	</tr>
 	<tr>
-	<td>Priority</td>
-	<td>:</td>
+	<td>Priority :</td>
 	<td>
 	<select name="Priority">
 	<option value="High">High</option>
