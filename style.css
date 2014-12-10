@@ -54,6 +54,13 @@ div.desc {
     line-height:40px;
     padding:5px;
 }
+.tasktable {
+    background: rgba(255,255,255,0.5);
+    margin: 20px;
+    width: 280px;
+    line-height:40px;
+    padding:5px;
+}
 
 .logout {
     background: rgba(255,255,255,0.5);
@@ -113,6 +120,13 @@ div.desc {
 }
 
 .table {
+    background: rgba(255,255,255,0.5);
+    margin: 20px;
+    width: 280px;
+    line-height:40px;
+    padding:5px;
+}
+.tasktable {
     background: rgba(255,255,255,0.5);
     margin: 20px;
     width: 280px;
@@ -270,6 +284,13 @@ div.desc {
     padding:3px;
 	float:right;
 }
+.tasktable {
+    background: rgba(255,255,255,0.5);
+    margin: 20px;
+    width: 280px;
+    line-height:40px;
+    padding:5px;
+}
 #footer {
 	background:rgba(255,255,255,0.5);
 	
@@ -325,6 +346,13 @@ div.desc {
 
 
 .table {
+    background: rgba(255,255,255,0.5);
+    margin: 20px;
+    width: 280px;
+    line-height:40px;
+    padding:5px;
+}
+.tasktable {
     background: rgba(255,255,255,0.5);
     margin: 20px;
     width: 280px;

@@ -38,7 +38,7 @@ include ('connection.php');
 </form>
 </tr>
 <?php
-echo "<table class='table'>";
+echo "<table class='tasktable'>";
 echo "<tr>";
 echo "<td>Ticket ID: <b></td>";
 echo "<td>Created by: <b></td>";
