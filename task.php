@@ -37,7 +37,7 @@ include ("session.php");
 </form>
 </tr>
 <?php
-include ('connection.php');
+require ('connection.php');
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		
