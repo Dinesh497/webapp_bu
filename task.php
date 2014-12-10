@@ -1,6 +1,7 @@
 <!doctype html>
 <?php
 include ("session.php");
+include ('fetch.php');
 
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
@@ -38,7 +39,7 @@ include ("session.php");
 </form>
 </tr>
 <?php
-include ('fetch.php');
+
 
 		
 	echo "<table border='0' bgcolor=#F2F2F2>";
