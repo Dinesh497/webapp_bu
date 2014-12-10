@@ -38,19 +38,19 @@ include ('connection.php');
 </form>
 </tr>
 <?php
-
+echo "<table border='1' bgcolor=#F2F2F2>";
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		
-	echo "<table border='0' bgcolor=#F2F2F2>";
+	
 	
 	
 	
 			echo "<br>";
-			echo "<tr>";	
+			
 			echo "<tr>";
 				echo "<td>Ticket ID: <b> " . $row['ticket_id'] . "</td>";
-			echo "<tr>";
+			
 			echo "<tr>";
 				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created by: <b> " . $row['user'] . "</td>";
 			echo "</tr>";
@@ -79,9 +79,10 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 			echo "<tr>";
 				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room map:<b> " . $row['room_map'] . "</td>";
 			echo "</tr>";	
-			echo "</table>";//tabel sluiten
+			
 			echo"<br>";
 }
+echo "</table>";//tabel sluiten
 ?>
 
 
