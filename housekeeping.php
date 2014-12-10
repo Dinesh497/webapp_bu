@@ -41,9 +41,9 @@ include ("session.php");
 
 
 <div class="img">
-      <href="problem.php"> 
+      <A href="problem.php"> 
       <img src="images\add_task.png" class="img-responsive" alt="Cinque Terre" width="220" height="200"> 
-	  </a>
+	  </A>
 	  <div class="desc">Add a description of the image here</div>
 </div>
 <div class="img2">
