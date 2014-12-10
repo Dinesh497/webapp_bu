@@ -55,7 +55,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		
 	
 	
-			echo "<form method='post' action='edittask.php'>";
+			
 	
 			echo "<br>";
 			
@@ -79,7 +79,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		
 				echo "<td>" . $row['handle_before'] . "</td>";
 			
-				echo "<button input type="submit" class="pure-button pure-button-primary">";
+				
 		
 				
 			echo "</tr>";	
