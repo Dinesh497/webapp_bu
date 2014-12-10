@@ -1,8 +1,7 @@
 <!doctype html>
 <?php
 include ("session.php");
-include ('fetch.php');
-
+include ('connection.php');
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
 		exit;
@@ -40,7 +39,8 @@ include ('fetch.php');
 </tr>
 <?php
 
-
+$result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
+	while($row = mysql_fetch_array($result)){
 		
 	echo "<table border='0' bgcolor=#F2F2F2>";
 	
