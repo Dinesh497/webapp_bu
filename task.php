@@ -51,32 +51,25 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 			echo "<tr>";
 				echo "<td>Ticket ID: <b> " . $row['ticket_id'] . "</td>";
 			
-			echo "<tr>";
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created by: <b> " . $row['user'] . "</td>";
-			echo "</tr>";
-			echo "<tr>";
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Priority:<b> " . $row['priority'] . "</td>";
-			echo "</tr>";
-			echo "<tr>";
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Location:<b> " . $row['location'] . "</td>";
-			echo "</tr>";
 			
-			echo "<tr>";
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created by: <b> " . $row['user'] . "</td>";
+			
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Priority:<b> " . $row['priority'] . "</td>";
+			
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Location:<b> " . $row['location'] . "</td>";
+			
+			
+			
 				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room Type:<b> " . $row['room_type'] . "</td>";
-			echo "</tr>";
-			echo "<tr>";
+			
 				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Known problem:<b> " . $row['known_problems'] . "</td>";
-			echo "</tr>";
-			echo "<tr>";
+			
 				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description:<b> " . $row['description'] . "</td>";
-			echo "</tr>";
-			echo "<tr>";
+		
 				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Handle Before:<b> " . $row['handle_before'] . "</td>";
-			echo "</tr>";
-			echo "<tr>";
+			
 				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created in:<b> " . $row['date'] . "</td>";
-			echo "</tr>";
-			echo "<tr>";
+		
 				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room map:<b> " . $row['room_map'] . "</td>";
 			echo "</tr>";	
 			
