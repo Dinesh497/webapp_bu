@@ -42,16 +42,16 @@ include ("session.php");
 
 <div class="img">
       <A href="problem.php"> 
-      <img src="images\add_task.png" class="img-responsive" alt="Cinque Terre" width="220" height="200"> 
+      <img src="images\add_task.png" class="img-responsive"  width="220" height="200"> 
 	  </A>
-	  <div class="desc">Add a description of the image here</div>
+	  <div class="desc">Add new problem</div>
 </div>
 <div class="img2">
 	<A href="task.php">
 	<img src="images\task.png" class="img-responsive" width="220" height="200">
     
 	</A>
-	<div class="desc">Add a description of the image here</div>
+	<div class="desc">View problems</div>
 </div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

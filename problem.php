@@ -13,7 +13,7 @@ include ("session.php");
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <link rel='stylesheet' href='style.css' />
 <link rel="stylesheet" media="(max-width: 400px)" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
- <link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
+<link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
   <script src="jQuery.ui.datepicker.js"></script>
   <script>
   //reset type=date inputs to text
