@@ -47,10 +47,10 @@ include ("session.php");
 	  <div class="desc">Add a description of the image here</div>
 </div>
 <div class="img2">
-	<a target="_blank" href="task.php">
+	<A href="task.php">
 	<img src="images\task.png" class="img-responsive" width="220" height="200">
     
-	</a>
+	</A>
 	<div class="desc">Add a description of the image here</div>
 </div>
 
