@@ -39,6 +39,15 @@ include ('connection.php');
 </tr>
 <?php
 echo "<table border='1' bgcolor=#F2F2F2>";
+echo "<tr>";
+echo "<td>Ticket ID: <b></td>";
+echo "<td>Created by: <b></td>";
+echo "<td>Priority:</td>";
+echo "<td>Location:</td>";
+echo "<td>Known_problem</td>";
+echo "<td>Description</td>";
+ 
+
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		
@@ -49,31 +58,31 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 			echo "<br>";
 			
 			echo "<tr>";
-				echo "<td>Ticket ID: <b> " . $row['ticket_id'] . "</td>";
+				echo "<td> " . $row['ticket_id'] . "</td>";
 			
 			
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created by: <b> " . $row['user'] . "</td>";
+				echo "<td> " . $row['user'] . "</td>";
 			
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Priority:<b> " . $row['priority'] . "</td>";
+				echo "<td> " . $row['priority'] . "</td>";
 			
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Location:<b> " . $row['location'] . "</td>";
+				echo "<td>" . $row['location'] . "</td>";
 			
 			
 			
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room Type:<b> " . $row['room_type'] . "</td>";
+				
 			
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Known problem:<b> " . $row['known_problems'] . "</td>";
+				echo "<td>" . $row['known_problems'] . "</td>";
 			
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description:<b> " . $row['description'] . "</td>";
+				echo "<td> " . $row['description'] . "</td>";
 		
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Handle Before:<b> " . $row['handle_before'] . "</td>";
+				echo "<td>" . $row['handle_before'] . "</td>";
 			
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created in:<b> " . $row['date'] . "</td>";
+			
 		
-				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room map:<b> " . $row['room_map'] . "</td>";
+				
 			echo "</tr>";	
 			
-			echo"<br>";
+			
 }
 echo "</table>";//tabel sluiten
 ?>
