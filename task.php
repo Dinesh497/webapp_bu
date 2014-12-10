@@ -1,6 +1,7 @@
 <!doctype html>
 <?php
 include ("session.php");
+include ('connection.php');
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
 		exit;
@@ -80,7 +81,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 			echo "</tr>";	
 			echo "</table>";//tabel sluiten
 			echo"<br>";
-
+}
 ?>
 
 
