@@ -38,7 +38,7 @@ include ('connection.php');
 </form>
 </tr>
 <?php
-echo "<table border='1' bgcolor=#F2F2F2>";
+echo "<table border='1' bgcolor=#FFFFFF>";
 echo "<tr>";
 echo "<td>Ticket ID: <b></td>";
 echo "<td>Created by: <b></td>";
@@ -46,6 +46,7 @@ echo "<td>Priority:</td>";
 echo "<td>Location:</td>";
 echo "<td>Known_problem</td>";
 echo "<td>Description</td>";
+echo "<td>Handle before</td>";
  
 
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
