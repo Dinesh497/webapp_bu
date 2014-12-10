@@ -36,9 +36,52 @@ include ("session.php");
 	</td>
 </form>
 </tr>
+<?php
+include ('connection.php');
+$result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
+	while($row = mysql_fetch_array($result)){
+		
+	echo "<table border='0' bgcolor=#F2F2F2>";
+	
+	
+	
+			echo "<br>";
+			echo "<tr>";	
+			echo "<tr>";
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voornaam: <b> " . $row['ticket_id'] . "</td>";
+			echo "<tr>";
+			echo "<tr>";
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Achternaam: <b> " . $row['user'] . "</td>";
+			echo "</tr>";
+			echo "<tr>";
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Geboortedatum:<b> " . $row['priority'] . "</td>";
+			echo "</tr>";
+			echo "<tr>";
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adres:<b> " . $row['location'] . "</td>";
+			echo "</tr>";
+			
+			echo "<tr>";
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Postcode:<b> " . $row['room_type'] . "</td>";
+			echo "</tr>";
+			echo "<tr>";
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Woonplaats:<b> " . $row['known_problems'] . "</td>";
+			echo "</tr>";
+			echo "<tr>";
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail:<b> " . $row['description'] . "</td>";
+			echo "</tr>";
+			echo "<tr>";
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telefoonnummer:<b> " . $row['handle_before'] . "</td>";
+			echo "</tr>";
+			echo "<tr>";
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telefoonnummer:<b> " . $row['date'] . "</td>";
+			echo "</tr>";
+			echo "<tr>";
+				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telefoonnummer:<b> " . $row['room_map'] . "</td>";
+			echo "</tr>";	
+			echo "</table>";//tabel sluiten
+			echo"<br>";
 
-
-
+?>
 
 
 
