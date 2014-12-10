@@ -49,7 +49,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 			echo "<br>";
 			echo "<tr>";	
 			echo "<tr>";
-				echo "<td><input name="ticket" type="text">Ticket ID: <b> " . $row['ticket_id'] . "</td>";
+				echo "<td>Ticket ID: <b> " . $row['ticket_id'] . "</td>";
 			echo "<tr>";
 			echo "<tr>";
 				echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created by: <b> " . $row['user'] . "</td>";
