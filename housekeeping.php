@@ -41,7 +41,7 @@ include ("session.php");
 
 
 <div class="img">
-      <a target="_blank" href="problem.php"> 
+      <href="problem.php"> 
       <img src="images\add_task.png" class="img-responsive" alt="Cinque Terre" width="220" height="200"> 
 	  </a>
 	  <div class="desc">Add a description of the image here</div>
