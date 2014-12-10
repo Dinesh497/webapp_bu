@@ -40,6 +40,7 @@ include ('connection.php');
 <?php
 
 echo "<table class='tasktable'>";
+echo "<form method='post' action='edittask.php'>";
 //echo "<tr>";
 //echo "<td>Ticket ID: <b></td>";
 //echo "<td>Created by: <b></td>";
@@ -55,7 +56,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		
 	
 	
-			echo "<form method='post' action='edittask.php'>";
+			
 	
 			echo "<br>";
 			
