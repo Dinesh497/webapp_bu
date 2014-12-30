@@ -85,6 +85,10 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		
 				echo "<td>" . $row['handle_before'] . "</td>";
 				
+<<<<<<< HEAD
+=======
+			echo "</tr>";	
+>>>>>>> parent of 3caaa98... form in table
 			
 			
 }
