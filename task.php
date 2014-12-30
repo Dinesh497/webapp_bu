@@ -60,7 +60,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	
 
 	
-			echo "<form method='post' action='edittask.php'>";
+			
 	
 			echo "<br>";
 			
