@@ -58,6 +58,11 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		echo "<br>";
 	
+
+	
+			echo "<form method='post' action='edittask.php'>";
+	
+			echo "<br>";
 			
 			echo "<tr>";
 				echo "<td> " . $row['ticket_id'] . "</td>";
@@ -81,7 +86,11 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 				
 			
 				echo "<td> " . $row['description'] . "</td>";
-				
+
+		
+				echo "<td>" . $row['handle_before'] . "</td>";
+			
+
 		
 				echo "<td>" . $row['handle_before'] . "</td>";
 				
