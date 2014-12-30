@@ -81,7 +81,8 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 			
 				
 		
-				
+				echo "<td align="center"><a href="update.php?id=<?php echo $rows['ticket_id']; ?>">update</a></td>
+</tr>"
 			echo "</tr>";	
 			
 			
