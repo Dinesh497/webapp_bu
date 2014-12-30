@@ -38,7 +38,7 @@ include ('connection.php');
 </form>
 </tr>
 <?php
-echo "<form action="niks.php" method="get">";
+
 echo "<table class='tasktable'>";
 echo "<tr>";
 echo "<td>Ticket ID: <b></td>";
@@ -82,9 +82,8 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 				
 		
 				
-			echo "</tr>";
-echo "<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>"			
-			echo "</form>";
+			echo "</tr>";	
+			
 			
 }
 echo "</table>";//tabel sluiten
