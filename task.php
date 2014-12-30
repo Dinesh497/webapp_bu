@@ -37,57 +37,59 @@ include ('connection.php');
 	</td>
 </form>
 </tr>
+<?php
+
+echo "<table class='tasktable'>";
+echo "<tr>";
+echo "<td>Ticket ID: <b></td>";
+echo "<td>Created by: <b></td>";
+echo "<td>Priority:</td>";
+echo "<td>Location:</td>";
+echo "<td>Known_problem</td>";
+echo "<td>Description</td>";
+echo "<td>Handle before</td>";
+echo "<td>Handle before</td>";
 
 
-<table class='tasktable'>
-<tr>
-<td>Ticket ID: <b></td>
-<td>Created by: <b></td>
-<td>Priority:</td>
-<td>Location:</td>
-<td>Known_problem</td>
-<td>Description</td>
-<td>Handle before</td>
-<td>Handle before</td>
+
+
 <?php
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
-?>		
+		echo "<br>";
 	
+			
+			echo "<tr>";
+				echo "<td> " . $row['ticket_id'] . "</td>";
 	
-			echo "<form method='post' action='edittask.php'>";
-	
-	<br>
-			
-	<tr>
-	<td><?php echo $row['ticket_id'];?></td>
 			
 			
-				<td><?php echo $row['user'];?></td>
+				echo "<td> " . $row['user'] . "</td>";
+				
 			
-				<td><?php echo $row$row['priority'];?></td>
+				echo "<td> " . $row['priority'] . "</td>";
+				
 			
-				<td><?php echo $row['location'];?></td>
+				echo "<td>" . $row['location'] . "</td>";
+				
 			
 			
 			
 				
 			
-				<td><?php echo $row['known_problems'];?></td>
-			
-				<td><?php echo $row['description'];?></td>
-		
-				<td><?php echo $row['handle_before'];?></td>
-			
-				echo "<button input type="submit" class="pure-button pure-button-primary">";
-		
+				echo "<td>" . $row['known_problems'] . "</td>";
 				
 			
+				echo "<td> " . $row['description'] . "</td>";
+				
+		
+				echo "<td>" . $row['handle_before'] . "</td>";
+				
 			
 			
 }
-</table>
-
+echo "</table>";//tabel sluiten
+?>
 
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
