@@ -50,58 +50,45 @@ echo "<td>Description</td>";
 echo "<td>Handle before</td>";
 echo "<td>Handle before</td>";
 
-
-
-
-<?php
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
-		echo "<br>";
+		
 	
-
 	
-			
+			echo "<form method='post' action='edittask.php'>";
 	
 			echo "<br>";
 			
 			echo "<tr>";
 				echo "<td> " . $row['ticket_id'] . "</td>";
-	
 			
 			
 				echo "<td> " . $row['user'] . "</td>";
-				
 			
 				echo "<td> " . $row['priority'] . "</td>";
-				
 			
 				echo "<td>" . $row['location'] . "</td>";
-				
 			
 			
 			
 				
 			
 				echo "<td>" . $row['known_problems'] . "</td>";
-				
 			
 				echo "<td> " . $row['description'] . "</td>";
-
 		
 				echo "<td>" . $row['handle_before'] . "</td>";
 			
-
+				echo "<button input type="submit" class="pure-button pure-button-primary">";
 		
-				echo "<td>" . $row['handle_before'] . "</td>";
 				
-
 			echo "</tr>";	
-
 			
 			
 }
 echo "</table>";//tabel sluiten
 ?>
+
 
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
