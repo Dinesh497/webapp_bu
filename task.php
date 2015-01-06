@@ -40,16 +40,16 @@ include ('connection.php');
 <?php
 
 echo "<table class='tasktable'>";
-
-echo "<tr>";
-echo "<td>Ticket ID: <b></td>";
-echo "<td>Created by: <b></td>";
-echo "<td>Priority:</td>";
-echo "<td>Location:</td>";
-echo "<td>Known_problem</td>";
-echo "<td>Description</td>";
-echo "<td>Handle before</td>";
-echo "<td>Handle before</td>";
+echo "<form method='post' action='edittask.php'>";
+//echo "<tr>";
+//echo "<td>Ticket ID: <b></td>";
+//echo "<td>Created by: <b></td>";
+//echo "<td>Priority:</td>";
+//echo "<td>Location:</td>";
+//echo "<td>Known_problem</td>";
+//echo "<td>Description</td>";
+//echo "<td>Handle before</td>";
+//echo "<td>Handle before</td>";
 
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
@@ -80,7 +80,8 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		
 				echo "<td>" . $row['handle_before'] . "</td>";
 			
-				
+				echo "<button input type="submit" class="pure-button pure-button-primary">Edit</button>";
+				echo "</form>";
 				
 			echo "</tr>";	
 			
