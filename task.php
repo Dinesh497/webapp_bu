@@ -55,11 +55,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		
 	
 	
-<<<<<<< HEAD
-			
-=======
-	
->>>>>>> parent of 7c06938... fasd
+
 	
 			echo "<br>";
 			
@@ -83,13 +79,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		
 				echo "<td>" . $row['handle_before'] . "</td>";
 			
-<<<<<<< HEAD
-				
-=======
-			
-		
->>>>>>> parent of 7c06938... fasd
-				
+
 			echo "</tr>";	
 			
 			
