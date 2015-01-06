@@ -15,12 +15,7 @@ include ('connection.php');
 <link rel='stylesheet' href='style.css' />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-
 <body>
-
-
-
- 
 
 <tr>
 <form name="form1"  action="logout.php" method="POST">
@@ -60,26 +55,22 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 			echo "<br>";
 			
 			echo "<tr>";
-				echo "<td> " . $row['ticket_id'] . "</td>";
 			
+			echo "<td> " . $row['ticket_id'] . "</td>";
 			
-				echo "<td> " . $row['user'] . "</td>";
+			echo "<td> " . $row['user'] . "</td>";
 			
-				echo "<td> " . $row['priority'] . "</td>";
+			echo "<td> " . $row['priority'] . "</td>";
 			
-				echo "<td>" . $row['location'] . "</td>";
+			echo "<td>" . $row['location'] . "</td>";
 			
+			echo "<td>" . $row['known_problems'] . "</td>";
 			
-			
-				
-			
-				echo "<td>" . $row['known_problems'] . "</td>";
-			
-				echo "<td> " . $row['description'] . "</td>";
+			echo "<td> " . $row['description'] . "</td>";
 		
-				echo "<td>" . $row['handle_before'] . "</td>";
+			echo "<td>" . $row['handle_before'] . "</td>";
 			
-				echo "<button input type="submit" class="pure-button pure-button-primary">";
+			echo "<button input type="submit" class="pure-button pure-button-primary">";
 		
 				
 			echo "</tr>";	
