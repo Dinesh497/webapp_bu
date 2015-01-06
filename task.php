@@ -76,7 +76,8 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 			echo "</tr>";	
 			
 			
-}
+			}
+
 echo "</table>";//tabel sluiten
 ?>
 
