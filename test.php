@@ -61,9 +61,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		echo "<td>" . $row['known_problems'] . "</td>";
 		echo "<td> " . $row['description'] . "</td>";	
 		echo "<td>" . $row['handle_before'] . "</td>";
-		echo "<td align="center">";
-		echo "<a href="update.php?id= $rows['id'] ">update</a>";
-		echo "</td>";
+		
 		echo "</tr>";	
 	}
 echo "</table>";//tabel sluiten
