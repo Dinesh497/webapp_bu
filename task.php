@@ -52,11 +52,11 @@ echo "<td>Edit</td>";
 echo "</table>";//tabel sluiten
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
-		echo "<form class='tasktable'>";
+		echo "<form>";
+		echo "<table class='tasktable'>";
 		echo "<br>";
 		echo "<tr>";
 		echo "<td> " . $row['ticket_id'] . "</td>";
-		echo "<br>";
 		echo "<td> " . $row['user'] . "</td>";
 		echo "<td> " . $row['priority'] . "</td>";
 		echo "<td>" . $row['location'] . "</td>";
@@ -65,6 +65,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		echo "<td>" . $row['handle_before'] . "</td>";
 		echo "<td>" . "<a href='ticket.php?action=edit&id=" . $row['ticket_id'] . "'>More Information</a>" . "</td>"; 
 		echo "</tr>";
+		echo "</table>";
 		echo "</form>";
 	}
 ///echo "</table>";//tabel sluiten
