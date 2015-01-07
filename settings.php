@@ -48,10 +48,8 @@ include ("session.php");
 	$rooms = mysql_query("SELECT room_id FROM rooms", $dbcon) or die (mysql_error());
 	while($row = mysql_fetch_array($rooms)){
 
-		echo <option value= $row['room_id'];</option>
+		echo <option value=" $row['room_id'];"></option>
 	}
-
-
 
 	?>
 	</select>
