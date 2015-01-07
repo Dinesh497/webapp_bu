@@ -33,15 +33,14 @@ include ("session.php");
 
 
 <?php
-echo "<table class='tasktable'>";
 
-echo "<tr>";
-echo "<td>Room map</td>";
+$result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0101'", $dbcon) or die (mysql_error());
+$row = mysql_fetch_array($result);
 
-$result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0101'", $dbcon);
-print $result;
+header("Content-type: image/Jpeg");
+echo $row['imageContent'];
 
-echo "</table>";//tabel sluiten
+
 ?>
 </body>
 
