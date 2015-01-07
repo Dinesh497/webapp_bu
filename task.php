@@ -50,6 +50,9 @@ echo "<td>Description</td>";
 echo "<td>Handle before</td>";
 echo "<td>Handle before</td>";
 
+$result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
+	while($row = mysql_fetch_array($result)){
+	}
 echo "</table>";//tabel sluiten
 ?>
 
