@@ -123,7 +123,15 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Room map</td>
-	<td><input type="blob" name="room_map" value=""  /></td>
+	<td><?php
+$result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0101'", $dbcon) or die (mysql_error());
+$row = mysql_fetch_array($result);
+
+//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
+
+echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
+
+?>
 	</tr>
 
 	
