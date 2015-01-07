@@ -31,6 +31,11 @@ include ("session.php");
 </form>
 </tr>
 <?php
+echo "<table class='tasktable'>";
+
+echo "<tr>";
+echo "<td>Room map</td>";
+
 $result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0101'", $dbcon);
 while($row = mysql_fetch_array($result)){
 		echo "<br>";
@@ -38,7 +43,7 @@ while($row = mysql_fetch_array($result)){
 		echo "<td> " . $row['room_map'] . "</td>";
 		
 	}
-
+echo "</table>";//tabel sluiten
 ?>
 </body>
 
