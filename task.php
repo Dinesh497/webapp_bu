@@ -52,6 +52,16 @@ echo "<td>Handle before</td>";
 
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
+		echo "<br>";
+		echo "<tr>";
+		echo "<td> " . $row['ticket_id'] . "</td>";
+		echo "<td> " . $row['user'] . "</td>";
+		echo "<td> " . $row['priority'] . "</td>";
+		echo "<td>" . $row['location'] . "</td>";
+		echo "<td>" . $row['known_problems'] . "</td>";
+		echo "<td> " . $row['description'] . "</td>";	
+		echo "<td>" . $row['handle_before'] . "</td>";
+		echo "</tr>";	
 	}
 echo "</table>";//tabel sluiten
 ?>
