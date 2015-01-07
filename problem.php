@@ -5,7 +5,7 @@ include ("session.php");
 		header('Location:index.php');
 		exit;
 	}
-$room_id = $_SESSION[room_id];
+$room_id = $_SESSION['room_id'];
 
 
 ?>
