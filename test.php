@@ -39,7 +39,7 @@ include ('connection.php');
 </tr>
 <?php
 echo "<table class='tasktable'>";
-
+echo "<form>";
 echo "<tr>";
 echo "<td>Ticket ID: <b></td>";
 echo "<td>Created by: <b></td>";
@@ -48,21 +48,26 @@ echo "<td>Location:</td>";
 echo "<td>Known_problem</td>";
 echo "<td>Description</td>";
 echo "<td>Handle before</td>";
-echo "<td>Handle before</td>";
+echo "<td>Edit</td>";
 
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
+		
+		
 		echo "<br>";
 		echo "<tr>";
-		echo "<td> " . $row['ticket_id'] . "</td>";
+		echo "<td> " . $row['id'] . "</td>";
 		echo "<td> " . $row['user'] . "</td>";
 		echo "<td> " . $row['priority'] . "</td>";
 		echo "<td>" . $row['location'] . "</td>";
 		echo "<td>" . $row['known_problems'] . "</td>";
 		echo "<td> " . $row['description'] . "</td>";	
 		echo "<td>" . $row['handle_before'] . "</td>";
-		
-		echo "</tr>";	
+		echo "<td>" . "<a href='ticket.php?action=POST &id=" . $row['id'] . "'>More Information</a>" . "</td>"; 
+	
+		echo "</tr>";
+	
+		echo "</form>";
 	}
 echo "</table>";//tabel sluiten
 ?>

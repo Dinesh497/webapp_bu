@@ -63,7 +63,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		echo "<td>" . $row['known_problems'] . "</td>";
 		echo "<td> " . $row['description'] . "</td>";	
 		echo "<td>" . $row['handle_before'] . "</td>";
-		echo "<td>" . "<a href='ticket.php?action=edit&id=" . $row['id'] . "'>More Information</a>" . "</td>"; 
+		echo "<td>" . "<a href='ticket.php?ticket=" . $row['id'] . "'>More Information</a>" . "</td>"; 
 	
 		echo "</tr>";
 	
