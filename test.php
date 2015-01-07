@@ -38,7 +38,6 @@ include ('connection.php');
 </form>
 </tr>
 <?php
-
 echo "<table class='tasktable'>";
 
 echo "<tr>";
@@ -53,43 +52,22 @@ echo "<td>Handle before</td>";
 
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
-		
-	
-	
-			
-	
-			echo "<br>";
-			
-			echo "<tr>";
-				echo "<td><input name="username" type="text" id="username"> " . $row['ticket_id'] . "</td>";
-			
-			
-				echo "<td> " . $row['user'] . "</td>";
-			
-				echo "<td> " . $row['priority'] . "</td>";
-			
-				echo "<td>" . $row['location'] . "</td>";
-			
-			
-			
-				
-			
-				echo "<td>" . $row['known_problems'] . "</td>";
-			
-				echo "<td> " . $row['description'] . "</td>";
-		
-				echo "<td>" . $row['handle_before'] . "</td>";
-			
-				
-				
-			echo "</tr>";	
-			
-			
-}
+		echo "<br>";
+		echo "<tr>";
+		echo "<td> " . $row['ticket_id'] . "</td>";
+		echo "<td> " . $row['user'] . "</td>";
+		echo "<td> " . $row['priority'] . "</td>";
+		echo "<td>" . $row['location'] . "</td>";
+		echo "<td>" . $row['known_problems'] . "</td>";
+		echo "<td> " . $row['description'] . "</td>";	
+		echo "<td>" . $row['handle_before'] . "</td>";
+		echo "<td align="center">";
+		echo "<a href="update.php?id= $rows['id'] ">update</a>";
+		echo "</td>";
+		echo "</tr>";	
+	}
 echo "</table>";//tabel sluiten
 ?>
-
-
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
