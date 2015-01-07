@@ -59,7 +59,6 @@ include ("session.php");
 		echo "<option value=" . $row['room_id'] . ">" . $row['room_id'] . "</option>";
 		}
 	?>
-	
 	</select>
 	</td>
 </tr>
