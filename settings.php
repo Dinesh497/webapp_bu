@@ -44,7 +44,7 @@ include ("session.php");
 			}
 		?>
 	</select>
-	<input type="submit" ><a href='settings.php?action=edit&id='>Get Map</a>
+	<type="submit" ><a href='settings.php?action=edit&id='>Get Map</a>
 	<button input type="submit" class="pure-button pure-button-primary">Get Map</button>
 	</td>
 </tr>
