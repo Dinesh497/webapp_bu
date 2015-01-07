@@ -64,12 +64,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 	echo "<tr>";
 	echo "<td>status :</td>"
 	echo "<td>";
-	echo "<select name=""status"">";
-	echo "<option value=" . $row['status'] . ">" . $row['status'] . "</option>";
 
-	echo "<option value=""pending">"Pending""</option>";
-	echo "<option value=""closed">"Closed""</option>";
-	echo "</select>"
 	//</td>
 	//</tr>
 	//<tr>
