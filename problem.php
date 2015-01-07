@@ -39,6 +39,23 @@ include ("session.php");
 	</td>
 </form>
 </tr>
+<form name="getroommap" action="problem.php" method="POST">
+		<tr>
+	<td>Location :</td>
+	<td><select name="location"  type="text">
+		<option value=""></option>
+		<?php 
+		$rooms = mysql_query("SELECT room_id FROM rooms", $dbcon) or die (mysql_error());
+		while($row = mysql_fetch_array($rooms)){
+
+			echo "<option value=" . $row['room_id'] . ">" . $row['room_id'] . "</option>";
+			}
+		?>
+	</select>
+	<button input type="submit" class="pure-button pure-button-primary">Get Map</button>
+	</td>
+	</tr>
+</form>
 
 
 <form name="submitform"  action="submit.php" method="POST">
