@@ -87,7 +87,9 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Location :</td>
-	<td><input name="location" type="text"><button input type="get" class="pure-button pure-button-primary">Get Map</button></td>
+	<td><input name="location" type="text">
+		<button input type="get" action="problem.php" class="pure-button pure-button-primary">Get Map</button>
+	</td>
 	</tr>
 	<tr>
 	<td>Room type :</td>
