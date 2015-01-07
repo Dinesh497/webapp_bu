@@ -37,9 +37,21 @@ include ('connection.php');
 	</td>
 </form>
 </tr>
+<?php
+echo "<table class='tasktable'>";
 
+echo "<tr>";
+echo "<td>Ticket ID: <b></td>";
+echo "<td>Created by: <b></td>";
+echo "<td>Priority:</td>";
+echo "<td>Location:</td>";
+echo "<td>Known_problem</td>";
+echo "<td>Description</td>";
+echo "<td>Handle before</td>";
+echo "<td>Handle before</td>";
 
-
+echo "</table>";//tabel sluiten
+?>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
