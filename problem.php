@@ -39,8 +39,10 @@ include ("session.php");
 	</td>
 </form>
 </tr>
+
 <form name="getroommap" action="problem.php" method="POST">
-		<tr>
+	<table class='submittable'  >
+	<tr>
 	<td>Location :</td>
 	<td><select name="location"  type="text">
 		<option value=""></option>
@@ -55,6 +57,7 @@ include ("session.php");
 	<button input type="submit" class="pure-button pure-button-primary">Get Map</button>
 	</td>
 	</tr>
+	</table>
 </form>
 
 
