@@ -7,7 +7,7 @@ include ('connection.php');
 		exit;
 	}
 
-$ID = $_POST['ticket_ID'];
+
 
 ?>
 <title>Westcord Fashion Hotel</title>
@@ -29,7 +29,7 @@ $ID = $_POST['ticket_ID'];
 	<table class='logout' >
 		<tr>
 		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
-		<?php print $ID; ?>
+		<?php print $_POST['ticket_ID']; ?>
 		<tr>
 		
 		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
