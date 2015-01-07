@@ -29,6 +29,7 @@ include ("session.php");
 	</table>
 	</td>
 </form>
+<form name="submitform"  action="settings.php" method="POST">
 </tr>
 <tr>
 	<td>Location :</td>
@@ -49,6 +50,7 @@ echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '
 
 ?>
 	</tr>
+	</form>
 
 </body>
 
