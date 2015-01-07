@@ -48,27 +48,27 @@ include ("session.php");
 	$rooms = mysql_query("SELECT room_id FROM rooms", $dbcon) or die (mysql_error());
 	while($row = mysql_fetch_array($rooms)){
 
-		echo <option value=" $row['room_id'];"></option>
+		echo "<option value="" . $row['room_id'];" . "></option>"
 	}
 
 	?>
 	</select>
 	</td>
-	</tr>
+</tr>
 
 <tr>
 	<td>Room map</td>
 	<td><?php
 	$room_id = $_POST['location'];
-$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon) or die (mysql_error());
-$row = mysql_fetch_array($result);
+	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon) or die (mysql_error());
+	$row = mysql_fetch_array($result);
 
-//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
+	//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
-echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
+	echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
 
-?>
-	</tr>
+	?>
+</tr>
 	</form>
 
 </body>
