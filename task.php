@@ -48,7 +48,7 @@ echo "<td>Location:</td>";
 echo "<td>Known_problem</td>";
 echo "<td>Description</td>";
 echo "<td>Handle before</td>";
-echo "<td>Handle before</td>";
+echo "<td>Edit</td>";
 
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
