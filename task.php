@@ -39,7 +39,7 @@ include ('connection.php');
 </tr>
 <?php
 echo "<table class='tasktable'>";
-
+echo "<form>";
 echo "<tr>";
 echo "<td>Ticket ID: <b></td>";
 echo "<td>Created by: <b></td>";
@@ -49,11 +49,11 @@ echo "<td>Known_problem</td>";
 echo "<td>Description</td>";
 echo "<td>Handle before</td>";
 echo "<td>Edit</td>";
-echo "</table>";//tabel sluiten
+
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
-		echo "<form>";
-		echo "<table class='taskform'>";
+		
+		
 		echo "<br>";
 		echo "<tr>";
 		echo "<td> " . $row['ticket_id'] . "</td>";
@@ -65,10 +65,10 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		echo "<td>" . $row['handle_before'] . "</td>";
 		echo "<td>" . "<a href='ticket.php?action=edit&id=" . $row['ticket_id'] . "'>More Information</a>" . "</td>"; 
 		echo "</tr>";
-		echo "</table>";
+	
 		echo "</form>";
 	}
-///echo "</table>";//tabel sluiten
+echo "</table>";//tabel sluiten
 ?>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
