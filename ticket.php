@@ -29,7 +29,7 @@ $ticket = $_GET['ticket'];
 	<table class='logout' >
 		<tr>
 		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
-		<?php echo $_post['id']; ?>
+		<?php echo $ticket; ?>
 		<tr>
 		
 		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
