@@ -135,9 +135,8 @@ include ("session.php");
 	<tr>
 	<td>Room map</td>
 	<td><?php
-	$room_id = $_POST['location'];
-	
 	$room_id = $_SESSION['room_id'];
+	$room_id = $_POST['location'];
 
 	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon) or die (mysql_error());
 	$row = mysql_fetch_array($result);
