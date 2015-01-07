@@ -88,7 +88,6 @@ include ("session.php");
 	<tr>
 	<td>Location :</td>
 	<td><select name="location"  type="text">
-		<td><button input type="submit" class="pure-button pure-button-primary">Get Map</button></td>
 		<option value=""></option>
 		<?php 
 		$rooms = mysql_query("SELECT room_id FROM rooms", $dbcon) or die (mysql_error());
