@@ -40,7 +40,22 @@ $ticket = $_GET['ticket'];
 </form>
 </tr>
 <?php
-
+$result = mysql_query("SELECT * FROM tickets WHERE id='$ticket'", $dbcon);
+	while($row = mysql_fetch_array($result)){
+		
+		
+		echo "<br>";
+		echo "<tr>";
+		echo "<td> " . $row['id'] . "</td>";
+		echo "<td> " . $row['user'] . "</td>";
+		echo "<td> " . $row['priority'] . "</td>";
+		echo "<td>" . $row['location'] . "</td>";
+		echo "<td>" . $row['known_problems'] . "</td>";
+		echo "<td> " . $row['description'] . "</td>";	
+		echo "<td>" . $row['handle_before'] . "</td>";
+		echo "<td>" . "<a href='ticket.php?ticket=" . $row['id'] . "'>More Information</a>" . "</td>"; 
+	
+		echo "</tr>";
 ?>
 
 
