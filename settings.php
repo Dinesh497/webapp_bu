@@ -37,7 +37,7 @@ include ("session.php");
 $result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0101'", $dbcon) or die (mysql_error());
 $row = mysql_fetch_array($result);
 
-header("Content-type: image/Jpeg");
+echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 echo $row['imageContent'];
 
 
