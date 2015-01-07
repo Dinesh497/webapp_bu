@@ -33,7 +33,7 @@ include ("session.php");
 <tr>
 	<td>Location :</td>
 	<td><input name="location" type="text">
-		<a href='problem.php?action=edit&id='>Get Map</a>
+		<a href='settings.php?action=edit&id='>Get Map</a>
 	</td>
 </tr>
 <tr>
