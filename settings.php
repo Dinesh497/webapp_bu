@@ -44,12 +44,12 @@ $result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0101'", $dbcon)
 //echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
 while($row = mysql_fetch_array($result)){
-		echo "<form class='tasktable'>";
+		
 		echo "<br>";
 		echo "<tr>";
 		echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
 		echo "</tr>";
-		echo "</form>";
+
 
 echo "</table>";
 ?>
