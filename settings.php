@@ -13,8 +13,6 @@ include ("session.php");
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <link rel='stylesheet' href='style.css' />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-
 <body>
 
 <tr>
@@ -32,7 +30,16 @@ include ("session.php");
 	</td>
 </form>
 </tr>
+<?php
+$result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0101'", $dbcon);
+while($row = mysql_fetch_array($result)){
+		echo "<br>";
+		echo "<tr>";
+		echo "<td> " . $row['room_map'] . "</td>";
+		
+	}
 
+?>
 </body>
 
 </html>
