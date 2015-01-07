@@ -53,17 +53,17 @@ echo "<td>Edit</td>";
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		
-		
+		$_SESSION['ticket'] = $row['id'];
 		echo "<br>";
 		echo "<tr>";
-		echo "<td> " . $row['ticket_id'] . "</td>";
+		echo "<td> " . $row['id'] . "</td>";
 		echo "<td> " . $row['user'] . "</td>";
 		echo "<td> " . $row['priority'] . "</td>";
 		echo "<td>" . $row['location'] . "</td>";
 		echo "<td>" . $row['known_problems'] . "</td>";
 		echo "<td> " . $row['description'] . "</td>";	
 		echo "<td>" . $row['handle_before'] . "</td>";
-		echo "<td>" . "<a href='ticket.php?action=edit&id=" . $row['ticket_id'] . "'>More Information</a>" . "</td>"; 
+		echo "<td>" . "<a href='ticket.php?action=edit&id=" . $row['id'] . "'>More Information</a>" . "</td>"; 
 		echo "</tr>";
 	
 		echo "</form>";
