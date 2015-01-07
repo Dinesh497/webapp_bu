@@ -69,10 +69,6 @@ $room_id = $_SESSION[room_id];
 	
 	</tr>
 	<tr>
-	<td>Ticket ID :</td>
-	<td><input name="ticket" type="text"></td>
-	</tr>
-	<tr>
 	<td>Date :</td>
 	<td><script>
 	var tD = new Date();
