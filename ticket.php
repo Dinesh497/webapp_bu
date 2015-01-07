@@ -39,8 +39,9 @@ $ticket = $_GET['ticket'];
 	</td>
 </form>
 </tr>
-<?php
 
+<form name="submitform"  action="submit.php" method="POST">
+<?php
 $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		
@@ -62,8 +63,9 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 
 		
 	}
-
 ?>
+	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
+
 
 
 
