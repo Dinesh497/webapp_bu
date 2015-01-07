@@ -121,6 +121,11 @@ include ("session.php");
 	<td>Handle before :</td>
 	<td><input type="date" name="hdate" value=""  /></td>
 	</tr>
+	<tr>
+	<td>Room map</td>
+	<td><input type="blob" name="room_map" value=""  /></td>
+	</tr>
+
 	
 	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
 	</table>
