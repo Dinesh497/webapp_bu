@@ -135,14 +135,16 @@ include ("session.php");
 	<tr>
 	<td>Room map</td>
 	<td><?php
-$result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0102'", $dbcon) or die (mysql_error());
-$row = mysql_fetch_array($result);
+	$room_id = $_POST['location'];
 
-//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
+	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon) or die (mysql_error());
+	$row = mysql_fetch_array($result);
 
-echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
+	//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
-?>
+	echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
+
+	?>
 	</tr>
 
 	
