@@ -41,11 +41,7 @@ $ticket = $_GET['ticket'];
 </tr>
 <?php
 
-$result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
-	while($row = mysql_fetch_array($result)){
-		
-		
-		echo $ticket;
+
 ?>
 
 
