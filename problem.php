@@ -5,7 +5,6 @@ include ("session.php");
 		header('Location:index.php');
 		exit;
 	}
-
 ?>
 <title>Westcord Fashion Hotel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -135,8 +134,9 @@ include ("session.php");
 	<tr>
 	<td>Room map</td>
 	<td><?php
-	$room_id = $_SESSION['room_id'];
+
 	$room_id = $_POST['location'];
+	$_SESSION = $_SESSION['room_id'];
 
 	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon) or die (mysql_error());
 	$row = mysql_fetch_array($result);
