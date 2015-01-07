@@ -53,7 +53,7 @@ echo "</table>";//tabel sluiten
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		echo "<form>";
-		echo "<table class='tasktable'>";
+		echo "<table class='taskform'>";
 		echo "<br>";
 		echo "<tr>";
 		echo "<td> " . $row['ticket_id'] . "</td>";

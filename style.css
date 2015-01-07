@@ -361,6 +361,14 @@ div.desc {
     padding:5px;
 }
 
+.taskform {
+    background: rgba(255,255,255,0.5);
+	margin: 62px;
+	margin-top: 20px;
+	width: 1232px;
+    line-height:40px;
+    padding:5px;
+}
 .submittable {
     background: rgba(255,255,255,0.5);
     margin: 40px;
