@@ -56,6 +56,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 		echo "<br>";
 		echo "<tr>";
 		echo "<td> " . $row['ticket_id'] . "</td>";
+		echo "<br>";
 		echo "<td> " . $row['user'] . "</td>";
 		echo "<td> " . $row['priority'] . "</td>";
 		echo "<td>" . $row['location'] . "</td>";
