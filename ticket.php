@@ -40,7 +40,18 @@ $ticket = $_GET['ticket'];
 </form>
 </tr>
 <?php
-$result = mysql_query("SELECT * FROM tickets WHERE id='$ticket'", $dbcon);
+echo "<table class='tasktable'>";
+echo "<form>";
+echo "<tr>";
+echo "<td>Ticket ID: <b></td>";
+echo "<td>Created by: <b></td>";
+echo "<td>Priority:</td>";
+echo "<td>Location:</td>";
+echo "<td>Known_problem</td>";
+echo "<td>Description</td>";
+echo "<td>Handle before</td>";
+echo "<td>Edit</td>";
+$result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		
 		
@@ -53,7 +64,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE id='$ticket'", $dbcon);
 		echo "<td>" . $row['known_problems'] . "</td>";
 		echo "<td> " . $row['description'] . "</td>";	
 		echo "<td>" . $row['handle_before'] . "</td>";
-		echo "<td>" . "<a href='ticket.php?ticket=" . $row['id'] . "'>More Information</a>" . "</td>"; 
+
 	
 		echo "</tr>";
 ?>
