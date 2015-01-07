@@ -31,6 +31,7 @@ include ("session.php");
 </form>
 <form name="submitform"  action="settings.php" method="POST">
 </tr>
+
 <tr>
 	<td>Location :</td>
 	<td><select name="location"  type="text">
@@ -43,6 +44,7 @@ include ("session.php");
 			}
 		?>
 	</select>
+	<input type="submit" a href='settings.php?action=edit&id='>Get Map</a>
 	<button input type="submit" class="pure-button pure-button-primary">Get Map</button>
 	</td>
 </tr>
