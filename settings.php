@@ -30,6 +30,16 @@ include ("session.php");
 	</td>
 </form>
 </tr>
+
+<img src="image.php?id=<?php echo $result; ?>" />
+<?php
+$id = (isset($_GET['id']) && is_numeric($_GET['id'])) ? intval($_GET['id']) : 0;
+$image = getImageFromDatabase($result); // your code to fetch the image
+
+header('Content-Type: image/jpeg');
+echo $image;
+?>
+
 <?php
 echo "<table class='tasktable'>";
 
