@@ -28,6 +28,7 @@ include ('connection.php');
 	<table class='logout' >
 		<tr>
 		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
+		<?php echo "test"; ?>
 		<tr>
 		
 		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
@@ -41,6 +42,7 @@ include ('connection.php');
 $ID = $_POST['ticket_ID'];
 print $ID;
 ?>
+
 
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
