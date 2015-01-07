@@ -33,7 +33,7 @@ include ("session.php");
 </tr>
 <tr>
 	<td>Location :</td>
-	<td><input name="location" method='POST' type="text">
+	<td><input name="location" method="POST" type="text">
 		<a href='settings.php?action=edit&id='>Get Map</a>
 	</td>
 </tr>
