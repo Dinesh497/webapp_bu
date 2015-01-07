@@ -38,7 +38,7 @@ $result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0101'", $dbcon)
 $row = mysql_fetch_array($result);
 
 echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
-echo $row['imageContent'];
+
 
 
 ?>
