@@ -39,7 +39,7 @@ include ('connection.php');
 </tr>
 <?php
 echo "<table class='tasktable'>";
-echo "<form action="ticket.php" method="POST">";
+echo "<form>";
 echo "<tr>";
 echo "<td>Ticket ID: <b></td>";
 echo "<td>Created by: <b></td>";
