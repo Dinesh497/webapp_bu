@@ -31,14 +31,6 @@ include ("session.php");
 </form>
 </tr>
 
-<img src="image.php?id=<?php echo $image_id; ?>" />
-<?php
-$id = (isset($_GET['id']) && is_numeric($_GET['id'])) ? intval($_GET['id']) : 0;
-$image = getImageFromDatabase($id); // your code to fetch the image
-
-header('Content-Type: image/jpeg');
-echo $image;
-?>
 
 <?php
 echo "<table class='tasktable'>";
@@ -47,12 +39,8 @@ echo "<tr>";
 echo "<td>Room map</td>";
 
 $result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0101'", $dbcon);
-while($row = mysql_fetch_array($result)){
-		echo "<br>";
-		echo "<tr>";
-		echo "<td> " . $row['room_map'] . "</td>";
-		
-	}
+print $result;
+
 echo "</table>";//tabel sluiten
 ?>
 </body>
