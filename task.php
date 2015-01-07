@@ -53,7 +53,7 @@ echo "<td>Edit</td>";
 $result = mysql_query("SELECT * FROM tickets WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		
-		$_SESSION['ticket'] = $row['id'];
+		
 		echo "<br>";
 		echo "<tr>";
 		echo "<td> " . $row['id'] . "</td>";

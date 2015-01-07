@@ -29,7 +29,7 @@ include ('connection.php');
 	<table class='logout' >
 		<tr>
 		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
-		<?php echo $_SESSION['ticket']; ?>
+		<?php echo $_post['id']; ?>
 		<tr>
 		
 		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
