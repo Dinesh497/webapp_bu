@@ -31,10 +31,10 @@ include ("session.php");
 </form>
 </tr>
 
-<img src="image.php?id=<?php echo $result; ?>" />
+<img src="image.php?id=<?php echo $image_id; ?>" />
 <?php
 $id = (isset($_GET['id']) && is_numeric($_GET['id'])) ? intval($_GET['id']) : 0;
-$image = getImageFromDatabase($result); // your code to fetch the image
+$image = getImageFromDatabase($id); // your code to fetch the image
 
 header('Content-Type: image/jpeg');
 echo $image;
