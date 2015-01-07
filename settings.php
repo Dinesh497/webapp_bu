@@ -51,7 +51,7 @@ while($row = mysql_fetch_array($result)){
 		echo "</tr>";
 		echo "</form>";
 
-
+echo "</table>";
 ?>
 </body>
 
