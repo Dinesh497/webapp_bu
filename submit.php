@@ -1,6 +1,7 @@
 <?php
 	session_start(); // Starting Session	
 	require ("connection.php");
+	include ("problem.php");
 
 	
 	$ticket = $_POST['ticket'];
@@ -8,7 +9,7 @@
 	$user = $_SESSION['gebruiker'];
 	$status = $_POST['status'];
 	$priority = $_POST['priority'];
-	$location = $_SESSION['room_id'];
+	$location = $room_id;
 	$room = $_POST['room'];
 	$KP = $_POST['known'];
 	$description = $_POST['description'];
