@@ -44,6 +44,7 @@ include ("session.php");
 			}
 		?>
 	</select>
+	<button input type="submit" class="pure-button pure-button-primary">Get Map</button>
 	</td>
 </tr>
 
