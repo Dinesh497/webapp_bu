@@ -39,7 +39,7 @@ include ('connection.php');
 </tr>
 <?php
 $ID = $_POST['ticket_ID'];
-echo $ID;
+print $ID;
 ?>
 
 
