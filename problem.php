@@ -97,6 +97,7 @@ include ("session.php");
 			}
 		?>
 	</select>
+	<input type="submit" a href='problem.php?action=edit&id='>Get Map</a>
 	</td>
 	</tr>
 	<tr>
