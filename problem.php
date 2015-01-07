@@ -88,7 +88,6 @@ include ("session.php");
 	<tr>
 	<td>Location :</td>
 	<td><input name="location" type="text">
-		<button input type="get" action="problem.php" method="POST" class="pure-button pure-button-primary">Get Map</button>
 		<a href='problem.php?action=edit&id='>Get Map</a>
 	</td>
 	</tr>
@@ -127,7 +126,7 @@ include ("session.php");
 	<tr>
 	<td>Room map</td>
 	<td><?php
-$result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0101'", $dbcon) or die (mysql_error());
+$result = mysql_query("SELECT room_map FROM rooms WHERE room_id='0102'", $dbcon) or die (mysql_error());
 $row = mysql_fetch_array($result);
 
 //echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
