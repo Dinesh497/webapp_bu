@@ -14,7 +14,8 @@ include ('connection.php');
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <link rel='stylesheet' href='style.css' />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
+<link type="text/css" media="screen" rel="stylesheet" href="responsive-tables.css" />
+<script type="text/javascript" src="responsive-tables.js"></script>
 
 <body>
 
