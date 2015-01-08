@@ -97,6 +97,10 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 		<td>Description :</td>
 		<td><textarea  name="description" maxlength="1000" cols="25" rows="6"><?php echo $row['description']; ?></textarea></td>
 		</tr>
+		<tr>
+		<td>Room Map :</td>
+		<td><?php echo $row['room_map']; ?>Moet nog komen lol</td>
+		</tr>
 
 		
 		
