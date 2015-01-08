@@ -47,7 +47,7 @@ include ('connection.php');
 	<option value="Pending">Pending</option>
 	<option value="Closed">Closed</option>
 </select>
-</td>
+
 <td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
 </tr>
 </table>
