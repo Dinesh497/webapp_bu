@@ -380,6 +380,8 @@ div.desc {
 .searchtable {
     background: rgba(255,255,255,0.5);
     margin: 40px;
+	margin-left: 63px;
+	margin-bottom: -30px;
     width: 205px;
     line-height:40px;
     padding:5px;
