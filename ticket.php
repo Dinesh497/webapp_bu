@@ -48,6 +48,10 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 		
 	
 		<table class='submittable'>
+		<tr>
+		<td>Date :</td>
+		<td><?php echo $row['date']; ?></td>
+		</tr>
 
 
 		
