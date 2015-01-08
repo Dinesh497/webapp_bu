@@ -75,8 +75,9 @@ include ("session.php");
 	//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
 	echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
+
 	
-	$im = imagecreatefromjpeg($row);
+	$im = imagecreatefromjpeg($row['room_map']);
 
 	$black = ImageColorAllocate($im, 255, 255, 255); 
 	
