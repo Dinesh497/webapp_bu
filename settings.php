@@ -79,6 +79,8 @@ include ("session.php");
 	
 	$im = imagecreatefromjpeg($row['room_map']);
 
+	echo $im;
+
 	$black = ImageColorAllocate($im, 255, 255, 255); 
 	
 	$start_x = 10; 
