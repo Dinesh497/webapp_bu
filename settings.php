@@ -74,25 +74,23 @@ include ("session.php");
 
 	//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
-	echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
+	//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
 
 	
 	$im = imagecreatefromjpeg($row['room_map']);
 
-	echo '<img src="data:image/jpeg;base64,' . base64_encode($im) . '" />';
-
-	$black = ImageColorAllocate($im, 255, 255, 255); 
+	$ellipseColor = ImageColorAllocate($im, 0, 0, 255); 
 	
-	$start_x = 10; 
-	$start_y = 20;
+	//$start_x = 10; 
+	//$start_y = 20;
+	//$font = 'arial.ttf';
+	//Imagettftext($im, 12, 0, $start_x, $start_y, $black, $font, 'text to write'); 
 
-	$font = 'arial.ttf';
+	imagefilledellipse($im, 100, 100, 10, 10, $ellipseColor)
 
-	Imagettftext($im, 12, 0, $start_x, $start_y, $black, $font, 'text to write'); 
-	//header('Content-Type: image/jpeg');
+	header('Content-Type: image/jpeg');
 	Imagejpeg($im, '', 100); 
 
-	ImageDestroy($im)
 
 	?>
 </tr>
