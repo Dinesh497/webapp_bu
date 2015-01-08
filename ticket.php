@@ -64,12 +64,29 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 		<td>status :</td>
 		<td>
 		<select name="status">
-		<option value="<?php echo $row['user']; ?>"><?php echo $row['user']; ?></option>
+		<option value="<?php echo $row['status']; ?>"><?php echo $row['status']; ?></option>
 		<option value="open">Open</option>
 		<option value="pending">Pending</option>
 		<option value="closed">Closed</option>
 		</select>
+		</td>
 		</tr>
+		<tr>
+		<td>Priority :</td>
+		<td>
+		<select name="priority">
+		<option value="<?php echo $row['priority']; ?>"><?php echo $row['priority']; ?></option>
+		<option value="High">High</option>
+		<option value="Medium">Medium</option>
+		<option value="Low">Low</option>
+		</select>
+		</td>
+		</tr>
+		<tr>
+		<td>Room type :</td>
+		<td><?php echo $row['room_type']; ?></td>
+		</tr>
+		
 
 		
 		<td><?php echo $row['id']; ?> </td>
