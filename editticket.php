@@ -11,7 +11,7 @@
 	
 	
 	// room map moet er nog bij
-	$sSQL = 'UPDATE  `webdb`.`tickets` SET 'status' = '$status', 'priority' = '$priority', 'description' = '$description' WHERE 'tickets'.'id' ='$id';
+	$sSQL = ('UPDATE  `webdb`.`tickets1` SET 'status' = '$status', 'priority' = '$priority', 'description' = '$description' WHERE 'tickets'.'id' ='$id');
 					
 @mysql_query($sSQL);
 	if(!mysql_error())
