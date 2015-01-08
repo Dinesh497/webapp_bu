@@ -3,7 +3,7 @@
 	require ("connection.php");
 
 	
-
+	$id = $_POST['id'];
 	$status = $_POST['status'];
 	$priority = $_POST['priority'];
 	$description = $_POST['description'];
@@ -11,8 +11,7 @@
 	
 	
 	// room map moet er nog bij
-	$sSQL = 'INSERT INTO tickets (status, priority, description) 
-	VALUES (\'' . $status .'\', \'' . $priority .'\', \'' . $description .'\')';
+	$sSQL = 'UPDATE  `webdb`.`tickets` SET 'status' = '$status', 'priority' = '$priority', 'description' = '$description' WHERE 'tickets'.'id' ='$id';
 					
 @mysql_query($sSQL);
 	if(!mysql_error())
