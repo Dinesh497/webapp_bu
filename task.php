@@ -38,7 +38,7 @@ include ('connection.php');
 </form>
 </tr>
 <form action="task.php" method="POST">
-<table class ='tasktable'>
+<table class ='searchtable'>
 <tr>
 <td>
 <select name="input">
@@ -48,7 +48,7 @@ include ('connection.php');
 	<option value="Closed">Closed</option>
 </select>
 
-<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
+<td><button input type="submit" class="pure-button pure-button-primary">Search status</button></td>
 </tr>
 </table>
 </form>
