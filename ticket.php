@@ -51,7 +51,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 
 
 		
-		<td><?php $row['id']; ?> </td>
+		<td><?php echo $row['id']; ?> </td>
 	
 
 		<?php
