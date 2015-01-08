@@ -37,6 +37,11 @@ include ('connection.php');
 	</td>
 </form>
 </tr>
+<table class ='tasktable'>
+<tr>
+<td>hier komt de search bar><td>
+</tr>
+</table>
 <?php
 echo "<table class='tasktable'>";
 echo "<form>";
