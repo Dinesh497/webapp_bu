@@ -11,7 +11,7 @@
 	
 	
 	// room map moet er nog bij
-	$sSQL = ("UPDATE `tickets1` SET status = '$status', priority = '$priority', description = '$description' WHERE id ='$id'",$dbcon);
+	$sSQL ="UPDATE `tickets1` SET status='$status', priority='$priority', description='$description' WHERE id='$id'";
 					
 @mysql_query($sSQL);
 	if(!mysql_error())
