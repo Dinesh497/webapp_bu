@@ -40,12 +40,12 @@ $ticket = $_GET['ticket'];
 </form>
 </tr>
 
-<form name="submitform"  action="submit.php" method="POST">
+<form name="submitform"  action="test.php" method="POST">
 <?php
 $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		
-		echo "<form name="submitform"  action="submit.php" method="POST">";
+		
 	
 		echo "<table class='submittable'  >";
 
@@ -64,12 +64,12 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 		echo "</tr>";
 
 		echo "</table>";
-		echo "</form>";
+		
 	}
 ?>
 	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
 
-
+</form>
 
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
