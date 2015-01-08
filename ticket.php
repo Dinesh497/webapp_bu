@@ -64,10 +64,10 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 		echo "</tr>";
 
 		echo "</table>";
-		
+		?>
+		<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
 	}
-?>
-	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
+	
 
 </form>
 
