@@ -74,6 +74,20 @@ include ("session.php");
 	//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
 	echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
+	$im = imagecreatefromjpeg($result);
+
+	$black = ImageColorAllocate($im, 255, 255, 255); 
+	
+	$start_x = 10; 
+	$start_y = 20;
+
+	$font = 'arial.ttf';
+
+	Imagettftext($im, 12, 0, $start_x, $start_y, $black, $font, 'text to write'); 
+
+	Imagejpeg($im, '', 100); 
+
+	ImageDestroy($im)
 
 	?>
 </tr>
