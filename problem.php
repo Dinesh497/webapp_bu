@@ -82,9 +82,9 @@ include ("session.php");
 	<td>
 	<select name="status">
 	<option value=""></option>
-	<option value="open">Open</option>
-	<option value="pending">Pending</option>
-	<option value="closed">Closed</option>
+	<option value="Open">Open</option>
+	<option value="Pending">Pending</option>
+	<option value="Closed">Closed</option>
 	</select>
 	</td>
 	</tr>

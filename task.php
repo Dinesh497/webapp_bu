@@ -37,12 +37,24 @@ include ('connection.php');
 	</td>
 </form>
 </tr>
+<form action="task.php" method="POST">
 <table class ='tasktable'>
 <tr>
-<td>hier komt de search bar><td>
+<td>
+<select name="input">
+	<option value=""></option>
+	<option value="Open">Open</option>
+	<option value="Pending">Pending</option>
+	<option value="Closed">Closed</option>
+</select>
+</td>
+<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
 </tr>
 </table>
+</form>
+
 <?php
+$input = $_POST['input'];
 echo "<table class='tasktable'>";
 echo "<form>";
 echo "<tr>";
@@ -55,7 +67,7 @@ echo "<td>Description</td>";
 echo "<td>Handle before</td>";
 echo "<td>Edit</td>";
 
-$result = mysql_query("SELECT * FROM tickets1 WHERE status='open'", $dbcon);
+$result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		
 		
