@@ -94,10 +94,13 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 		<td>Known Problem :</td>
 		<td><?php echo $row['known_problems']; ?></td>
 		</tr>
-		
+		<tr>
+		<td>Description :</td>
+		<td><textarea  name="description" maxlength="1000" cols="25" rows="6"><?php echo $row['description']; ?></textarea></td>
+		</tr>
 
 		
-		<td><?php echo $row['id']; ?> </td>
+		
 	
 
 		<?php
