@@ -89,7 +89,7 @@ include ("session.php");
 	$font = 'arial.ttf';
 
 	Imagettftext($im, 12, 0, $start_x, $start_y, $black, $font, 'text to write'); 
-	header('Content-Type: image/jpeg');
+	//header('Content-Type: image/jpeg');
 	Imagejpeg($im, '', 100); 
 
 	ImageDestroy($im)
