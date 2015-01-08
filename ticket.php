@@ -61,7 +61,11 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 		<td><?php echo $row['user']; ?></td>
 		</tr>
 		<tr>
-		<td>status :</td>
+		<td>Handle before :</td>
+		<td><?php echo $row['handle_before']; ?></td>
+		</tr>
+		<tr>
+		<td>Status :</td>
 		<td>
 		<select name="status">
 		<option value="<?php echo $row['status']; ?>"><?php echo $row['status']; ?></option>
@@ -85,6 +89,10 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 		<tr>
 		<td>Room type :</td>
 		<td><?php echo $row['room_type']; ?></td>
+		</tr>
+		<tr>
+		<td>Known Problem :</td>
+		<td><?php echo $row['known_problems']; ?></td>
 		</tr>
 		
 
