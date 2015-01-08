@@ -45,7 +45,9 @@ $ticket = $_GET['ticket'];
 $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		
-
+		echo "<form name="submitform"  action="submit.php" method="POST">";
+	
+		echo "<table class='submittable'  >";
 
 
 		echo "<br>";
@@ -57,11 +59,12 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 		echo "<td>" . $row['known_problems'] . "</td>";
 		echo "<td> " . $row['description'] . "</td>";	
 		echo "<td>" . $row['handle_before'] . "</td>";
-		echo "<td>" . "<a href='ticket.php?ticket=" . $row['id'] . "'>More Information</a>" . "</td>"; 
+		
 	
 		echo "</tr>";
 
-		
+		echo "</table>";
+		echo "</form>";
 	}
 ?>
 	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
