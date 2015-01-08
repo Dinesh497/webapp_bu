@@ -49,10 +49,27 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 	
 		<table class='submittable'>
 		<tr>
-		<td>Date :</td>
+		<td>Ticket ID :</td>
+		<td><?php echo $row['id']; ?></td>
+		</tr>
+		<tr>
+		<td>Created on :</td>
 		<td><?php echo $row['date']; ?></td>
 		</tr>
-
+		<tr>
+		<td>Created by :</td>
+		<td><?php echo $row['user']; ?></td>
+		</tr>
+		<tr>
+		<td>status :</td>
+		<td>
+		<select name="status">
+		<option value="<?php echo $row['user']; ?>"><?php echo $row['user']; ?></option>
+		<option value="open">Open</option>
+		<option value="pending">Pending</option>
+		<option value="closed">Closed</option>
+		</select>
+		</tr>
 
 		
 		<td><?php echo $row['id']; ?> </td>
