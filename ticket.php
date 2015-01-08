@@ -52,6 +52,7 @@ $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 
 		echo "<br>";
 		echo "<tr>";
+		echo "<td>""Ticket ID:" "</td>";
 		echo "<td> " . $row['id'] . "</td>";
 		echo "<td> " . $row['user'] . "</td>";
 		echo "<td> " . $row['priority'] . "</td>";
