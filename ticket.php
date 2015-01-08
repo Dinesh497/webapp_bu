@@ -44,27 +44,17 @@ $ticket = $_GET['ticket'];
 <?php
 $result = mysql_query("SELECT * FROM tickets WHERE id=$ticket", $dbcon);
 	while($row = mysql_fetch_array($result)){
-		
-		
-	
-		echo "<table class='submittable'  >";
-
-
-		echo "<br>";
-		echo "<tr>";
-		echo "<td>""Ticket ID:" "</td>";
-		echo "<td> " . $row['id'] . "</td>";
-		echo "<td> " . $row['user'] . "</td>";
-		echo "<td> " . $row['priority'] . "</td>";
-		echo "<td>" . $row['location'] . "</td>";
-		echo "<td>" . $row['known_problems'] . "</td>";
-		echo "<td> " . $row['description'] . "</td>";	
-		echo "<td>" . $row['handle_before'] . "</td>";
+		?>
 		
 	
-		echo "</tr>";
+		<table class='submittable'>
+
 
 		
+		<td><?php $row['id']; ?> </td>
+	
+
+		<?php
 		
 		
 	}
