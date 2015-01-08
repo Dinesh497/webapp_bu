@@ -8,7 +8,7 @@
 	$user = $_SESSION['gebruiker'];
 	$status = $_POST['status'];
 	$priority = $_POST['priority'];
-	$location = $_SESSION['room_id'];
+	$location = $_POST['location'];
 	$room = $_POST['room'];
 	$KP = $_POST['known'];
 	$description = $_POST['description'];
