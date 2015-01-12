@@ -386,22 +386,19 @@ div.desc {
 }
 .tasktable {
    
-    background: rgba(255,255,255,0.5);
-	margin: 62px;
-	margin-top: 20px;
-	width: 1232px;
-    line-height:40px;
+    margin: 60px;
+    width: 755px;
+    line-height:62px;
     padding:5px;
-
 	
 	border-collapse: collapse; 
 }
 	/* Zebra striping */
 	tr:nth-of-type(odd) { 
-		; 
+		background: #eee; 
 	}
 	th { 
-		; 
+		background: #333; 
 		color: white; 
 		font-weight: bold; 
 	}
