@@ -155,8 +155,9 @@ include ("session.php");
 		//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
 		echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
-		$imgData = $_SESSION['room_map'];
-		
+
+		$upload = base64_decode($imgData);
+		$upload = $_SESSION['map'];
 		//echo "Choose a room at the category location above.";
 		//$imgData =addslashes (file_get_contents($_FILES[$row]));
 
