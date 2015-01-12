@@ -136,6 +136,7 @@ include ('connection.php');
 <thead>
 <tr>
 <th>Ticket ID</th>
+<br>
 <th>Created by</th>
 <th>Priority</th>
 <th>Location</th>
