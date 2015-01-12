@@ -184,6 +184,7 @@ function file_upload_error_message($error_code) {
 	<option value="Royal-Suite">Royal-Suite</option>
 	<option value="INV-STE">INV-STE</option>
 
+<option value=" <?php echo $row['room_type']; ?> "><?php echo $row['room_type'];?> </option>
 </tr>
 	</form>
 
