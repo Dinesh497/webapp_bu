@@ -156,7 +156,7 @@ include ("session.php");
 
 		echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
 
-		$upload = $imgData;
+		$upload = base64_encode($imgData);
 		$upload = $_SESSION['map'];
 
 		echo'<img src="data:image/jpeg;base64,' . $_SESSION['map'] . '" />';
