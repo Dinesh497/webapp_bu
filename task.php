@@ -14,7 +14,12 @@ include ('connection.php');
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <link rel='stylesheet' href='teststyle.css' />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
 
 	<style>
 	
@@ -92,35 +97,44 @@ include ('connection.php');
 	}
 	
 	</style>
+	<script>
+    $(document).ready(function(){
+        $("#nav-mobile").html($("#nav-main").html());
+        $("#nav-trigger span").click(function(){
+            if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                $(this).removeClass("open");
+            } else {
+                $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                $(this).addClass("open");
+            }
+        });
+    });
+</script>
 <body>
 
 
-<nav id="nav" role="navigation">
-    <a href="#nav" title="Show navigation">Show navigation</a>
-    <a href="#" title="Hide navigation">Hide navigation</a>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li>
-            <a href="/" aria-haspopup="true">Blog</a>
-            <ul>
-                <li><a href="/">Design</a></li>
-                <li><a href="/">HTML</a></li>
-                <li><a href="/">CSS</a></li>
-                <li><a href="/">JavaScript</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="/" aria-haspopup="true">Work</a>
-            <ul>
-                <li><a href="/">Web Design</a></li>
-                <li><a href="/">Typography</a></li>
-                <li><a href="/">Front-End</a></li>
-            </ul>
-        </li>
-        <li><a href="/">About</a></li>
-    </ul>
-</nav>
- 
+<div id="main">
+    <div class="container">
+        <div id="nav-trigger">
+            <span>Menu</span>
+        </div>
+        <nav id="nav-main">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Tutorials</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile"></nav>
+
+        <section>
+        
+        </section>
+    </div>
+</div><!-- #main -->
 
 <tr>
 <form name="form1"  action="logout.php" method="POST">
