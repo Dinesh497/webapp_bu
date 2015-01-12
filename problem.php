@@ -151,7 +151,6 @@ include ("session.php");
 	<td>Room map</td>
 	<td><name="map" type="file" >
 	<?php
-	//$room_id = $_POST['location'];
 	$sessionroom = $room_id; 
 	$sessionroom = $_SESSION['room_id'];
 
@@ -162,6 +161,8 @@ include ("session.php");
 		//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
 		echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
+
+		echo = $_SESSION['room_id'];
 		
 
 		//echo'<img src="data:image/jpeg;base64,' . $_SESSION['map'] . '" />';
