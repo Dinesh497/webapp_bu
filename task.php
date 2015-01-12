@@ -55,8 +55,9 @@ include ('connection.php');
 
 
 <table class='tasktable'>
-<thead>
+
 <form>
+<thead>
 <tr>
 <th>Ticket ID</th>
 <th>Created by</th>
@@ -88,10 +89,10 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
 		</tr>
 		</tbody>
 		</form>
-		</table>
+		
 		<?php
 	}
-
+echo "</table>";//tabel sluiten
 ?>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
