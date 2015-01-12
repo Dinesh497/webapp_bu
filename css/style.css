@@ -64,7 +64,7 @@ nav#nav-mobile {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: #c80032; }
+    background-color: #012D59; }
   nav#nav-mobile li {
     display: block;
     padding: 5px 0;
@@ -77,7 +77,7 @@ nav#nav-mobile {
     color: white;
     padding: 10px 30px; }
     nav#nav-mobile a:hover {
-      background-color: #af002c;
+      background-color: #0078E7;
       color: #fff; }
 
 /* =Sections
