@@ -142,7 +142,7 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Room map</td>
-	<td><input type ="image" name="map" value="" >
+	<td><name="map" value="" >
 	<?php
 	$room_id = $_POST['location'];
 	$sessionroom = $room_id;
