@@ -108,19 +108,21 @@ include ("session.php");
 		$room_type = mysql_query("SELECT room_type FROM rooms Where room_id=$room_id", $dbcon) or die (mysql_error());
 		
 		if($row = mysql_fetch_array($room_type)){
-			echo "<option value=" . $row['room_type'] . ">" . $row['room_type'] . "</option>";
-		}
-			else{
-
-			echo "<option value="Large-Double">Large-Double</option>";
-			echo "<option value="XL-Double">XL-Double</option>";
-			echo "<option value="SYNDICAT">Syndicat</option>";
-			echo "<option value="Large-Twin">Large-Twin</option>";
-			echo "<option value="Royal-Suite">Royal-Suite</option>";
-			echo "<option value="INV-STE">INV-STE</option>";
+			?>
+			<option value=" <?php echo $row['room_type']; ?> "><?php echo $row['room_type'];?> </option>
+			<?php
 			}
+			?>
 
-		?>
+			<option value="Large-Double">Large-Double</option>
+			<option value="XL-Double">XL-Double</option>
+			<option value="SYNDICAT">Syndicat</option>
+			<option value="Large-Twin">Large-Twin</option>
+			<option value="Royal-Suite">Royal-Suite</option>
+			<option value="INV-STE">INV-STE</option>
+			
+
+		
 	</select>
 	</td>
 	</tr>
