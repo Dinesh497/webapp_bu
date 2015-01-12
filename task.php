@@ -114,7 +114,7 @@ include ('connection.php');
 </form>
 </tr>
 <form action="task.php" method="POST">
-<table class ='searchtable'>
+<div class ='searchtable'>
 <tr>
 <td>
 <select name="input">
@@ -126,7 +126,7 @@ include ('connection.php');
 
 <td><button input type="submit" class="pure-button pure-button-primary">Search status</button></td>
 </tr>
-</table>
+</div>
 </form>
 
 
