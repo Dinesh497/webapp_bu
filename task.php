@@ -115,7 +115,7 @@ include ('connection.php');
 
 
 <div id="main">
-    <div class="container">
+    <div class="container1">
         <div id="nav-trigger">
             <span>Menu</span>
         </div>
