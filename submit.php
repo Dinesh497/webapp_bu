@@ -1,5 +1,5 @@
 <?php
-	include 'problem.php';
+	include 'location.php';
 	session_start(); // Starting Session	
 	require ("connection.php");
 	
@@ -10,12 +10,12 @@
 	$user = $_SESSION['gebruiker'];
 	$status = $_POST['status'];
 	$priority = $_POST['priority'];
-	$location = $_SESSION['room_id'];
+	$location = $room_id;
 	$room = $_POST['room'];
 	$KP = $_POST['known'];
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
-	$map = $room_id;
+	$map = $imgData;
 
 	
 	
