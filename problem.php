@@ -162,7 +162,7 @@ include ("session.php");
 
 		echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
 
-		echo = $_SESSION['room_id'];
+		echo $_SESSION['room_id'];
 		
 
 		//echo'<img src="data:image/jpeg;base64,' . $_SESSION['map'] . '" />';
