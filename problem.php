@@ -112,12 +112,6 @@ include ("session.php");
 				}
 
 		?>
-	<option value="Large-Double">Large-Double</option>
-	<option value="XL-Double">XL-Double</option>
-	<option value="SYNDICAT">Syndicat</option>
-	<option value="Large-Twin">Large-Twin</option>
-	<option value="Royal-Suite">Royal-Suite</option>
-	<option value="INV-STE">INV-STE</option>
 	</select>
 	</td>
 	</tr>
