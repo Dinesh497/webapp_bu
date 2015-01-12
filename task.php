@@ -104,6 +104,7 @@ include ('connection.php');
 		<tr>
 		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
 		<tr>
+		<br>
 		
 		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
 
