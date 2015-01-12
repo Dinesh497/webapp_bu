@@ -170,15 +170,7 @@ include ('connection.php');
 </div>
 </form>
 
-<?php
-if ($input ==""):{ ?>
 
-<td></td>
-<?php
-}
-?>
-<?php
-else: {?>
 <table class='tasktable'>
 
 <form>
