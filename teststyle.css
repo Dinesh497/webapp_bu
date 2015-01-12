@@ -396,7 +396,20 @@ div.desc {
 	
 	border-collapse: collapse; 
 }
-
+	/* Zebra striping */
+	tr:nth-of-type(odd) { 
+		; 
+	}
+	th { 
+		; 
+		color: white; 
+		font-weight: bold; 
+	}
+	td, th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+	}
 
 .taskform {
     background: rgba(255,255,255,0.5);
