@@ -115,7 +115,11 @@ include ('connection.php');
 	$(function(){
 		$('#menu').slicknav();
 	});
+	$('#menu').slicknav({
+		prependTo:'#demo1'
+});
 </script>
+
 		<br>
 		
 		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
