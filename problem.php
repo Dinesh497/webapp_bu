@@ -13,6 +13,12 @@ include ("session.php");
 <link rel='stylesheet' href='style.css' />
 <link rel="stylesheet" media="(max-width: 400px)" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/navstyle.css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
   <script src="jQuery.ui.datepicker.js"></script>
   <script>
   //reset type=date inputs to text
@@ -20,9 +26,44 @@ include ("session.php");
     $.mobile.page.prototype.options.degradeInputs.date = true;
   });	
   </script>
+    <script>
+    $(document).ready(function(){
+        $("#nav-mobile").html($("#nav-main").html());
+        $("#nav-trigger span").click(function(){
+            if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                $(this).removeClass("open");
+            } else {
+                $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                $(this).addClass("open");
+            }
+        });
+    });
+</script>
   <script src="jquery.ui.datepicker.mobile.js"></script>
 <body>
+<div id="main">
+    <div class="container1">
+        <div id="nav-trigger">
+            <span>Menu</span>
+        </div>
+        <nav id="nav-main">
+            <ul>
+                <li><a href="homepage.php">Home</a></li>
+                <li><a href="location.php">Add Task</a></li>
+				<li><a href="task.php">Check task</a></li>
+                <li><a href="settings.php">Settings</a></li>
+                <li><a href="logout.php">Logout</a></li>
+                
+            </ul>
+        </nav>
+        <nav id="nav-mobile"></nav>
 
+        <section>
+        
+        </section>
+    </div>
+</div>
 <?php
 		$room_type = mysql_query("SELECT room_type FROM rooms Where room_id=$room_id", $dbcon);
 		
