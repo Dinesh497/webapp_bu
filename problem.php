@@ -1,5 +1,6 @@
 <!doctype html>
 <?php
+include 'location.php';
 include ("session.php");
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
@@ -43,7 +44,6 @@ include ("session.php");
 	<tr>
 	<td>Location :</td>
 	<td><select name="location"  type="text">
-		<option value=" "></option>
 		<?php 
 		$rooms = mysql_query("SELECT room_id FROM rooms", $dbcon) or die (mysql_error());
 		while($row = mysql_fetch_array($rooms)){
