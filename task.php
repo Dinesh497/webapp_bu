@@ -54,24 +54,27 @@ include ('connection.php');
 </table>
 </form>
 
+
+<table class='tasktable'>
+<thead>
+<form>
+<tr>
+<td>Ticket ID: <b></td>
+<td>Created by: <b></td>
+<td>Priority:</td>
+<td>Location:</td>
+<td>status</td>
+<td>Description</td>
+<td>Handle before</td>
+<td>Edit</td>
+</tr>
+</thead>
 <?php
 $input = $_POST['input'];
-echo "<table class='tasktable'>";
-echo "<form>";
-echo "<tr>";
-echo "<td>Ticket ID: <b></td>";
-echo "<td>Created by: <b></td>";
-echo "<td>Priority:</td>";
-echo "<td>Location:</td>";
-echo "<td>status</td>";
-echo "<td>Description</td>";
-echo "<td>Handle before</td>";
-echo "<td>Edit</td>";
-
 $result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		
-		
+		echo "<tbody>";
 		echo "<br>";
 		echo "<tr>";
 		echo "<td> " . $row['id'] . "</td>";
@@ -84,7 +87,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
 		echo "<td>" . "<a href='ticket.php?ticket=" . $row['id'] . "'>More Information</a>" . "</td>"; 
 	
 		echo "</tr>";
-	
+		echo "</tbody>";
 		echo "</form>";
 	}
 echo "</table>";//tabel sluiten
