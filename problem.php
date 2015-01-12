@@ -153,7 +153,7 @@ include ("session.php");
 	<td>Room map</td>
 	<td><name="map" type="file" >
 	<?php
-	$room_id = $_POST['location'];
+	//$room_id = $_POST['location'];
 	$sessionroom = $room_id; 
 	$sessionroom = $_SESSION['room_id'];
 
