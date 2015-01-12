@@ -141,9 +141,9 @@ div.desc {
 }
 .searchtable {
     background: rgba(255,255,255,0.5);
-    margin: 80px;
-	margin-left: 63px;
-	margin-bottom: -30px;
+	margin: 80px;
+	margin-left: 225px;
+	margin-bottom: -13px;
     width: 205px;
     line-height:40px;
     padding:5px;
@@ -151,6 +151,7 @@ div.desc {
 .tasktable {
     background: rgba(255,255,255,0.5);
     margin: 20px;
+	margin-left: 184px;
     width: 280px;
     line-height:40px;
     padding:5px;
@@ -160,7 +161,8 @@ div.desc {
 
 .logout {
     background: rgba(255,255,255,0.5);
-    margin: 10px;
+    margin: 4px;
+margin-top: -74px;
     width: 270px;
     line-height:20px;
     padding:3px;
