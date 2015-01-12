@@ -15,7 +15,7 @@
 	$KP = $_POST['known'];
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
-	$map = $_SESSION['map'];
+	$map = $_POST['map'];
 
 	
 	
