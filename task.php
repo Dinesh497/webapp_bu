@@ -58,11 +58,11 @@ include ('connection.php');
 <thead>
 <form>
 <tr>
-<th>Ticket ID:</th>
-<th>Created by:</th>
-<th>Priority:</th>
-<th>Location:</th>
-<th>status</th>
+<th>Ticket ID</th>
+<th>Created by</th>
+<th>Priority</th>
+<th>Location</th>
+<th>Status</th>
 <th>Description</th>
 <th>Handle before</th>
 <th>Edit</th>
@@ -76,14 +76,14 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
 		<tbody>
 		
 		<tr>
-		<td data-title="Ticket ID:"><?php echo $row['id']; ?></td>
-		<td> <?php echo $row['user']; ?> </td>
-		<td> <?php echo $row['priority']; ?></td>
-		<td> <?php echo $row['location']; ?> </td>
-		<td> <?php echo $row['status']; ?></td>
-		<td> <?php echo $row['description']; ?></td>	
-		<td> <?php echo $row['handle_before']; ?></td>
-		<td> <a href='ticket.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
+		<td data-title="Ticket ID"><?php echo $row['id']; ?></td>
+		<td data-title="Created by"> <?php echo $row['user']; ?> </td>
+		<td data-title="Priority"> <?php echo $row['priority']; ?></td>
+		<td data-title="Location"> <?php echo $row['location']; ?> </td>
+		<td data-title="Status"> <?php echo $row['status']; ?></td>
+		<td data-title="Description"> <?php echo $row['description']; ?></td>	
+		<td data-title="Handle before"> <?php echo $row['handle_before']; ?></td>
+		<td data-title="edit"> <a href='ticket.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
 	
 		</tr>
 		</tbody>
