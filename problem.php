@@ -160,6 +160,8 @@ include ("session.php");
 			echo "Choose a room at the category location above.";
 		}
 
+		public $imgData =addslashes(file_get_contents($_FILES[$row['room_map']]));
+		
 	?></td>
 	</tr>
 
