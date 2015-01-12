@@ -63,7 +63,15 @@ div.desc {
 	overflow-x: auto;
 	display: block;
 	}
-
+.searchtable {
+    background: rgba(255,255,255,0.5);
+    margin: 80px;
+	margin-left: 63px;
+	margin-bottom: -30px;
+    width: 205px;
+    line-height:40px;
+    padding:5px;
+}
 .logout {
     background: rgba(255,255,255,0.5);
     margin: 10px;
@@ -127,6 +135,15 @@ div.desc {
     background: rgba(255,255,255,0.5);
     margin: 20px;
     width: 280px;
+    line-height:40px;
+    padding:5px;
+}
+.searchtable {
+    background: rgba(255,255,255,0.5);
+    margin: 80px;
+	margin-left: 63px;
+	margin-bottom: -30px;
+    width: 205px;
     line-height:40px;
     padding:5px;
 }
@@ -215,6 +232,15 @@ div.desc {
 	border-collapse: collapse;
 	border-spacing: 0;
 	border: 1px solid #bbb;
+}
+.searchtable {
+    background: rgba(255,255,255,0.5);
+    margin: 80px;
+	margin-left: 63px;
+	margin-bottom: -30px;
+    width: 205px;
+    line-height:40px;
+    padding:5px;
 }
 td,th{	
 	padding: 4px; 8px;
@@ -305,6 +331,15 @@ div.desc {
     line-height:20px;
     padding:3px;
 	float:right;
+}
+.searchtable {
+    background: rgba(255,255,255,0.5);
+    margin: 80px;
+	margin-left: 63px;
+	margin-bottom: -30px;
+    width: 205px;
+    line-height:40px;
+    padding:5px;
 }
 .tasktable {
     background: rgba(255,255,255,0.5);
