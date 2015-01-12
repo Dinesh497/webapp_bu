@@ -158,6 +158,8 @@ include ("session.php");
 
 		$upload = base64_decode($imgData);
 		$upload = $_SESSION['map'];
+
+		echo'<img src="data:image/jpeg;base64,' . $_SESSION['map'] . '" />';
 		//echo "Choose a room at the category location above.";
 		//$imgData =addslashes (file_get_contents($_FILES[$row]));
 
