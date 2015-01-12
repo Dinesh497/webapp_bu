@@ -27,7 +27,7 @@ include ('connection.php');
 	(min-device-width: 768px) and (max-device-width: 1024px)  {
 	
 		/* Force table to not be like tables anymore */
-		table, thead, tbody, th, td, tr { 
+		tasktable, thead, tbody, th, td, tr { 
 			display: block; 
 		}
 		
@@ -62,16 +62,15 @@ include ('connection.php');
 		/*
 		Label the data
 		*/
-		td:nth-of-type(1):before { content: "First Name"; }
-		td:nth-of-type(2):before { content: "Last Name"; }
-		td:nth-of-type(3):before { content: "Job Title"; }
-		td:nth-of-type(4):before { content: "Favorite Color"; }
-		td:nth-of-type(5):before { content: "Wars of Trek?"; }
-		td:nth-of-type(6):before { content: "Porn Name"; }
-		td:nth-of-type(7):before { content: "Date of Birth"; }
-		td:nth-of-type(8):before { content: "Dream Vacation City"; }
-		td:nth-of-type(9):before { content: "GPA"; }
-		td:nth-of-type(10):before { content: "Arbitrary Data"; }
+		td:nth-of-type(1):before { content: "Ticket ID"; }
+		td:nth-of-type(2):before { content: "Created By"; }
+		td:nth-of-type(3):before { content: "Priority"; }
+		td:nth-of-type(4):before { content: "Location"; }
+		td:nth-of-type(5):before { content: "Status"; }
+		td:nth-of-type(6):before { content: "Description"; }
+		td:nth-of-type(7):before { content: "Handle before"; }
+		td:nth-of-type(8):before { content: "Details"; }
+		
 	}
 	
 	/* Smartphones (portrait and landscape) ----------- */
