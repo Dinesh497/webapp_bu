@@ -1,5 +1,5 @@
 <?php
-	include ("problem.php");
+	//include ("problem.php");
 	session_start(); // Starting Session	
 	require ("connection.php");
 	
@@ -15,13 +15,13 @@
 	$KP = $_POST['known'];
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
-	$map = $imgData;
+	$map = $_SESSION['room_map'];
 
 	
 	
 	// room map moet er nog bij
 	$sSQL = 'INSERT INTO tickets1 (ticket_id, user, status, priority, location, room_type, known_problems, description, handle_before, date, room_map)
-	VALUES (\'' . $ticket .'\', \'' . $user .'\', \'' . $status .'\', \'' . $priority .'\', \'' . $location .'\', \'' . $room .'\', \'' . $KP .'\', \'' . $description .'\',\'' . $handledate .'\', \'' . $date .'\',\'' . $map .'\'')';
+	VALUES (\'' . $ticket .'\', \'' . $user .'\', \'' . $status .'\', \'' . $priority .'\', \'' . $location .'\', \'' . $room .'\', \'' . $KP .'\', \'' . $description .'\',\'' . $handledate .'\', \'' . $date .'\',\'' . $map .'\')';
 					
 @mysql_query($sSQL);
 	if(!mysql_error())
