@@ -147,7 +147,7 @@ include ("session.php");
 	<td><input type="date" name="hdate" value=""  /></td>
 	</tr>
 	<tr>
-	
+	<!--This makes the post of room_id hidden from the users, but enables the use as a standard variable.-->
 	<td><input type="hidden" name="location" value="<?php echo $room_id; ?>"  /></td>
 	</tr>
 	<tr>

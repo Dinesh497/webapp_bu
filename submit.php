@@ -1,5 +1,4 @@
 <?php
-	include 'location.php';
 	session_start(); // Starting Session	
 	require ("connection.php");
 	
