@@ -76,7 +76,7 @@ include ("session.php");
 
 	echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
 
-	
+	/*
 	$im = imagecreatefromjpeg($row['room_map']);
 
 	$ellipseColor = ImageColorAllocate($im, 0, 0, 255); 
@@ -90,7 +90,7 @@ include ("session.php");
 
 	header('Content-Type: image/jpeg');
 	Imagejpeg($im, '', 100); 
-	
+	*/
 
 	?>
 </tr>
