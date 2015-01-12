@@ -97,10 +97,10 @@ include ('connection.php');
 
 
 <ul id="menu">
-	<li><a href="#">item 1</a></li>
-	<li><a href="#">item 2</a></li>
-	<li><a href="#">item 3</a></li>
-	<li><a href="#">item 4</a></li>
+	<li><a class="scroll" href="#features">Features</a></li>
+	<li><a class="scroll" href="#usage">Usage Instructions</a></li>
+	<li><a class="scroll" href="#examples">Examples</a></li>
+	<li><a href="http://github.com">View on Github</a></li>
 </ul>
  
 
@@ -112,9 +112,7 @@ include ('connection.php');
 		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
 		<tr>
 		<script>
-	$(function(){
-		$('#menu').slicknav();
-	});
+	
 	$('#menu').slicknav({
 		prependTo:'#demo1'
 });
