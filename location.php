@@ -50,7 +50,7 @@ include ("session.php");
 
 
       echo "<option value=" . $row['room_id'] . ">" . $row['room_id'] . "</option>";
-      $room_id = $_SESSION['room_id'];
+      $room_id = $_POST['room_id'];
       }
     ?>
     <!--<option value=" <?php //echo $_SESSION['room_id']; ?> "><?php //echo $_SESSION['room_id'];?> </option>-->
