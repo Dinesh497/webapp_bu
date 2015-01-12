@@ -128,9 +128,9 @@ include ("session.php");
 
 		echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
 
-		echo $_SESSION['room_id'];
+		//$imgData = new Imagick($imgData);
+		//$map = $imgData->getImageBlob();
 		
-
 		//echo'<img src="data:image/jpeg;base64,' . $_SESSION['map'] . '" />';
 		//echo "Choose a room at the category location above.";
 		//$imgData =addslashes (file_get_contents($_FILES[$row]));
