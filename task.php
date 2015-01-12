@@ -210,7 +210,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
 		<?php
 	}
 echo "</table>";//tabel sluiten
-}
+
 ?>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
