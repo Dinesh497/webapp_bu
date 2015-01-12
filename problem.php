@@ -23,43 +23,6 @@ include ("session.php");
   <script src="jquery.ui.datepicker.mobile.js"></script>
 <body>
 
-<tr>
-<form name="session"  action="logout.php" method="POST">
-	<td>
-	<table class='logout' >
-		<tr>
-		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
-		<tr>
-		
-		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
-
-		</tr>
-	</table>
-	</td>
-</form>
-</tr>
-
-<!--<form name="getroommap" action="problem.php" method="POST">
-	<table class='submittable'  >
-	<tr>
-	<td>Location :</td>
-	<td><select name="location"  type="text">
-		<?php 
-		/*$rooms = mysql_query("SELECT room_id FROM rooms", $dbcon) or die (mysql_error());
-		while($row = mysql_fetch_array($rooms)){
-
-
-			echo "<option value=" . $row['room_id'] . ">" . $row['room_id'] . "</option>";
-			}*/
-		?>
-		<option value=" <?php //echo $room_id; ?> "><?php //echo $room_id;?> </option>
-	</select>
-	<button input type="submit" class="pure-button pure-button-primary">Get Map</button>
-	</td>
-	</tr>
-	</table>
-</form>-->
-
 <?php
 		$room_type = mysql_query("SELECT room_type FROM rooms Where room_id=$room_id", $dbcon);
 		
