@@ -58,14 +58,14 @@ include ('connection.php');
 <thead>
 <form>
 <tr>
-<td>Ticket ID: <b></td>
-<td>Created by: <b></td>
-<td>Priority:</td>
-<td>Location:</td>
-<td>status</td>
-<td>Description</td>
-<td>Handle before</td>
-<td>Edit</td>
+<th>Ticket ID:</th>
+<th>Created by:</th>
+<th>Priority:</th>
+<th>Location:</th>
+<th>status</th>
+<th>Description</th>
+<th>Handle before</th>
+<th>Edit</th>
 </tr>
 </thead>
 <?php
@@ -76,7 +76,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
 		echo "<tbody>";
 		echo "<br>";
 		echo "<tr>";
-		echo "<td> " . $row['id'] . "</td>";
+		echo "<td data-title="Ticket ID:"> " . $row['id'] . "</td>";
 		echo "<td> " . $row['user'] . "</td>";
 		echo "<td> " . $row['priority'] . "</td>";
 		echo "<td>" . $row['location'] . "</td>";
