@@ -152,11 +152,11 @@ include ("session.php");
 	if ($row = mysql_fetch_array($result)){
 
 		$imgData = base64_encode($row['room_map']);
-		//$imgData = $_SESSION['room_map'];
 		//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
 		echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
-
+		$imgData = $_SESSION['room_map'];
+		
 		//echo "Choose a room at the category location above.";
 		//$imgData =addslashes (file_get_contents($_FILES[$row]));
 
