@@ -122,10 +122,10 @@ include ('connection.php');
         <nav id="nav-main">
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Tutorials</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="">Task</a></li>
+                <li><a href="">settings</a></li>
+                <li><a href="">logout</a></li>
+                
             </ul>
         </nav>
         <nav id="nav-mobile"></nav>
