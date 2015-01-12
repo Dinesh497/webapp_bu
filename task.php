@@ -86,7 +86,7 @@ include ('connection.php');
 	/* iPads (portrait and landscape) ----------- */
 	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 		body { 
-			width: 495px; 
+			width: ; 
 		}
 	}
 	
