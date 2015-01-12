@@ -171,7 +171,7 @@ include ('connection.php');
 </form>
 
 <?php
-if ($input =""):{ ?>
+if ($input ==""):{ ?>
 
 <td></td>
 <?php
