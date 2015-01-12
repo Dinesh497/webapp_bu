@@ -50,8 +50,8 @@ include ("session.php");
                 <li><a href="homepage.php">Home</a></li>
                 <li><a href="location.php">Add Task</a></li>
 				<li><a href="task.php">Check task</a></li>
-                <li><a href="settings.php">settings</a></li>
-                <li><a href="logout.php">logout</a></li>
+                <li><a href="settings.php">Settings</a></li>
+                <li><a href="logout.php">Logout</a></li>
                 
             </ul>
         </nav>
