@@ -115,17 +115,16 @@ include ('connection.php');
 </tr>
 <form action="task.php" method="POST">
 <div class ='searchtable'>
-<tr>
-<td>
+
 <select name="input">
 	<option value=""></option>
 	<option value="Open">Open</option>
 	<option value="Pending">Pending</option>
 	<option value="Closed">Closed</option>
 </select>
+<br>
+<button input type="submit" class="pure-button pure-button-primary">Search status</button>
 
-<td><button input type="submit" class="pure-button pure-button-primary">Search status</button></td>
-</tr>
 </div>
 </form>
 

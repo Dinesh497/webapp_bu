@@ -65,16 +65,17 @@ div.desc {
 	}
 .searchtable {
     background: rgba(255,255,255,0.5);
-    margin: 80px;
-	margin-left: 63px;
-	margin-bottom: -30px;
+	margin: 88px;
+	margin-left: 60px;
+	margin-bottom: -14px;
     width: 205px;
     line-height:40px;
     padding:5px;
 }
 .logout {
     background: rgba(255,255,255,0.5);
-    margin: 10px;
+    margin: -67px;
+	margin-right: 22px;
     width: 270px;
     line-height:20px;
     padding:3px;
