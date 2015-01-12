@@ -52,7 +52,7 @@ include ("session.php");
 			echo "<option value=" . $row['room_id'] . ">" . $row['room_id'] . "</option>";
 			}*/
 		?>
-		<option value=" <?php echo $room_id; ?> "><?php echo $room_id;?> </option>
+		<option value=" <?php //echo $room_id; ?> "><?php //echo $room_id;?> </option>
 	</select>
 	<button input type="submit" class="pure-button pure-button-primary">Get Map</button>
 	</td>
@@ -153,7 +153,7 @@ include ("session.php");
 	$sessionroom = $room_id; 
 	$sessionroom = $_SESSION['room_id'];
 
-	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id= $room_id", $dbcon);
+	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon);
 	if ($row = mysql_fetch_array($result)){
 
 		$imgData = base64_encode($row['room_map']);
