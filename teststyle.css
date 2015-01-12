@@ -574,4 +574,11 @@ nav#nav-mobile {
     nav#nav-mobile a:hover {
       background-color: #af002c;
       color: #fff; }
+	  
+	  .container {
+padding-right: 72px;
+padding-left: 629px;
+margin-right: 274px;
+margin-left: -211px;
+}
 }
