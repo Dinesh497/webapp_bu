@@ -104,14 +104,12 @@ include ("session.php");
 	<td><select name="room" type="text">
 	<option value=""></option>
 		<?php
-
+		$room_id = $_POST['location'];
 		$room_type = mysql_query("SELECT room_type FROM rooms Where room_id = $room_id", $dbcon) or die (mysql_error());
+		
 		$row = mysql_fetch_array($room_type)
 
 		echo "<option value=" . $row['room_type'] . ">" . $row['room_type'] . "</option>";
-
-
-
 
 		?>
 	<option value="Large-Double">Large-Double</option>
