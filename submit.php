@@ -14,7 +14,7 @@
 	$KP = $_POST['known'];
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
-	$map = $imgData;
+	$map = $row['room_map'];
 
 	
 	
