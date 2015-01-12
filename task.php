@@ -122,7 +122,8 @@ include ('connection.php');
         <nav id="nav-main">
             <ul>
                 <li><a href="homepage.php">Home</a></li>
-                <li><a href="task,php">Task</a></li>
+                <li><a href="location.php">Add Task</a></li>
+				<li><a href="task.php">Check task</a></li>
                 <li><a href="settings.php">settings</a></li>
                 <li><a href="logout.php">logout</a></li>
                 
