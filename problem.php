@@ -5,8 +5,6 @@ include ("session.php");
 		header('Location:index.php');
 		exit;
 	}
-
-	$room_id = $_POST['location'];
 ?>
 <title>Westcord Fashion Hotel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -105,15 +103,12 @@ include ("session.php");
 	<td>Room type :</td>
 	<td><select name="room" type="text">
 	<option value=""></option>
-		<?php
-		$room_type = mysql_query("SELECT room_type FROM rooms Where room_id = $room_id", $dbcon) or die (mysql_error());
-		while($row = mysql_fetch_array($room_type)){
-
-				echo "<option value=" . $row['room_type'] . ">" . $row['room_type'] . "</option>";
-
-				}
-
-		?>
+	<option value="Large-Double">Large-Double</option>
+	<option value="XL-Double">XL-Double</option>
+	<option value="SYNDICAT">Syndicat</option>
+	<option value="Large-Twin">Large-Twin</option>
+	<option value="Royal-Suite">Royal-Suite</option>
+	<option value="INV-STE">INV-STE</option>
 	</select>
 	</td>
 	</tr>
@@ -149,7 +144,7 @@ include ("session.php");
 	<td>Room map</td>
 	<td><name="map" type="file" >
 	<?php
-	//$room_id = $_POST['location'];
+	$room_id = $_POST['location'];
 	$sessionroom = $room_id; 
 	$sessionroom = $_SESSION['room_id'];
 
