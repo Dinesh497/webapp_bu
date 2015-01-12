@@ -61,8 +61,6 @@ include ("session.php");
 </form>-->
 
 <?php
-
-		$room_id = $_POST['location'];
 		$room_type = mysql_query("SELECT room_type FROM rooms Where room_id=$room_id", $dbcon);
 		
 		$row = mysql_fetch_array($room_type);
@@ -90,7 +88,6 @@ include ("session.php");
 	<td>status :</td>
 	<td>
 	<select name="status">
-	<option value=""></option>
 	<option value="Open">Open</option>
 	<option value="Pending">Pending</option>
 	<option value="Closed">Closed</option>
