@@ -157,7 +157,7 @@ include ("session.php");
 		//echo "Choose a room at the category location above.";
 		$imgData =addslashes(file_get_contents($_FILES[$row['room_map']]));
 
-		echo $imgData;
+		print $imgData;
 
 		}
 		else{
