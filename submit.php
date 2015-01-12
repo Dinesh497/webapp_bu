@@ -1,7 +1,8 @@
 <?php
+	include ("problem.php");
 	session_start(); // Starting Session	
 	require ("connection.php");
-	include ("problem.php");
+	
 
 	
 	$ticket = $_POST['ticket'];
