@@ -14,6 +14,8 @@ include ('connection.php');
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <link rel='stylesheet' href='teststyle.css' />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="SlickNav/slicknav.css" />
+<script src="SlickNav/jquery.slicknav.min.js"></script>
 
 	<style>
 	
@@ -94,7 +96,12 @@ include ('connection.php');
 <body>
 
 
-
+<ul id="menu">
+	<li><a href="#">item 1</a></li>
+	<li><a href="#">item 2</a></li>
+	<li><a href="#">item 3</a></li>
+	<li><a href="#">item 4</a></li>
+</ul>
  
 
 <tr>
@@ -104,6 +111,11 @@ include ('connection.php');
 		<tr>
 		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
 		<tr>
+		<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
 		<br>
 		
 		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
