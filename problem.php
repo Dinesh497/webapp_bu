@@ -28,7 +28,7 @@ include ("session.php");
 	<td>
 	<table class='logout' >
 		<tr>
-		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
+		<td><?php //echo $_SESSION['gebruiker']; ?> is logged in!</td>
 		<tr>
 		
 		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
@@ -61,7 +61,7 @@ include ("session.php");
 </form>-->
 
 <?php
-		$room_type = mysql_query("SELECT room_type FROM rooms Where room_id=$room_id", $dbcon);
+		$room_type = mysql_query("SELECT room_type FROM rooms Where room_id=$_SESSION ['room_id']", $dbcon);
 		
 		$row = mysql_fetch_array($room_type);
 			?>
@@ -153,7 +153,7 @@ include ("session.php");
 	$sessionroom = $room_id; 
 	$sessionroom = $_SESSION['room_id'];
 
-	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon);
+	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id= $_SESSION ['room_id']", $dbcon);
 	if ($row = mysql_fetch_array($result)){
 
 		$imgData = base64_encode($row['room_map']);
