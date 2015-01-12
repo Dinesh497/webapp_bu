@@ -386,7 +386,7 @@ div.desc {
 }
 .tasktable {
    
-    background: rgba(255,255,255,0.5);
+    background: 
 	margin: 62px;
 	margin-top: 20px;
 	width: 1232px;
@@ -400,7 +400,7 @@ div.desc {
 		background: #eee; 
 	}
 	th { 
-		background: #333; 
+		background: ; 
 		color: white; 
 		font-weight: bold; 
 	}
