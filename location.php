@@ -43,7 +43,7 @@ include ("session.php");
   <tr>
   <td>Location :</td>
   <td><select name="location"  type="text">
-    <option value=""></option>
+    <option value=" "></option>
     <?php 
     $rooms = mysql_query("SELECT room_id FROM rooms", $dbcon) or die (mysql_error());
     while($row = mysql_fetch_array($rooms)){
