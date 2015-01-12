@@ -72,22 +72,23 @@ include ('connection.php');
 $input = $_POST['input'];
 $result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
 	while($row = mysql_fetch_array($result)){
+		?>
+		<tbody>
 		
-		echo "<tbody>";
-		echo "<br>";
-		echo "<tr>";
-		echo "<td data-title="Ticket ID:"> " . $row['id'] . "</td>";
-		echo "<td> " . $row['user'] . "</td>";
-		echo "<td> " . $row['priority'] . "</td>";
-		echo "<td>" . $row['location'] . "</td>";
-		echo "<td>" . $row['status'] . "</td>";
-		echo "<td> " . $row['description'] . "</td>";	
-		echo "<td>" . $row['handle_before'] . "</td>";
-		echo "<td>" . "<a href='ticket.php?ticket=" . $row['id'] . "'>More Information</a>" . "</td>"; 
+		<tr>
+		<td data-title="Ticket ID:"><?php echo $row['id']; ?></td>
+		<td> <?php echo $row['user']; ?> </td>
+		<td> <?php echo $row['priority']; ?></td>
+		<td> <?php echo $row['location']; ?> </td>
+		<td> <?php echo $row['status']; ?></td>
+		<td> <?php echo $row['description']; ?></td>	
+		<td> <?php echo $row['handle_before']; ?></td>
+		<td> <a href='ticket.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
 	
-		echo "</tr>";
-		echo "</tbody>";
-		echo "</form>";
+		</tr>
+		</tbody>
+		</form>
+		<?php
 	}
 echo "</table>";//tabel sluiten
 ?>
