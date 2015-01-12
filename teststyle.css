@@ -390,17 +390,23 @@ div.desc {
     width: 280px;
     line-height:40px;
     padding:5px;
-	border-collapse: collapse;
-	border-spacing: 0;
-	border: 1px solid #bbb;
-}
-td,th{	
-	padding: 4px; 8px;
-	border-top: 1px solid #ddd;
-}
-tbody tr:nth-child(even)  td {
- background-color: #eee; 
- }
+	
+	border-collapse: collapse; 
+	}
+	/* Zebra striping */
+	tr:nth-of-type(odd) { 
+		background: #eee; 
+	}
+	th { 
+		background: #333; 
+		color: white; 
+		font-weight: bold; 
+	}
+	td, th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+	}
 
 .taskform {
     background: rgba(255,255,255,0.5);
