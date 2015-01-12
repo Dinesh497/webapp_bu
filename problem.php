@@ -142,7 +142,8 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Room map</td>
-	<td><?php
+	<td><input type ="image" name="map" value="" >
+	<?php
 	$room_id = $_POST['location'];
 	$sessionroom = $room_id;
 	$sessionroom = $_SESSION['room_id'];
@@ -159,7 +160,7 @@ include ("session.php");
 			echo "Choose a room at the category location above.";
 		}
 
-	?>
+	?></td>
 	</tr>
 
 	
