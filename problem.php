@@ -104,12 +104,13 @@ include ("session.php");
 	<td><select name="room" type="text">
 	<option value=""></option>
 		<?php
+
 		$room_type = mysql_query("SELECT room_type FROM rooms Where room_id = $room_id", $dbcon) or die (mysql_error());
-		while($row = mysql_fetch_array($room_type)){
+		$row = mysql_fetch_array($room_type)
 
-			echo "<option value=" . $row['room_type'] . ">" . $row['room_type'] . "</option>";
+		echo "<option value=" . $row['room_type'] . ">" . $row['room_type'] . "</option>";
 
-		}
+
 
 
 		?>
