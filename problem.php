@@ -102,7 +102,7 @@ include ("session.php");
 	<tr>
 	<td>Room type :</td>
 	<td><select name="room" type="text">
-		
+
 	<option value="<?php $row['room_type']; ?>"><?php $row['room_type']; ?></option>
 		<?php
 
@@ -112,7 +112,7 @@ include ("session.php");
 		if($row = mysql_fetch_array($room_type)){
 			echo "<option value=" . $row['room_type'] . ">" . $row['room_type'] . "</option>";
 		}
-		else{
+			else{
 
 			echo "<option value="Large-Double">Large-Double</option>";
 			echo "<option value="XL-Double">XL-Double</option>";
@@ -120,7 +120,7 @@ include ("session.php");
 			echo "<option value="Large-Twin">Large-Twin</option>";
 			echo "<option value="Royal-Suite">Royal-Suite</option>";
 			echo "<option value="INV-STE">INV-STE</option>";
-		}
+			}
 
 		?>
 	</select>
