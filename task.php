@@ -14,8 +14,7 @@ include ('connection.php');
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <link rel='stylesheet' href='teststyle.css' />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="SlickNav/slicknav.css" />
-<script src="SlickNav/jquery.slicknav.min.js"></script>
+
 
 	<style>
 	
@@ -96,12 +95,31 @@ include ('connection.php');
 <body>
 
 
-<ul id="menu">
-	<li><a class="scroll" href="#features">Features</a></li>
-	<li><a class="scroll" href="#usage">Usage Instructions</a></li>
-	<li><a class="scroll" href="#examples">Examples</a></li>
-	<li><a href="http://github.com">View on Github</a></li>
-</ul>
+<nav id="nav" role="navigation">
+    <a href="#nav" title="Show navigation">Show navigation</a>
+    <a href="#" title="Hide navigation">Hide navigation</a>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li>
+            <a href="/" aria-haspopup="true">Blog</a>
+            <ul>
+                <li><a href="/">Design</a></li>
+                <li><a href="/">HTML</a></li>
+                <li><a href="/">CSS</a></li>
+                <li><a href="/">JavaScript</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/" aria-haspopup="true">Work</a>
+            <ul>
+                <li><a href="/">Web Design</a></li>
+                <li><a href="/">Typography</a></li>
+                <li><a href="/">Front-End</a></li>
+            </ul>
+        </li>
+        <li><a href="/">About</a></li>
+    </ul>
+</nav>
  
 
 <tr>
@@ -111,12 +129,7 @@ include ('connection.php');
 		<tr>
 		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
 		<tr>
-		<script>
 	
-	$('#menu').slicknav({
-		prependTo:'#demo1'
-});
-</script>
 
 		<br>
 		
