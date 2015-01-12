@@ -102,8 +102,6 @@ include ("session.php");
 	<tr>
 	<td>Room type :</td>
 	<td><select name="room" type="text">
-
-	<option value="<?php $row['room_type']; ?>"><?php $row['room_type']; ?></option>
 		<?php
 
 		$room_id = $_POST['location'];
