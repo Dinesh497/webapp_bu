@@ -153,11 +153,11 @@ include ("session.php");
 	//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
 		echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
-		echo "Choose a room at the category location above.";
-	}
-	else{
-		echo "Choose a room at the category location above.";
-	}
+		//echo "Choose a room at the category location above.";
+		}
+		else{
+			echo "Choose a room at the category location above.";
+		}
 
 	?>
 	</tr>
