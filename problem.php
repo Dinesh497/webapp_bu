@@ -151,10 +151,10 @@ include ("session.php");
 	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon);
 	if ($row = mysql_fetch_array($result)){
 
+		$imgData = $row;
 	//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
-		$image = '<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
-		echo $image;
+		echo'<img src="data:image/jpeg;base64,' . base64_encode( $row['room_map'] ) . '" />';
 		//echo "Choose a room at the category location above.";
 		//$imgData =addslashes (file_get_contents($_FILES[$row]));
 
