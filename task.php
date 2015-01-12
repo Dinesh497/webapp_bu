@@ -27,7 +27,7 @@ include ('connection.php');
 	(min-device-width: 768px) and (max-device-width: 1024px)  {
 	
 		/* Force table to not be like tables anymore */
-		tasktable, thead, tbody, th, td, tr { 
+		.tasktable, thead, tbody, th, td, tr { 
 			display: block; 
 		}
 		
