@@ -23,12 +23,12 @@ include ("session.php");
   <script src="jquery.ui.datepicker.mobile.js"></script>
 <body>
 
-<!--<tr>
+<tr>
 <form name="session"  action="logout.php" method="POST">
 	<td>
 	<table class='logout' >
 		<tr>
-		<td><?php //echo $_SESSION['gebruiker']; ?> is logged in!</td>
+		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
 		<tr>
 		
 		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
@@ -39,7 +39,7 @@ include ("session.php");
 </form>
 </tr>
 
-<form name="getroommap" action="problem.php" method="POST">
+<!--<form name="getroommap" action="problem.php" method="POST">
 	<table class='submittable'  >
 	<tr>
 	<td>Location :</td>
@@ -61,7 +61,7 @@ include ("session.php");
 </form>-->
 
 <?php
-		$room_type = mysql_query("SELECT room_type FROM rooms Where room_id=$_SESSION ['location']", $dbcon);
+		$room_type = mysql_query("SELECT room_type FROM rooms Where room_id=$room_id", $dbcon);
 		
 		$row = mysql_fetch_array($room_type);
 			?>
@@ -147,13 +147,17 @@ include ("session.php");
 	<td><input type="date" name="hdate" value=""  /></td>
 	</tr>
 	<tr>
+	
+	<td><input type="hidden" name="location" value="<?php echo $room_id; ?>"  /></td>
+	</tr>
+	<tr>
 	<td>Room map</td>
 	<td><name="map" type="file" >
 	<?php
 	$sessionroom = $room_id; 
 	$sessionroom = $_SESSION['room_id'];
 
-	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$_SESSION ['location']", $dbcon);
+	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon);
 	if ($row = mysql_fetch_array($result)){
 
 		$imgData = base64_encode($row['room_map']);
