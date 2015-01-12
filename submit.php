@@ -1,5 +1,5 @@
 <?php
-	//include ("problem.php");
+	include 'problem.php';
 	session_start(); // Starting Session	
 	require ("connection.php");
 	
@@ -15,7 +15,7 @@
 	$KP = $_POST['known'];
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
-	$map = $_POST['map'];
+	$map = $imgData;
 
 	
 	
