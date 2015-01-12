@@ -41,7 +41,7 @@ include ("session.php");
 
 
 <div class="img">
-      <A href="problem.php"> 
+      <A href="location.php"> 
       <img src="images\add_task.png" class="img-responsive"  width="220" height="200"> 
 	  </A>
 	  <div class="desc">Add new problem</div>
