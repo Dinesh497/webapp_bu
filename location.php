@@ -52,7 +52,7 @@ include ("session.php");
       echo "<option value=" . $row['room_id'] . ">" . $row['room_id'] . "</option>";
       }
     ?>
-    <!--<option value=" <?php echo $room_id; ?> "><?php echo $room_id;?> </option>-->
+    <option value=" <?php echo $room_id; ?> "><?php echo $room_id;?> </option>
   </select>
   <button input type="submit" class="pure-button pure-button-primary">Get Map</button>
   </td>
