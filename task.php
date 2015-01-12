@@ -100,7 +100,7 @@ include ('connection.php');
 <tr>
 <form name="form1"  action="logout.php" method="POST">
 	<td>
-	<table class='logout' >
+	<div class='logout' >
 		<tr>
 		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
 		<tr>
@@ -108,7 +108,7 @@ include ('connection.php');
 		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
 
 		</tr>
-	</table>
+	</div>
 	</td>
 </form>
 </tr>
