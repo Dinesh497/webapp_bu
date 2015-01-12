@@ -17,7 +17,7 @@ include ('connection.php');
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
-
+<link rel="stylesheet" href="css/style.css" />
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 
@@ -121,7 +121,7 @@ include ('connection.php');
         </div>
         <nav id="nav-main">
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="homepage.php">Home</a></li>
                 <li><a href="">Task</a></li>
                 <li><a href="">settings</a></li>
                 <li><a href="">logout</a></li>
