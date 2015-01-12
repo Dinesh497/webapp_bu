@@ -135,14 +135,14 @@ include ('connection.php');
 <form>
 <thead>
 <tr>
-<th>Ticket ID</th>
-<th>Created by</th>
-<th>Priority</th>
-<th>Location</th>
-<th>Status</th>
-<th>Description</th>
-<th>Handle before</th>
-<th>Edit</th>
+<th>Ticket ID &nbsp;</th>
+<th>Created by &nbsp;</th>
+<th>Priority &nbsp;</th>
+<th>Location &nbsp;</th>
+<th>Status &nbsp;</th>
+<th>Description &nbsp;</th>
+<th>Handle before &nbsp;</th>
+<th>Edit &nbsp;</th>
 </tr>
 </thead>
 <?php
