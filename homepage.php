@@ -19,7 +19,7 @@ include ("nav.php");
 
 <body>
  
-<form name="form1"  action="logout.php" method="POST">
+<!--<form name="form1"  action="logout.php" method="POST">
 	<td>
 	<table class='logout' >
 		<tr>
@@ -32,7 +32,7 @@ include ("nav.php");
 	</table>
 	</td>
 </form>
-</tr>
+</tr>-->
 
 
 <!--<div class="img">
