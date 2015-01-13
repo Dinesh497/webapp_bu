@@ -112,7 +112,7 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Room type :</td>
-	<td><input name="room" type="text" value=" <?php echo $row['room_type']; ?> " readonly></td>
+	<td><input name="room" type="text" value="<?php echo $row['room_type']; ?>" readonly></td>
 	</tr>
 	<!--<option value="Large-Double">Large-Double</option>	
 	<option value="XL-Double">XL-Double</option>
