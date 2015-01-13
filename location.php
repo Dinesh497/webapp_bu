@@ -92,7 +92,7 @@ include ("session.php");
 
 
       echo "<option value=" . $row['room_id'] . ">" . $row['room_id'] . "</option>";
-      $room_id = $_POST['location'];
+      //$room_id = $_POST['location'];
       }
     ?>
     <!--<option value=" <?php //echo $room_id; ?> "><?php //echo $room_id;?> </option>-->

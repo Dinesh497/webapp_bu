@@ -6,6 +6,7 @@ include ("session.php");
 		header('Location:index.php');
 		exit;
 	}
+	$room_id = $_POST['location'];
 ?>
 <title>Westcord Fashion Hotel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
