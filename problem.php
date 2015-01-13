@@ -157,9 +157,10 @@ include ("session.php");
 	<td><name="map" type="file" accept="image/jpeg" >
 	<?php
 
-	$imgName = mysql_real_escape_string($_FILES["room_map"]["room_id"]);
-	$imgData = mysql_real_escape_string(file_get_contents($_FILES["room_map"]["tmp_name"]));
-	$imgType = mysql_real_escape_string($_FILES["room_map"]["type"]);
+	$imgName = mysql_real_escape_string($_FILES["map"]["name"]);
+	$imgData = mysql_real_escape_string(file_get_contents($_FILES["map"]["tmp_name"]));
+	echo $imageData;
+	//$imgType = mysql_real_escape_string($_FILES["map"]["type"]);
 	
 	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon);
 	if ($row = mysql_fetch_array($result)){
