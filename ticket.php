@@ -114,20 +114,6 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 	while($row = mysql_fetch_array($result, MYSQL_ASSOC)){
 	
 		?>
-		
-<tr>
-
-<th>Created by &nbsp;</th>
-<th>Priority &nbsp;</th>
-<th>Location &nbsp;</th>
-<th>Status &nbsp;</th>
-<th>Description &nbsp;</th>
-<th>Handle before &nbsp;</th>
-<th>Edit &nbsp;</th>
-</tr>
-
-		
-	
 		<table class='submittable'>
 		<tr>
 		<th>Ticket ID </th>
@@ -158,8 +144,8 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		</td>
 		</tr>
 		<tr>
-		<td>Priority :</td>
-		<td>
+		<th>Priority:</th>
+		<td data-title="Priority:">
 		<select name="priority">
 		<option value="<?php echo $row['priority']; ?>"><?php echo $row['priority']; ?></option>
 		<option value="High">High</option>
@@ -169,20 +155,20 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		</td>
 		</tr>
 		<tr>
-		<td>Room type :</td>
-		<td><?php echo $row['room_type']; ?></td>
+		<th>Room type:</th>
+		<td data-title="Room type:"><?php echo $row['room_type']; ?></td>
 		</tr>
 		<tr>
-		<td>Known Problem :</td>
-		<td><?php echo $row['known_problems']; ?></td>
+		<th>Known Problem:</th>
+		<td data-title="Known Problem:"><?php echo $row['known_problems']; ?></td>
 		</tr>
 		<tr>
-		<td>Description :</td>
-		<td><textarea  name="description" maxlength="1000" cols="25" rows="6" style="margin: 0px; width: 100%; height: 256px;"><?php echo $row['description']; ?></textarea></td>
+		<th>Description:</th>
+		<td data-title="Description:"><textarea  name="description" maxlength="1000" cols="25" rows="6" style="margin: 0px; width: 100%; height: 256px;"><?php echo $row['description']; ?></textarea></td>
 		</tr>
 		<tr>
-		<td>Image :</td>
-		<td>
+		<th>Image:</th>
+		<td data-title="Image:">
 		
 		<img src="data:image/jpeg;base64,<?php echo base64_encode($row['room_map']); ?>" class="img-responsive" width="400" height="400" />
 		
