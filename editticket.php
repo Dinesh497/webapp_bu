@@ -17,7 +17,7 @@
 	if(!mysql_error())
 						{
 						
-							echo '<br><br><br>Ticket is updated.';
+							echo '<br><br><br>Ticket is updated. Redirecting....';
 							header("refresh:5; url=location.php");
 						
 						}
