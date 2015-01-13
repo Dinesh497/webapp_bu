@@ -72,6 +72,13 @@ div.desc {
     line-height:40px;
     padding:5px;
 }
+.submittable {
+    background: rgba(255,255,255,0.5);
+    margin: 40px;
+    width: 384px;
+    line-height:40px;
+    padding:5px;
+}
 .logout {
     background: rgba(255,255,255,0.5);
     margin: -67px;
@@ -130,6 +137,13 @@ div.desc {
     font-weight: normal;
     width: 120px;
     margin: 5px;
+}
+.submittable {
+    background: rgba(255,255,255,0.5);
+    margin: 40px;
+    width: 384px;
+    line-height:40px;
+    padding:5px;
 }
 
 .table {
@@ -217,6 +231,13 @@ div.desc {
     font-weight: normal;
     width: 120px;
     margin: 5px;
+}
+.submittable {
+    background: rgba(255,255,255,0.5);
+    margin: 40px;
+    width: 384px;
+    line-height:40px;
+    padding:5px;
 }
 
 .table {
@@ -335,6 +356,13 @@ div.desc {
     line-height:20px;
     padding:3px;
 	float:right;
+}
+.submittable {
+    background: rgba(255,255,255,0.5);
+    margin: 40px;
+    width: 384px;
+    line-height:40px;
+    padding:5px;
 }
 .searchtable {
     background: rgba(255,255,255,0.5);
