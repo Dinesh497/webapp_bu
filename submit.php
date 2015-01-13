@@ -37,7 +37,7 @@
 							//$imgData = $row['room_map'];
 							//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
-							echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
+							echo'<img src="data:image/jpeg;base64,' . $map . '" />';
 						}
 						else
 						{

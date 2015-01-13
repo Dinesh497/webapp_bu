@@ -161,13 +161,13 @@ include ("session.php");
 	$imgData = mysql_real_escape_string(file_get_contents($_FILES["room_map"]["tmp_name"]));
 	$imgType = mysql_real_escape_string($_FILES["room_map"]["type"]);
 	
-	//$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon);
-	//if ($row = mysql_fetch_array($result)){
+	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon);
+	if ($row = mysql_fetch_array($result)){
 		
-		//$imgData = base64_encode($row['room_map']);
+		$imgData = base64_encode($row['room_map']);
 		//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
-		//echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
+		echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
 		//header("content-type: image/jpeg");
 		//echo $imgData;
 
@@ -178,10 +178,10 @@ include ("session.php");
 		//echo "Choose a room at the category location above.";
 		//$imgData =addslashes (file_get_contents($_FILES[$row]));
 
-		//}
-		//else{
+		}
+		else{
 			echo "Choose a room at the category location above.";
-		//}
+		}
 
 		//$imgData =addslashes(file_get_contents($_FILES[$row['room_map']]));
 		
