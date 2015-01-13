@@ -25,7 +25,7 @@ $ticket = $_GET['ticket'];
  
 
 <tr>
-<form name="form1"  action="logout.php" method="POST">
+<!--<form name="form1"  action="logout.php" method="POST">
 	<td>
 	<table class='logout' >
 		<tr>
@@ -38,7 +38,7 @@ $ticket = $_GET['ticket'];
 	</table>
 	</td>
 </form>
-</tr>
+</tr>-->
 
 <form name="submitform"  action="editticket.php" method="POST">
 <?php
@@ -51,6 +51,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		<tr>
 		<td>Ticket ID :</td>
 		<td><?php echo $row['id']; ?></td>
+		<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 		</tr>
 		<tr>
 		<td>Created on :</td>
