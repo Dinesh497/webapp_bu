@@ -160,7 +160,13 @@ include ("session.php");
 	$imgName = mysql_real_escape_string($_FILES["room_map"]["room_id"]);
 	$imgData = mysql_real_escape_string(file_get_contents($_FILES["room_map"]["tmp_name"]));
 	$imgType = mysql_real_escape_string($_FILES["room_map"]["type"]);
-
+	if(substr($imgType,0,5) == "image")
+	{
+		echo "working image";
+	}
+	else
+	echo "Not an image";
+	}
 	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon);
 	if ($row = mysql_fetch_array($result)){
 		
