@@ -162,10 +162,13 @@ include ("session.php");
 	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon);
 	if ($row = mysql_fetch_array($result)){
 
-		$imgData = base64_encode($row['room_map']);
+		//$imgData = base64_encode($row['room_map']);
+		$imgData = $row['room_map'];
 		//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
-		echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
+		//echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
+		header("content-type: image/jpeg");
+		echo $imgData;
 
 		//$imgData = new Imagick($imgData);
 		//$map = $imgData->getImageBlob();
