@@ -15,9 +15,21 @@ include ("nav.php");
 <link rel='stylesheet' href='teststyle.css' />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-
-
 <body>
+
+
+<form name="submitform"  action="submit.php" method="POST">
+	<table class='submittable'  >
+		
+
+
+
+
+
+		<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
+	</table>
+	
+</form>
 
 
 
