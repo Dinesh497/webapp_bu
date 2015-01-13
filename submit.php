@@ -15,7 +15,8 @@
 	$KP = $_POST['known'];
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
-	$map = addslashes(file_get_contents($_FILES[$row['room_map']]);
+	//$map = addslashes(file_get_contents($_FILES[$row['room_map']]);
+	$map = $imgData;
 
 	
 	
@@ -30,10 +31,10 @@
 							echo '<br><br><br>You are now registerd.';
 							//echo '<img src="data:image/jpeg;base64,' . base64_encode($map) . '" />';
 							//echo $map;
-							$result = mysql_query("SELECT room_map FROM tickets1 WHERE id='23'", $dbcon);
-							$row = mysql_fetch_array($result);
+							//$result = mysql_query("SELECT room_map FROM tickets1 WHERE id='23'", $dbcon);
+							//$row = mysql_fetch_array($result);
 
-							$imgData = $row['room_map'];
+							//$imgData = $row['room_map'];
 							//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
 							echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
