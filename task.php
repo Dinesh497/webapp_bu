@@ -100,7 +100,7 @@ include ('connection.php');
 
 
 <tr>
-<form name="form1"  action="logout.php" method="POST">
+<!--<form name="form1"  action="logout.php" method="POST">
 	<td>
 	<div class='logout' >
 		<tr>
@@ -115,7 +115,7 @@ include ('connection.php');
 		</tr>
 	</div>
 	</td>
-</form>
+</form>-->
 </tr>
 <form action="task.php" method="POST">
 <div class ='searchtable'>
