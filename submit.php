@@ -27,25 +27,14 @@
 	VALUES (\'' . $ticket .'\', \'' . $user .'\', \'' . $status .'\', \'' . $priority .'\', \'' . $location .'\', \'' . $room .'\', \'' . $KP .'\', \'' . $description .'\',\'' . $handledate .'\', \'' . $date .'\',\'' . $imgData .'\')';
 					
 @mysql_query($sSQL);
-	if(!mysql_error())
-						{
-						echo $imgtype;
-							echo '<br><br><br>You are now registerd.';
-							//echo '<img src="data:image/jpeg;base64,' . base64_encode($map) . '" />';
-							//echo $map;
-							//$result = mysql_query("SELECT room_map FROM tickets1 WHERE id='23'", $dbcon);
-							//$row = mysql_fetch_array($result);
-
-							//$imgData = $row['room_map'];
-							//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
-
-							//echo'<img src="data:image/jpeg;base64,' . $map . '" />';
-						}
-						else
-						{
-							die('Error: ' . mysql_error()); 
-							
-						}
+	if(!mysql_error()){
+		echo '<br><br><br>You are now registerd.';
+		header("refresh:5; url=location.php");
+		}
+	else
+		{
+		die('Error: ' . mysql_error()); 
+		}
 
 $conn->close();					
 ?>
