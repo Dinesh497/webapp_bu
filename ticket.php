@@ -64,7 +64,7 @@ $ticket = $_GET['ticket'];
 		Label the data
 		*/
 		td:nth-of-type(1):before { content: "Ticket ID"; }
-		td:nth-of-type(2):before { content: "Created By"; }
+		td:nth-of-type(1):before { content: "Created By"; }
 		td:nth-of-type(3):before { content: "Priority"; }
 		td:nth-of-type(4):before { content: "Location"; }
 		td:nth-of-type(5):before { content: "Status"; }
