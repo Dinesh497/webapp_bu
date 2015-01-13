@@ -1,5 +1,5 @@
 <?php
-	include 'problem.php';
+	//include 'problem.php';
 	session_start(); // Starting Session	
 	require ("connection.php");
 	
@@ -16,7 +16,9 @@
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
 	//$map = addslashes(file_get_contents($_FILES[$row['room_map']]);
-	$map = $imgData;
+	$imgName = mysql_real_escape_string($_FILES["map"]["name"]);
+	$imgData = mysql_real_escape_string(file_get_contents($_FILES["map"]["tmp_name"]));
+	echo $imageData;
 
 	
 	
