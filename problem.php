@@ -71,7 +71,7 @@ include ("session.php");
 		$row = mysql_fetch_array($room_type);
 			?>
 
-<form name="submitform"  action="submit.php" method="POST">
+<form name="submitform"  action="submit.php" method="POST" enctype="multipart/form-data">
 	
 	<table class='submittable'  >
 	<tr>
@@ -154,7 +154,7 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Room map</td>
-	<td><name="map" type="file" accept="image/jpeg" >
+	<td>
 	<?php
 
 	//$imgName = mysql_real_escape_string($_FILES["map"]["name"]);
@@ -189,6 +189,13 @@ include ("session.php");
 	?>
 	</td>
 	</tr>
+	<tr>
+	<td>Upload image</td>
+	<td>
+	<name="image" type="file" accept="image/jpeg" >
+	</td>
+	</tr>
+	
 
 	
 	<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
