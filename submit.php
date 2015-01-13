@@ -15,7 +15,7 @@
 	$KP = $_POST['known'];
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
-	$map = addslashes(file_get_contents($_FILES[$imgData]);
+	$map = addslashes(file_get_contents($_FILES[$row['room_map']]);
 
 	
 	
