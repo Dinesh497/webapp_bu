@@ -156,13 +156,15 @@ include ("session.php");
 	<td>Room map</td>
 	<td><name="map" type="file" >
 	<?php
-	$sessionroom = $room_id; 
-	$sessionroom = $_SESSION['room_id'];
+
+	$imgName = mysql_real_escape_string($_FILES["room_map"]["room_id"]);
+	$imgData = mysql_real_escape_string(file_get_contents($_FILES["room_map"]["tmp_name"]));
+	$imgType = mysql_real_escape_string($_FILES["room_map"]["type"]);
 
 	$result = mysql_query("SELECT room_map FROM rooms WHERE room_id=$room_id", $dbcon);
 	if ($row = mysql_fetch_array($result)){
-
 		//$imgData = base64_encode($row['room_map']);
+		
 		$imgData = $row['room_map'];
 		//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
