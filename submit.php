@@ -27,6 +27,7 @@
 						{
 						
 							echo '<br><br><br>You are now registerd.';
+							echo $room;
 							
 						}
 						else
