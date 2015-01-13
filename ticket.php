@@ -63,14 +63,7 @@ $ticket = $_GET['ticket'];
 		/*
 		Label the data
 		*/
-		td:nth-of-type(1):before { content: "Ticket ID"; }
-		td:nth-of-type(1):before { content: "Created By"; }
-		td:nth-of-type(3):before { content: "Priority"; }
-		td:nth-of-type(4):before { content: "Location"; }
-		td:nth-of-type(5):before { content: "Status"; }
-		td:nth-of-type(6):before { content: "Description"; }
-		td:nth-of-type(7):before { content: "Handle before"; }
-		td:nth-of-type(8):before { content: "Details"; }
+
 		
 	}
 	
@@ -122,16 +115,6 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 	
 		?>
 		<table class='submittable'>
-		<tr>
-		<th>Ticket ID &nbsp;</th>
-<th>Created by &nbsp;</th>
-<th>Priority &nbsp;</th>
-<th>Location &nbsp;</th>
-<th>Status &nbsp;</th>
-<th>Description &nbsp;</th>
-<th>Handle before &nbsp;</th>
-<th>Edit &nbsp;</th>
-		</tr>
 		<tr>
 		<th>Ticket ID </th>
 		<td data-title="Ticket ID"><?php echo $row['id']; ?></td>
