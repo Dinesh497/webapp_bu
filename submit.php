@@ -15,7 +15,7 @@
 	$KP = $_POST['known'];
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
-	$map = base64_encode($imgData);
+	$map = addslashes(file_get_contents($_FILES[$imgData]);
 
 	
 	
@@ -33,7 +33,7 @@
 							$result = mysql_query("SELECT room_map FROM tickets1 WHERE id='23'", $dbcon);
 							$row = mysql_fetch_array($result);
 
-							$imgData = base64_encode($row['room_map']);
+							$imgData = $row['room_map'];
 							//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
 							echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
