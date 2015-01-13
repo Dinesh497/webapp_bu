@@ -101,23 +101,11 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		<td><textarea  name="description" maxlength="1000" cols="25" rows="6"><?php echo $row['description']; ?></textarea></td>
 		</tr>
 		<tr>
-		<td>Room Map :</td>
+		<td>Image :</td>
 		<td>
-		<?php
-		$map = $row['room_map'];
-		echo $map;
-		?>
-		<img src="data:image/jpeg;base64,'<?php echo $map;?>'"/>
+		<img src="showimage.php?id= <?php echo $row['id'];?>" height="400" width="400">
 		
-			<!--	//$imgData = base64_encode($row['room_map']);
-				//$imgData = $row['room_map'];
 
-				//echo '<img src="data:image/jpeg;base64,' . $imgData . '" />';
-				//echo '<img src="data:image/jpeg;base64,' . base64_encode($row['room_map']) . '" />';
-
-				//header("content-type: image/jpeg");
-				//echo $imgData;
-			-->
 		</td>
 		</tr>
 
