@@ -104,7 +104,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		<td>Room Map :</td>
 		<td>
 		<?php
-		$map = $row['id'];
+		$map = $row['room_map'];
 		?>
 		<img src="data:image/jpeg;base64,'<?php echo $map?>'"/>
 		
