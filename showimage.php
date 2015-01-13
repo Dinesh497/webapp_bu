@@ -6,7 +6,7 @@ if(isset($_GET['id']))
 {
     
     $id = mysql_real_escape_string($_GET['id']);
-	$result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
+	$result = mysql_query("SELECT * FROM tickets1 WHERE id=$id", $dbcon);
     while($row = mysql_fetch_assoc($query))
     {
         $imageData = $row["image"];
