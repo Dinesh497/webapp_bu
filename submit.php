@@ -28,8 +28,8 @@
 						{
 						
 							echo '<br><br><br>You are now registerd.';
-							//echo '<img src="data:image/jpeg;base64,' . base64_encode($map) . '" />';
-							echo $map;
+							echo '<img src="data:image/jpeg;base64,' . base64_encode($map) . '" />';
+							//echo $map;
 						}
 						else
 						{
