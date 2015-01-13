@@ -570,3 +570,140 @@ div.desc {
 	  
 
 }
+
+@media screen and (min-width: 938px) {
+ body {
+    background-image: url("images/westcord.jpg");
+    background-repeat: no-repeat;
+	font-family: calibri;
+	width: 100%;
+}
+ul{
+ margin: 0;
+ padding: 0;
+ }
+div.img {
+    margin-top: 130px;
+	margin-bottom: 187px;
+	margin-right: 893px;
+	padding: 5px;
+	border: ;
+	height: auto;
+	width: auto;
+	float: right;
+	text-align: center;
+	background-color: #C0C0C0; 
+}
+
+div.img2 {
+	margin-top: -467px;
+	margin-right: 577px;	
+	padding: 5px;
+	border: ;
+	height: auto;
+	width: auto;
+	float: right;
+	text-align: center;
+	background-color: ;
+}
+div.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 120px;
+    margin: 5px;
+}
+
+
+.table {
+    background: rgba(255,255,255,0.5);
+    margin: 20px;
+    width: 280px;
+    line-height:40px;
+    padding:5px;
+}
+.tasktable {
+   
+     background: transparent;
+	margin: 348px;
+	margin-top: 20px;
+	width: 1232px;
+    line-height:40px;
+    padding:5px;
+	border-style: none;
+	border-collapse: collapse; 
+}
+	/* Zebra striping */
+	tr:nth-of-type(odd) { 
+		background: #eee; 
+	}
+	th { 
+		background: #333; 
+		color: white; 
+		font-weight: bold; 
+	}
+	td, th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+	}
+
+.taskform {
+    background: rgba(255,255,255,0.5);
+	margin: 62px;
+	margin-top: 20px;
+	width: 1232px;
+    line-height:40px;
+    padding:5px;
+}
+.submittable {
+    background: rgba(255,255,255,0.5);
+    margin: 40px;
+    width: 550px;
+    line-height:40px;
+    padding:5px;
+}
+.locationtable {
+    background: rgba(255,255,255,0.5);
+    margin: 40px;
+	margin-left: 576px;
+	width: 227px;
+    line-height:40px;
+    padding:5px;
+}
+
+.searchtable {
+    background: rgba(255,255,255,0.5);
+    margin: 100px;
+	margin-left: 64px;
+	margin-bottom: -30px;
+	margin-top: 77px;
+	margin-left: 354px;
+	
+	margin-bottom: -30px;
+    width: 205px;
+    line-height:40px;
+    padding:5px;
+}
+
+.logout {
+    background: rgba(255,255,255,0.5);
+    margin: 35px;
+	margin-top: -72px;
+    width: 270px;
+    line-height:20px;
+    padding:3px;
+	float:right;
+}
+#footer {
+	background:rgba(255,255,255,0.5);
+	width:100%;
+	height:20px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	text-align:center;
+}
+
+	  
+
+}
