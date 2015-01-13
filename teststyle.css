@@ -493,6 +493,14 @@ div.desc {
     line-height:40px;
     padding:5px;
 }
+.locationtable {
+    background: rgba(255,255,255,0.5);
+    margin: 40px;
+	margin-left: 576px;
+	width: 227px;
+    line-height:40px;
+    padding:5px;
+}
 
 .searchtable {
     background: rgba(255,255,255,0.5);
