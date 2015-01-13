@@ -16,9 +16,9 @@
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
 	//$map = addslashes(file_get_contents($_FILES[$row['room_map']]);
-	$imgName = mysql_real_escape_string($_FILES["map"]["name"]);
-	$imgData = mysql_real_escape_string(file_get_contents($_FILES["map"]["tmp_name"]));
-	echo $imgData;
+	
+	$imgData = mysql_real_escape_string(file_get_contents($_FILES["image"]["tmp_name"]));
+	$imgtype = mysql_real_escape_string($_FILES["map"]["type"]);
 
 	
 	
@@ -46,8 +46,6 @@
 							die('Error: ' . mysql_error()); 
 							
 						}
-
-
 
 $conn->close();					
 ?>
