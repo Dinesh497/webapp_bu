@@ -178,7 +178,7 @@ echo "</table>";//tabel sluiten
 ?>
 <?php 
 $input = $_POST['input'];
-if (!empty ($input)){ ?>
+else (!empty ($input)){ ?>
 <table class='tasktable'>
 
 <form>
