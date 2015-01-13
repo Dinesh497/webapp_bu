@@ -192,7 +192,7 @@ include ("session.php");
 	<tr>
 	<td>Upload image</td>
 	<td>
-	<name="image" input type="file"  >
+	<input type="file" name="fileToUpload" id="fileToUpload">
 	</td>
 	</tr>
 	
