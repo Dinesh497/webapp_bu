@@ -123,7 +123,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		?>
 		
 <tr>
-<th>Ticket ID </th>
+
 <th>Created by &nbsp;</th>
 <th>Priority &nbsp;</th>
 <th>Location &nbsp;</th>
@@ -137,7 +137,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 	
 		<table class='submittable'>
 		<tr>
-		
+		<th>Ticket ID </th>
 		<td data-title="Ticket ID"><?php echo $row['id']; ?></td>
 		<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 		</tr>
@@ -150,12 +150,12 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		<td data-title="Created by:"><?php echo $row['user']; ?></td>
 		</tr>
 		<tr>
-		<td>Handle before :</td>
-		<td><?php echo $row['handle_before']; ?></td>
+		<th>Handle before:</th>
+		<td data-title="Handle before:"><?php echo $row['handle_before']; ?></td>
 		</tr>
 		<tr>
-		<td>Status :</td>
-		<td>
+		<th>Status:</th>
+		<td data-title="Status:">
 		<select name="status">
 		<option value="<?php echo $row['status']; ?>"><?php echo $row['status']; ?></option>
 		<option value="open">Open</option>
