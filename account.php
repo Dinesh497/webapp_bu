@@ -18,11 +18,20 @@ include ("nav.php");
 <body>
 
 
-<form name="submitform"  action="submit.php" method="POST">
+<form name="submitform"  action="account.php" method="POST">
 	<table class='submittable'  >
-		
-
-
+		<tr>
+		<td>Name :</td>
+		<td><input name="name" type="text" value=""></td>
+		</tr>
+		<tr>
+		<td>Username :</td>
+		<td><input name="username" type="text" value=""></td>
+		</tr>
+		<tr>
+		<td>Password :</td>
+		<td><input name="password" type="text" value=""></td>
+		</tr>
 
 
 
