@@ -43,7 +43,7 @@ $ticket = $_GET['ticket'];
 <form name="submitform"  action="editticket.php" method="POST">
 <?php
 $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
-	while($row = mysql_fetch_array($result)){
+	while($row = mysql_fetch_array($result, MYSQL_ASSOC)){
 	
 		?>
 		
