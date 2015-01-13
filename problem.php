@@ -185,7 +185,9 @@ include ("session.php");
 
 		//$imgData =addslashes(file_get_contents($_FILES[$row['room_map']]));
 		
-	?></td>
+	?>
+	<td><img src"ticket.php?id=26"></td>
+	</td>
 	</tr>
 
 	
