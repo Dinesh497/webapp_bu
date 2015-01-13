@@ -13,17 +13,9 @@ include ("nav.php");
 <link rel='stylesheet' href='teststyle.css' />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <!--<link rel="stylesheet" media="(max-width: 400px)" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
-<link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
 
 
-  <script src="jQuery.ui.datepicker.js"></script>
-  <script>
-  //reset type=date inputs to text
-  $( document ).bind( "mobileinit", function(){
-    $.mobile.page.prototype.options.degradeInputs.date = true;
-  });	
-  </script>
-  <script src="jquery.ui.datepicker.mobile.js"></script>
+
 
 <body>
 
@@ -58,7 +50,7 @@ include ("nav.php");
       $room_id = $_POST['location'];
       }
     ?>
-    <!--<option value=" <?php //echo $room_id; ?> "><?php //echo $room_id;?> </option>-->
+  
   </select>
   <button input type="submit" class="pure-button pure-button-primary">Get Map</button>
   </td>
