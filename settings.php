@@ -16,6 +16,19 @@ include ("nav.php");
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <body>
 
+<div class="img">
+      <a target="" href="task.php"> 
+      <img src="images\task.png" class="img-responsive" alt="Cinque Terre" width="220" height="200"> 
+	  </a>
+	  <div class="desc">Add a description of the image here</div>
+</div>
+<div class="img2">
+	<a target="" href="settings.php">
+	<img src="images\gear.png" class="img-responsive" width="220" height="200">
+    
+	</a>
+	<div class="desc">Add a description of the image here</div>
+</div>
 
 
 </body>
