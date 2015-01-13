@@ -168,7 +168,7 @@ include ("session.php");
 		$imgData = base64_encode($row['room_map']);
 		//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
-		echo'<img src="data:image/jpeg;base64,' . $imgData . '" />';
+		echo'<img src="data:image/jpeg;base64,' . $imgData . '" width="100" height="100" />';
 		//header("content-type: image/jpeg");
 		//echo $imgData;
 
@@ -192,7 +192,7 @@ include ("session.php");
 	<tr>
 	<td>Upload image</td>
 	<td>
-	<input type="file" name="fileToUpload" id="fileToUpload">
+	<input type="file" name="image">
 	</td>
 	</tr>
 	
