@@ -18,7 +18,7 @@
 						{
 						
 							echo '<br><br><br>Ticket is updated.';
-							header('location:task.php');
+							header("refresh:5; url=location.php");
 						
 						}
 						else
