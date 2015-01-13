@@ -191,7 +191,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		<td>Image :</td>
 		<td>
 		
-		<img src="data:image/jpeg;base64,<?php echo base64_encode($row['room_map']); ?>" width="400" height="400" />
+		<img src="data:image/jpeg;base64,<?php echo base64_encode($row['room_map']); ?>" class="img-responsive" width="400" height="400" />
 		
 
 		</td>
