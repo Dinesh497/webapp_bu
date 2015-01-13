@@ -105,8 +105,9 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		<td>
 		<?php
 		$map = $row['id'];
-		echo'<img src="data:image/jpeg;base64,' . $map . '" />';
 		?>
+		<img src="data:image/jpeg;base64,'<?php echo $map?>'"/>
+		
 			<!--	//$imgData = base64_encode($row['room_map']);
 				//$imgData = $row['room_map'];
 
