@@ -102,10 +102,14 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		<tr>
 		<td>Room Map :</td>
 		<td><?php 
-				$imgData = base64_encode($row['room_map']);
+				//$imgData = base64_encode($row['room_map']);
+				$imgData = $row['room_map'];
 
-				echo '<img src="data:image/jpeg;base64,' . $imgData . '" />';
+				//echo '<img src="data:image/jpeg;base64,' . $imgData . '" />';
 				//echo '<img src="data:image/jpeg;base64,' . base64_encode($row['room_map']) . '" />';
+
+				header("content-type: image/jpeg");
+				echo $imgData;
 			?>
 		</td>
 		</tr>
