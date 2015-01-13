@@ -82,9 +82,9 @@ div.locationtable {
 }
 .submittable {
     background: rgba(255,255,255,0.5);
-    margin: 40px;
-    width: 384px;
-    line-height:40px;
+  margin: 40px;
+width: 235px;
+line-height: 23px;
     padding:5px;
 }
 .logout {
