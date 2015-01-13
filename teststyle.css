@@ -72,6 +72,14 @@ div.desc {
     line-height:40px;
     padding:5px;
 }
+.locationtable {
+    background: rgba(255,255,255,0.5);
+    margin: 40px;
+	margin-left: 576px;
+	width: 227px;
+    line-height:40px;
+    padding:5px;
+}
 .submittable {
     background: rgba(255,255,255,0.5);
     margin: 40px;
@@ -162,6 +170,14 @@ div.desc {
     line-height:40px;
     padding:5px;
 }
+.locationtable {
+    background: rgba(255,255,255,0.5);
+    margin: 40px;
+	margin-left: 576px;
+	width: 227px;
+    line-height:40px;
+    padding:5px;
+}
 .tasktable {
     background: rgba(255,255,255,0.5);
     margin: 20px;
@@ -236,6 +252,14 @@ div.desc {
     background: rgba(255,255,255,0.5);
     margin: 40px;
     width: 384px;
+    line-height:40px;
+    padding:5px;
+}
+.locationtable {
+    background: rgba(255,255,255,0.5);
+    margin: 40px;
+	margin-left: 576px;
+	width: 227px;
     line-height:40px;
     padding:5px;
 }
@@ -370,6 +394,14 @@ div.desc {
 	margin-left: 127px;
 	margin-bottom: -30px;
     width: 205px;
+    line-height:40px;
+    padding:5px;
+}
+.locationtable {
+    background: rgba(255,255,255,0.5);
+    margin: 40px;
+	margin-left: 576px;
+	width: 227px;
     line-height:40px;
     padding:5px;
 }
