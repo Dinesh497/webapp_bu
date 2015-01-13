@@ -44,7 +44,7 @@ include ("nav.php");
 </tr>-->
 
 <form name="getroommap" action="problem.php" method="POST">
-  <table class='submittable'  >
+  <div class='submittable'  >
   <tr>
   <td>Location :</td>
   <td><select name="location"  type="text">
@@ -63,7 +63,7 @@ include ("nav.php");
   <button input type="submit" class="pure-button pure-button-primary">Get Map</button>
   </td>
   </tr>
-  </table>
+  </div>
 </form>
 
 
