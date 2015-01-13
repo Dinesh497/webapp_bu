@@ -123,7 +123,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		?>
 		
 <tr>
-
+<th>Ticket ID </th>
 <th>Created by &nbsp;</th>
 <th>Priority &nbsp;</th>
 <th>Location &nbsp;</th>
@@ -137,7 +137,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 	
 		<table class='submittable'>
 		<tr>
-		<th>Ticket ID </th>
+		
 		<td data-title="Ticket ID"><?php echo $row['id']; ?></td>
 		<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 		</tr>
