@@ -50,7 +50,7 @@ $Password = $_POST['password'];
 $asql = 'INSERT INTO users (id, username, password)
 		VALUES (\'' . $id .'\',\'' . $username .'\', \'SHA1(' . $password .')\')';
 
-@mysql_query($sSQL);
+@mysql_query($aSQL);
 	if(!mysql_error())
 						{
 						
@@ -61,8 +61,6 @@ $asql = 'INSERT INTO users (id, username, password)
 							die('Error: ' . mysql_error()); 
 							
 						}
-
-$conn->close();
 ?>
 
 </body>
