@@ -1,5 +1,5 @@
 <?php
-	include 'problem.php'
+	include 'problem.php';
 	session_start(); // Starting Session	
 	require ("connection.php");
 	
