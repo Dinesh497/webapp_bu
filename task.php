@@ -2,7 +2,7 @@
 <?php
 include ("session.php");
 include ("nav.php");
-include ('connection.php');
+
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
 		exit;
