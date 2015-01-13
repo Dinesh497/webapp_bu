@@ -111,6 +111,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 				header("content-type: image/jpeg");
 				echo $imgData;
 			?>
+		<td><img src"ticket.php?id=26"></td>
 		</td>
 		</tr>
 
