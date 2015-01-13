@@ -170,7 +170,7 @@ include ('connection.php');
 </div>
 </form>
 <?php 
-if ($input ==""): ?>
+if (!empty ($input)){ ?>
 
 
 <table class='tasktable'>
@@ -212,7 +212,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
 		<?php
 	}
 echo "</table>";//tabel sluiten
-
+}
 ?>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
