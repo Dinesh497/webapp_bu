@@ -18,6 +18,7 @@
 						{
 						
 							echo '<br><br><br>Ticket is updated.';
+							header('location:task.php');
 						
 						}
 						else
