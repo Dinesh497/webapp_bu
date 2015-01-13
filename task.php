@@ -169,6 +169,8 @@ include ('connection.php');
 
 </div>
 </form>
+<?php 
+if ($input ==""): ?>
 
 
 <table class='tasktable'>
