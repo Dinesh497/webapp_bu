@@ -23,12 +23,15 @@ include ("nav.php");
 	  <div class="desc">Add a description of the image here</div>
 </div>
 <div class="img2">
-	<a target="" href="settings.php">
+	<a target="" href="account.php">
 	<img src="images\gear.png" class="img-responsive" width="220" height="200">
     
 	</a>
 	<div class="desc">Add a description of the image here</div>
 </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 
 </body>
