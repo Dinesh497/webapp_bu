@@ -170,6 +170,7 @@ include ('connection.php');
 </div>
 </form>
 <?php 
+$input = $_POST['input'];
 if (!empty ($input)){ ?>
 
 
@@ -189,7 +190,7 @@ if (!empty ($input)){ ?>
 </tr>
 </thead>
 <?php
-$input = $_POST['input'];
+
 $result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		?>
