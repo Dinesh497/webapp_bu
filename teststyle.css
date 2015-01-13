@@ -212,9 +212,9 @@ ul{
  padding: 0;
  }
 div.img {
-margin-top: 188px;
-margin-bottom: 188px;
-margin-right: 437px;
+	margin-top: 31px;	
+	margin-bottom: 190px;
+	margin-right: 330px;
 	padding: 5px;
 	border: ;
 	height: auto;
@@ -226,7 +226,7 @@ margin-right: 437px;
 
 div.img2 {
 margin-top: -470px;
-margin-right: 141px;	
+margin-right: 74px;	
 	padding: 5px;
 	border: ;
 	height: auto;
@@ -258,7 +258,7 @@ div.desc {
 .locationtable {
     background: rgba(255,255,255,0.5);
     margin: 40px;
-	margin-left: 576px;
+	margin-left: 213px;
 	width: 227px;
     line-height:40px;
     padding:5px;
@@ -275,7 +275,7 @@ div.desc {
     background: #eee;
 	margin: 30px;
 	margin-left: 72px;
-	width: 646px;
+	width: 471px;
     line-height:40px;
     padding:5px;
 	border-collapse: collapse;
