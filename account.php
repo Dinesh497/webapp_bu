@@ -1,6 +1,8 @@
 <!doctype html>
 <?php
 include ("session.php");
+session_start(); // Starting Session	
+require ("connection.php");
 include ("nav.php");
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
@@ -21,6 +23,10 @@ include ("nav.php");
 <form name="submitform"  action="account.php" method="POST">
 	<table class='submittable'  >
 		<tr>
+		<td>ID :</td>
+		<td><input name="id" type="text" value=""></td>
+		</tr>
+		<tr>
 		<td>Username :</td>
 		<td><input name="username" type="text" value=""></td>
 		</tr>
@@ -35,9 +41,29 @@ include ("nav.php");
 	</table>
 	
 </form>
+<?php
 
+$id = $_POST['id'];
+$username = $_POST['username'];
+$Password = $_POST['password'];
 
+$asql = 'INSERT INTO users (id, username, password)
+		VALUES (\'' . $id .'\',\'' . $username .'\', \'SHA1(' . $password .')\')';
 
+@mysql_query($sSQL);
+	if(!mysql_error())
+						{
+						
+							echo '<br><br><br>Account has been made.';
+						}
+						else
+						{
+							die('Error: ' . mysql_error()); 
+							
+						}
+
+$conn->close();
+?>
 
 </body>
 
