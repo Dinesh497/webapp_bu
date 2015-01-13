@@ -63,14 +63,7 @@ $ticket = $_GET['ticket'];
 		/*
 		Label the data
 		*/
-		td:nth-of-type(1):before { content: "Ticket ID"; }
-		td:nth-of-type(2):before { content: "Created on"; }
-		td:nth-of-type(3):before { content: "Created By"; }
-		td:nth-of-type(4):before { content: "Location"; }
-		td:nth-of-type(5):before { content: "Status"; }
-		td:nth-of-type(6):before { content: "Description"; }
-		td:nth-of-type(7):before { content: "Handle before"; }
-		td:nth-of-type(8):before { content: "Details"; }
+		
 		
 	}
 	
@@ -185,7 +178,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		</tr>
 		<tr>
 		<td>Description :</td>
-		<td><textarea  name="description" maxlength="1000" cols="25" rows="6" style="margin: 0px; width: 400px; height: 256px;"><?php echo $row['description']; ?></textarea></td>
+		<td><textarea  name="description" maxlength="1000" cols="25" rows="6" style="margin: 0px; width: 100%; height: 256px;"><?php echo $row['description']; ?></textarea></td>
 		</tr>
 		<tr>
 		<td>Image :</td>
