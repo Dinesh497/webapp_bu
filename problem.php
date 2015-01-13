@@ -154,7 +154,7 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Room map</td>
-	<td><name="map" type="file" >
+	<td><name="map" type="file" accept="image/jpeg" >
 	<?php
 
 	$imgName = mysql_real_escape_string($_FILES["room_map"]["room_id"]);
