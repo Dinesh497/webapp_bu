@@ -1,4 +1,5 @@
 <?php
+	include 'problem.php'
 	session_start(); // Starting Session	
 	require ("connection.php");
 	
@@ -27,6 +28,7 @@
 						{
 						
 							echo '<br><br><br>You are now registerd.';
+							echo '<img src="data:image/jpeg;base64,' . base64_encode($map) . '" />';
 							
 						}
 						else
