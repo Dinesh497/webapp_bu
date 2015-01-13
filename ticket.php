@@ -44,6 +44,7 @@ $ticket = $_GET['ticket'];
 <?php
 $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 	while($row = mysql_fetch_array($result)){
+	$content = $row['room_map'];
 		?>
 		
 	
@@ -102,7 +103,8 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		<tr>
 		<td>Room Map :</td>
 		<td><?php 
-			echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['room_map'] ).'"/>'
+			header('Content-type: image/jpg');
+			echo $content;
 				//$imgData = base64_encode($row['room_map']);
 				//$imgData = $row['room_map'];
 
