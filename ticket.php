@@ -49,7 +49,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		<table class='submittable'>
 		<tr>
 		<td>Ticket ID :</td>
-		<td><input type="text" name="id" value="<?php echo $row['id']; ?>" readonly></td>
+		<td><input type="text" name="id" value="<?php echo $row['id']; ?>" disabled="disabled"></td>
 		</tr>
 		<tr>
 		<td>Created on :</td>
