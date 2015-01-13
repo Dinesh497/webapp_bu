@@ -64,8 +64,8 @@ $ticket = $_GET['ticket'];
 		Label the data
 		*/
 		td:nth-of-type(1):before { content: "Ticket ID"; }
-		td:nth-of-type(2):before { content: "Created By"; }
-		td:nth-of-type(3):before { content: "Priority"; }
+		td:nth-of-type(2):before { content: "Created on"; }
+		td:nth-of-type(3):before { content: "Created By"; }
 		td:nth-of-type(4):before { content: "Location"; }
 		td:nth-of-type(5):before { content: "Status"; }
 		td:nth-of-type(6):before { content: "Description"; }
@@ -137,17 +137,17 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 	
 		<table class='submittable'>
 		<tr>
-		<th>Ticket ID &nbsp;</th>
+		<th>Ticket ID </th>
 		<td data-title="Ticket ID"><?php echo $row['id']; ?></td>
 		<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 		</tr>
 		<tr>
-		<td>Created on :</td>
-		<td><?php echo $row['date']; ?></td>
+		<th>Created on:</th>
+		<td data-title="Created on:"><?php echo $row['date']; ?></td>
 		</tr>
 		<tr>
-		<td>Created by :</td>
-		<td><?php echo $row['user']; ?></td>
+		<th>Created by:</th>
+		<td data-title="Created by:"><?php echo $row['user']; ?></td>
 		</tr>
 		<tr>
 		<td>Handle before :</td>
