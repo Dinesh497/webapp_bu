@@ -21,10 +21,6 @@ include ("nav.php");
 <form name="submitform"  action="account.php" method="POST">
 	<table class='submittable'  >
 		<tr>
-		<td>Name :</td>
-		<td><input name="name" type="text" value=""></td>
-		</tr>
-		<tr>
 		<td>Username :</td>
 		<td><input name="username" type="text" value=""></td>
 		</tr>
@@ -35,7 +31,7 @@ include ("nav.php");
 
 
 
-		<td><button input type="submit" class="pure-button pure-button-primary">Submit</button></td>
+		<td><button input type="submit" class="pure-button pure-button-primary">Apply</button></td>
 	</table>
 	
 </form>
