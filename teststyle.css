@@ -338,16 +338,17 @@ div.desc {
 .searchtable {
     background: rgba(255,255,255,0.5);
     margin: 80px;
-	margin-left: 63px;
+	margin-left: 127px;
 	margin-bottom: -30px;
     width: 205px;
     line-height:40px;
     padding:5px;
 }
 .tasktable {
-    background: rgba(255,255,255,0.5);
-    margin: 20px;
-    width: 280px;
+    
+	margin-left: 128px;
+	margin: 28px;
+	width: 646px;
     line-height:40px;
     padding:5px;
 	border-collapse: collapse;
