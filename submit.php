@@ -29,7 +29,7 @@
 @mysql_query($sSQL);
 	if(!mysql_error())
 						{
-						echo $imgData;
+						
 							echo '<br><br><br>You are now registerd.';
 							//echo '<img src="data:image/jpeg;base64,' . base64_encode($map) . '" />';
 							//echo $map;
