@@ -122,11 +122,23 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 	
 		?>
 		
+<tr>
+
+<th>Created by &nbsp;</th>
+<th>Priority &nbsp;</th>
+<th>Location &nbsp;</th>
+<th>Status &nbsp;</th>
+<th>Description &nbsp;</th>
+<th>Handle before &nbsp;</th>
+<th>Edit &nbsp;</th>
+</tr>
+
+		
 	
 		<table class='submittable'>
 		<tr>
-		<td>Ticket ID :</td>
-		<td><?php echo $row['id']; ?></td>
+		<th>Ticket ID &nbsp;</th>
+		<td data-title="Ticket ID"><?php echo $row['id']; ?></td>
 		<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 		</tr>
 		<tr>
