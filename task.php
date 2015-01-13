@@ -133,9 +133,52 @@ include ('connection.php');
 </form>
 <?php 
 $input = $_POST['input'];
+if (empty ($input)){ ?>
+<table class='tasktable'>
+
+<form>
+<thead>
+<tr>
+<th>Ticket ID &nbsp;</th>
+<th>Created by &nbsp;</th>
+<th>Priority &nbsp;</th>
+<th>Location &nbsp;</th>
+<th>Status &nbsp;</th>
+<th>Description &nbsp;</th>
+<th>Handle before &nbsp;</th>
+<th>Edit &nbsp;</th>
+</tr>
+</thead>
+<?php
+
+$result = mysql_query("SELECT * FROM tickets1 WHERE status='open'", $dbcon);
+	while($row = mysql_fetch_array($result)){
+		?>
+		<tbody>
+		
+		<tr>
+		<td data-title="Ticket ID"><?php echo $row['id']; ?></td>
+		<td data-title="Created by"> <?php echo $row['user']; ?> </td>
+		<td data-title="Priority"> <?php echo $row['priority']; ?></td>
+		<td data-title="Location"> <?php echo $row['location']; ?> </td>
+		<td data-title="Status"> <?php echo $row['status']; ?></td>
+		<td data-title="Description"> <?php echo $row['description']; ?></td>	
+		<td data-title="Handle before"> <?php echo $row['handle_before']; ?></td>
+		<td data-title="edit"> <a href='ticket.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
+	
+		</tr>
+		</tbody>
+		</form>
+		
+		<?php
+	}
+echo "</table>";//tabel sluiten
+<?php
+}
+?>
+<?php 
+$input = $_POST['input'];
 if (!empty ($input)){ ?>
-
-
 <table class='tasktable'>
 
 <form>
