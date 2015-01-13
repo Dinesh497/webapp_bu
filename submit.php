@@ -16,9 +16,9 @@
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
 	//$map = addslashes(file_get_contents($_FILES[$row['room_map']]);
-	
+	$imgName = mysql_real_escape_string($_FILES["image"]["name"]);
 	$imgData = mysql_real_escape_string(file_get_contents($_FILES["image"]["tmp_name"]));
-	$imgtype = mysql_real_escape_string($_FILES["map"]["type"]);
+	$imgtype = mysql_real_escape_string($_FILES["image"]["type"]);
 
 	
 	
@@ -29,7 +29,7 @@
 @mysql_query($sSQL);
 	if(!mysql_error())
 						{
-						
+						echo $imgtype;
 							echo '<br><br><br>You are now registerd.';
 							//echo '<img src="data:image/jpeg;base64,' . base64_encode($map) . '" />';
 							//echo $map;
