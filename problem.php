@@ -112,17 +112,14 @@ include ("session.php");
 	</tr>
 	<tr>
 	<td>Room type :</td>
-	<td><select name="room" type="text">
-	<option value=" <?php echo $row['room_type']; ?> "><?php echo $row['room_type'];?> </option>
-	<option value="Large-Double">Large-Double</option>
+	<td><input name="room" type="text" value=" <?php echo $row['room_type']; ?> " readonly></td>
+	</tr>
+	<!--<option value="Large-Double">Large-Double</option>	
 	<option value="XL-Double">XL-Double</option>
 	<option value="SYNDICAT">Syndicat</option>
 	<option value="Large-Twin">Large-Twin</option>
 	<option value="Royal-Suite">Royal-Suite</option>
-	<option value="INV-STE">INV-STE</option>
-	</select>
-	</td>
-	</tr>
+	<option value="INV-STE">INV-STE</option>-->
 	<tr>
 	<td>Known Problems :</td>
 	<td>
