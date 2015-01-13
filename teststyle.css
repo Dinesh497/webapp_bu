@@ -488,6 +488,7 @@ div.desc {
    
      background: transparent;
 	margin: 348px;
+	margin-left: 172px;
 	margin-top: 20px;
 	width: 1232px;
     line-height:40px;
@@ -537,10 +538,10 @@ div.desc {
 .searchtable {
     background: rgba(255,255,255,0.5);
     margin: 100px;
-	margin-left: 64px;
-	margin-bottom: -30px;
+	
+	
 	margin-top: 77px;
-	margin-left: 354px;
+	margin-left: 175px;
 	
 	margin-bottom: -30px;
     width: 205px;
