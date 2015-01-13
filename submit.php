@@ -15,7 +15,7 @@
 	$KP = $_POST['known'];
 	$description = $_POST['description'];
 	$handledate = $_POST['hdate'];
-	$map = $imgData;
+	$map = base64_encode($imgData);
 
 	
 	
@@ -28,7 +28,7 @@
 						{
 						
 							echo '<br><br><br>You are now registerd.';
-							echo '<img src="data:image/jpeg;base64,' . base64_encode($map) . '" />';
+							//echo '<img src="data:image/jpeg;base64,' . base64_encode($map) . '" />';
 							//echo $map;
 						}
 						else
