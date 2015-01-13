@@ -27,7 +27,7 @@ include ("nav.php");
 <body>
 
 <tr>
-<form name="session"  action="logout.php" method="POST">
+<!--<form name="session"  action="logout.php" method="POST">
   <td>
   <table class='logout' >
     <tr>
@@ -40,7 +40,7 @@ include ("nav.php");
   </table>
   </td>
 </form>
-</tr>
+</tr>-->
 
 <form name="getroommap" action="problem.php" method="POST">
   <table class='submittable'  >
