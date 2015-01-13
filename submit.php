@@ -18,7 +18,7 @@
 	//$map = addslashes(file_get_contents($_FILES[$row['room_map']]);
 	$imgName = mysql_real_escape_string($_FILES["map"]["name"]);
 	$imgData = mysql_real_escape_string(file_get_contents($_FILES["map"]["tmp_name"]));
-	echo $imageData;
+	echo $imgData;
 
 	
 	
@@ -29,7 +29,7 @@
 @mysql_query($sSQL);
 	if(!mysql_error())
 						{
-						
+						echo $imgData;
 							echo '<br><br><br>You are now registerd.';
 							//echo '<img src="data:image/jpeg;base64,' . base64_encode($map) . '" />';
 							//echo $map;
@@ -39,7 +39,7 @@
 							//$imgData = $row['room_map'];
 							//echo '<img src="data:image/jpeg;base64,' . base64_encode( $row['imageContent'] ) . '" />';
 
-							echo'<img src="data:image/jpeg;base64,' . $map . '" />';
+							//echo'<img src="data:image/jpeg;base64,' . $map . '" />';
 						}
 						else
 						{
