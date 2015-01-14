@@ -20,7 +20,8 @@
 									else
 									{
 										echo('Error: ' . mysql_error()); 
-										header("refresh:5; url=location.php");
+										echo 'returning';
+										header("refresh:5; url=account.php");
 									}
 	} else 
 ?>
