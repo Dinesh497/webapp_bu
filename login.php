@@ -27,7 +27,7 @@
 	*/
 	
 
-	if(!$count==1){
+	if($count==1){
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
