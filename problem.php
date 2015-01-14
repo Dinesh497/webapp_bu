@@ -107,7 +107,7 @@ include ("session.php");
 	Description:
 	</td>
 	<td>
-	<textarea  name="description" maxlength="1000" cols="25" rows="6"></textarea>
+	<textarea  name="description" maxlength="1000" cols="25" rows="6" width="100%"></textarea>
 	</td>
 	</tr>
 	<tr>
