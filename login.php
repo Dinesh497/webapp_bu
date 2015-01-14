@@ -47,10 +47,10 @@
 		//$_SESSION['gebruiker'] = $gebruiker;
 		
 	//} 
-//}else{
-		//echo 'Username not found';
+else{
+		echo 'Username not found';
 		
-//	}
+}
 	//*/
 
 	
