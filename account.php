@@ -22,7 +22,7 @@ include ("nav.php");
 
 
 <?php
-	if (!empty($_POST['submitform'])) {
+	if (!empty($_GET['submitform'])) {
 		$id = $_POST['id'];
 			$username = $_POST['username'];
 			$Password = $_POST['password'];
@@ -44,7 +44,7 @@ include ("nav.php");
 	} else {
 ?>
 
-<form name="submitform"  action="account.php" method="POST">
+<form name="submitform"  action="account.php" method="get">
 	<table class='submittable'  >
 		<tr>
 		<td>ID :</td>
