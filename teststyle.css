@@ -75,16 +75,16 @@ div.desc {
 div.locationtable {
     background: rgba(255,255,255,0.5);
     margin: 40px;
-	margin-left: 74px;
+	margin-left: 50px;
 	width: 227px;
     line-height:40px;
     padding:5px;
 }
 .submittable {
     background: rgba(255,255,255,0.5);
-  margin: 40px;
-width: 275px;
-line-height: 23px;
+	margin: 40px;
+	width: 230px;
+	line-height: 23px;
     padding:5px;
 }
 .logout {
