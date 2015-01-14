@@ -28,13 +28,12 @@
 	
 //
 	if($count!=0){
-	
-		while ($row = mysql_fetch_assoc($result)){
-		$dbusername = $row['username'];
-		$dbpassword = $row['password'];
-		
-		echo $dbusername;
-		echo $dbpassword;
+		header("location:lol.php");
+		//while ($row = mysql_fetch_assoc($result)){
+		//$dbusername = $row['username'];
+		//$dbpassword = $row['password'];
+		//echo $dbusername;
+		//echo $dbpassword;
 	}
 		//if ($gebruiker==$dbusername&&$wachtwoord==$dbpassword){
 		//$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
