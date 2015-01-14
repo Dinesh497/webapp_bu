@@ -1,8 +1,8 @@
 <!doctype html>
 <?php
 include ("session.php");
-session_start(); // Starting Session	
-require ("connection.php");
+	
+
 include ("nav.php");
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
@@ -39,9 +39,7 @@ include ("nav.php");
 	</table>
 	
 </form>
-<?php
-}
-?>
+
 
 </body>
 
