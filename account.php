@@ -22,9 +22,9 @@ include ("nav.php");
 
 
 <?php
-	if (isset($_GET['username']) && isset($_GET['password'])) {
-			$username = stripslashes($_GET['username']);
-			$password = stripslashes($_GET['password']);
+	if (isset($_POST['username']) && isset($_POST['password'])) {
+			$username = stripslashes($_POST['username']);
+			$password = stripslashes($_POST['password']);
 			$hash = md5(sha1($password));
 
 			$asql = 'INSERT INTO users (username, password)
@@ -35,16 +35,17 @@ include ("nav.php");
 									{
 									
 										echo '<br><br><br>Account has been made.';
+										header("location:account.php");
 									}
 									else
 									{
 										die('Error: ' . mysql_error()); 
 										
 									}
-	} else {
+	} else 
 ?>
 
-<form name="submitform"  action="account.php" method="get">
+<form name="submitform"  action="account.php" method="post">
 	<table class='submittable'  >
 		<td>Username :</td>
 		<td><input name="username" type="text" value=""></td>
