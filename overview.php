@@ -6,7 +6,7 @@ include ("nav.php");
 		header('Location:index.php');
 		exit;
 	}
-require ('fpdf.php');
+require ('fpdf17/fpdf.php');
 
 
 ?>
