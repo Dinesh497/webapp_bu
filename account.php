@@ -21,31 +21,9 @@ include ("nav.php");
 
 
 
-<?php
-	if (isset($_POST['username']) && isset($_POST['password'])) {
-			$username = stripslashes($_POST['username']);
-			$password = stripslashes($_POST['password']);
-			$hash = md5(sha1($password));
 
-			$asql = 'INSERT INTO users (username, password)
-					VALUES (\'' . $username .'\', (\'' . $hash .'\'))';
 
-			@mysql_query($asql);
-				if(!mysql_error())
-									{
-									
-										echo '<br><br><br>Account has been made.';
-										header("location:account.php");
-									}
-									else
-									{
-										die('Error: ' . mysql_error()); 
-										
-									}
-	} else 
-?>
-
-<form name="submitform"  action="account.php" method="post">
+<form name="submitform"  action="register.php" method="POST">
 	<table class='submittable'  >
 		<td>Username :</td>
 		<td><input name="username" type="text" value=""></td>
