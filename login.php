@@ -31,8 +31,7 @@
 		while ($row = mysql_fetch_assoc($query)){
 		$dbusername = $row['username'];
 		$dbpassword = $row['password'];
-		echo $dbusername;
-		echo $dbpassword;
+		
 	}
 
 		if ($gebruiker==$dbusername&&$passencrypt==$dbpassword){
