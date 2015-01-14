@@ -18,6 +18,7 @@
 	if(!$count==1){
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
+		$_SESSION['wachtwoord'] = $passencrypt;
 		header("location:homepage.php");
 	} else{
 		echo 'Incorrect username or password';
