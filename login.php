@@ -7,7 +7,7 @@
 	$wachtwoord = $_POST['password'];
 	
 	$gebruiker = stripslashes($gebruiker);
-	$wachtwoord = stripslashes($wachtwoord);
+	//$wachtwoord = stripslashes($wachtwoord);
 	$passencrypt = sha1($wachtwoord);
 	
 	$query = mysql_query("SELECT * FROM users WHERE username='$gebruiker' AND password='$passencrypt'");
