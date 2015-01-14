@@ -23,9 +23,9 @@ include ("nav.php");
 
 <?php
 	if (!empty($_GET['id'], $_GET['username'], $_GET['password'])) {
-		$id = $_POST['id'];
-			$username = $_POST['username'];
-			$Password = $_POST['password'];
+			$id = $_GET['id'];
+			$username = $_GET['username'];
+			$Password = $_GET['password'];
 
 			$asql = 'INSERT INTO users (id, username, password)
 					VALUES (\'' . $id .'\',\'' . $username .'\', SHA1(\'' . $password .'\'))';
