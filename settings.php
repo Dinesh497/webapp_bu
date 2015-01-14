@@ -6,6 +6,7 @@ include ("nav.php");
 		header('Location:index.php');
 		exit;
 	}
+	
 
 
 ?>
@@ -17,7 +18,7 @@ include ("nav.php");
 <body>
 
 <div class="img">
-      <a target="" href="task.php"> 
+      <a target="" href="overview.php"> 
       <img src="images\task.png" class="img-responsive" alt="Cinque Terre" width="220" height="200"> 
 	  </a>
 	  <div class="desc">Add a description of the image here</div>
