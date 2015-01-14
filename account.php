@@ -24,10 +24,11 @@ include ("nav.php");
 <?php
 	if (isset($_GET['username']) && isset($_GET['password'])) {
 			$username = $_GET['username'];
-			$Password = $_GET['password'];
+			$password = $_GET['password'];
+			$hash = sha1($password);
 
 			$asql = 'INSERT INTO users (username, password)
-					VALUES (\'' . $username .'\', SHA1(\'' . $password .'\'))';
+					VALUES (\'' . $username .'\', (\'' . $hash .'\'))';
 
 			@mysql_query($asql);
 				if(!mysql_error())

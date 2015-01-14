@@ -8,7 +8,7 @@
 	
 	$gebruiker = stripslashes($gebruiker);
 	$wachtwoord = stripslashes($wachtwoord);
-	$passencrypt = sha1($wachtwoord);
+	$passencrypt = md5($wachtwoord);
 	
 	$query = mysql_query("SELECT * FROM users WHERE username='$gebruiker' AND password='$passencrypt'");
 	$numrows = mysql_num_rows($query);
