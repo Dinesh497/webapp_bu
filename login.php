@@ -14,11 +14,23 @@
 	$result = mysql_query($query);
 	$count = mysql_num_rows($result);
 	
-	
+	/*
+	if(!isset($count['username']) && !isset($count['password']))
+	{
+		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
+		$_SESSION['gebruiker'] = $gebruiker;
+		//$_SESSION['wachtwoord'] = $passencrypt;
+		header("location:homepage.php");
+	} else{
+		echo 'Incorrect username or password';
+	}
+	*/
+
 	if(!$count==1){
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
-		$_SESSION['wachtwoord'] = $passencrypt;
+		echo $count;
+		echo $result;
 		header("location:homepage.php");
 	} else{
 		echo 'Incorrect username or password';
