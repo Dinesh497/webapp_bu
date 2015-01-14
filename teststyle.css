@@ -487,7 +487,7 @@ div.desc {
     width: 120px;
     margin: 5px;
 }
-
+#information{ { display: none; } 
 
 .table {
     background: rgba(255,255,255,0.5);
