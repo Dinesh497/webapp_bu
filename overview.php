@@ -9,6 +9,12 @@
 	*/
 require ('fpdf17/fpdf.php');
 
+$pdf = new FPDF();
+$pdf->AddPage();
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(40,10,'Hello World!');
+$pdf->Output();
+
 ?>
 
 <!--<title>Westcord Fashion Hotel</title>
@@ -18,15 +24,6 @@ require ('fpdf17/fpdf.php');
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <body>-->
 
-<?php
-
-$pdf = new FPDF();
-$pdf->AddPage();
-$pdf->SetFont('Arial','B',16);
-$pdf->Cell(40,10,'Hello World!');
-$pdf->Output();
-
-?>
 
 <!--</body>
 
