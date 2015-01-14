@@ -22,7 +22,7 @@ include ("nav.php");
 
 
 <?php
-	if (!empty($_GET['submitform'])) {
+	if (!empty($_GET['id'])) {
 		$id = $_POST['id'];
 			$username = $_POST['username'];
 			$Password = $_POST['password'];
