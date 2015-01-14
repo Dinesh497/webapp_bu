@@ -147,8 +147,9 @@ div.desc {
     margin: 5px;
 }
 .submittable {
-    background: rgba(255,255,255,0.5);
+    background: rgba(238, 238, 238, 1);
     margin: 40px;
+	margin-top: 111px;
     width: 384px;
     line-height:40px;
     padding:5px;
@@ -293,7 +294,7 @@ div.desc {
 }
 td,th{	
 	padding: 4px; 8px;
-	
+	border-top: 1px solid #ddd;
 }
 tbody tr:nth-child(even)  td {
  background-color: #; 
