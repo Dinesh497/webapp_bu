@@ -22,7 +22,7 @@ include ("nav.php");
 
 
 <?php
-	if (!empty($_GET['id'], $_GET['username'], $_GET['password'])) {
+	if (isset($_GET['id']) &&  isset($_GET['username']) && isset($_GET['password'])) {
 			$id = $_GET['id'];
 			$username = $_GET['username'];
 			$Password = $_GET['password'];
