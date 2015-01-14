@@ -50,7 +50,7 @@
 else{
 		echo 'Username not found';
 		echo $passencrypt;
-		echo $query;
+		echo $numrows;
 }
 	//*/
 
