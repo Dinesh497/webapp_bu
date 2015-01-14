@@ -14,6 +14,8 @@
 	$result = mysql_query($query);
 	$count = mysql_num_rows($result);
 	
+	echo $count;
+
 	if(isset($count['username']) && isset($count['password']))
 	{
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
