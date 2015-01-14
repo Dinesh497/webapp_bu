@@ -44,7 +44,7 @@
 		
 		//$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		//$_SESSION['gebruiker'] = $gebruiker;
-		header("location:homepage.php");
+		
 	} 
 	}else{
 		echo 'Username not found';
