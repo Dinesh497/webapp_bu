@@ -11,8 +11,8 @@
 	$passencrypt = sha1($wachtwoord);
 	
 	$query = "SELECT * FROM users WHERE username='$gebruiker' and password='$passencrypt'";
-	$result = mysql_query($query);
-	$count = mysql_num_rows($result);
+	//$result = mysql_query($query);
+	$count = mysql_num_rows($query);
 	
 	
 	/*if(isset($gebruiker) && isset($passencrypt))
