@@ -10,9 +10,9 @@
 	$wachtwoord = stripslashes($wachtwoord);
 	$passencrypt = sha1($wachtwoord);
 	
-	$query = "SELECT * FROM users WHERE username='$gebruiker'";
-	$result = mysql_query($query);
-	$count = mysql_num_rows($result);
+	$query = mysql_query("SELECT * FROM users WHERE username='$gebruiker'");
+	
+	$numrows = mysql_num_rows($query);
 	
 	
 	/*if(isset($gebruiker) && isset($passencrypt))
@@ -27,7 +27,7 @@
 	*/
 	
 //
-	if($count!=0){
+	if($numrows!=0){
 		header("location:lol.php");
 		//while ($row = mysql_fetch_assoc($result)){
 		//$dbusername = $row['username'];
