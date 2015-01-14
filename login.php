@@ -34,12 +34,12 @@
 		echo $dbusername;
 		echo $dbpassword;
 	}
-}
-		//if ($gebruiker==$dbusername&&$wachtwoord==$dbpassword){
+
+		if ($gebruiker==$dbusername&&$passencrypt==$dbpassword){
 		//$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		//$_SESSION['gebruiker'] = $gebruiker;
-		//header("location:lol.php");
-		//}
+		header("location:lol.php");
+		}
 		//else{
 		//echo 'Incorrect username or password';
 		
@@ -47,6 +47,7 @@
 		//$_SESSION['gebruiker'] = $gebruiker;
 		
 	//} 
+	}
 else{
 		echo 'Username not found';
 		
