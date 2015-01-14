@@ -27,7 +27,32 @@
 	*/
 	
 //
-
+	if($count!=0){
+	
+		while ($row = mysql_fetch_assoc($result)){
+		$dbusername = $row['username'];
+		$dbpassword = $row['password'];
+		
+		echo $dbusername;
+		echo $dbpassword;
+	}
+		//if ($gebruiker==$dbusername&&$wachtwoord==$dbpassword){
+		//$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
+		//$_SESSION['gebruiker'] = $gebruiker;
+		//header("location:lol.php");
+		//}
+		//else{
+		//echo 'Incorrect username or password';
+		
+		//$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
+		//$_SESSION['gebruiker'] = $gebruiker;
+		
+	//} 
+}else{
+		echo 'Username not found';
+		
+	}
+	*/
 
 	
 ?>
