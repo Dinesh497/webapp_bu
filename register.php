@@ -4,7 +4,7 @@
 	$password = stripslashes($_POST['password']);
 	$hash = md5(sha1($password));
 	
-	if (isset($username) && isset($password) {
+	if (isset($username) && isset($password)) {
 			
 
 			$asql = 'INSERT INTO users (username, password)
