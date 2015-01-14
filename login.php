@@ -15,7 +15,7 @@
 	$count = mysql_num_rows($result);
 	
 	
-	if(isset($gebruiker) && isset($passencrypt))
+	if(!isset($gebruiker) && !isset($passencrypt))
 	{
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
