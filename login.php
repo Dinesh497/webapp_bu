@@ -27,15 +27,28 @@
 	*/
 	
 
-	if($count!=1){
+	if($count!=0){
 	
-		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
+		while ($row = mysql_fetch_assoc($result))
+	{
+		$dbusername = $row['username'];
+		$dbpassword = $row['password'];
+	}
+		if ($gebruiker==$dbusername&&$passencrypt==$dbpassword){
+		//$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
-	} else{
+		}
+		else{
 		echo 'Incorrect username or password';
-		echo $count;
+		echo
+		//$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
+		//$_SESSION['gebruiker'] = $gebruiker;
+		header("location:homepage.php");
+	} else{
+		echo 'Username not found';
+		
 	}
 
-	
+	}
 ?>
