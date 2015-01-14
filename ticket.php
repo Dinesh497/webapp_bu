@@ -117,7 +117,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 	while($row = mysql_fetch_array($result, MYSQL_ASSOC)){
 	
 		?>
-		<table class='submittable'>
+		<table class='tickettable'>
 		<tr>
 		<th>Ticket ID </th>
 		<td data-title="Ticket ID"><?php echo $row['id']; ?></td>
