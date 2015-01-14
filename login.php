@@ -12,7 +12,7 @@
 	
 	$query = "SELECT * FROM users WHERE username='$gebruiker' and password='$passencrypt'";
 	$result = mysql_query($query);
-	$count = mysql_num_rows($result);
+	//$count = mysql_num_rows($result);
 	
 	
 	/*if(isset($gebruiker) && isset($passencrypt))
@@ -27,7 +27,7 @@
 	*/
 	
 
-	if($count==1){
+	if($result==1){
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
