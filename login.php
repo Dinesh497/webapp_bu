@@ -41,14 +41,15 @@
 		}
 		else{
 		echo 'Incorrect username or password';
-		echo
+		
 		//$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		//$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
-	} else{
+	} 
+	}else{
 		echo 'Username not found';
 		
 	}
 
-	}
+	
 ?>
