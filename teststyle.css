@@ -72,6 +72,15 @@ div.desc {
     line-height:40px;
     padding:5px;
 }
+div.information{
+	background: rgba(255,255,255,0.5);
+    margin: 40px;
+	margin-left: 50px;
+	width: 27px;
+    line-height:40px;
+    padding:5px;
+}
+
 div.locationtable {
     background: rgba(255,255,255,0.5);
     margin: 40px;
@@ -83,7 +92,8 @@ div.locationtable {
 .submittable {
     background: rgba(255,255,255,0.5);
 	margin: 40px;
-	width: 230px;
+	margin-top: 182px;
+	width: 254px;
 	line-height: 23px;
     padding:5px;
 }
