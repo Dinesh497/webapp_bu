@@ -33,6 +33,7 @@
 		header("location:homepage.php");
 	} else{
 		echo 'Incorrect username or password';
+		echo $result;
 	}
 
 	
