@@ -10,7 +10,7 @@
 	$wachtwoord = stripslashes($wachtwoord);
 	$passencrypt = sha1($wachtwoord);
 	
-	$query = mysql_query("SELECT * FROM users WHERE username='$gebruiker'");
+	$query = mysql_query("SELECT * FROM users WHERE username='$gebruiker' AND password='$passencrypt'");
 	$numrows = mysql_num_rows($query);
 	
 	
@@ -26,19 +26,19 @@
 	*/
 	
 //
-	if($numrows!=0){
+	if($numrows==1){
+		header("location:lol.php");
+		//while ($row = mysql_fetch_assoc($query)){
+		//$dbusername = $row['username'];
+		//$dbpassword = $row['password'];
 		
-		while ($row = mysql_fetch_assoc($query)){
-		$dbusername = $row['username'];
-		$dbpassword = $row['password'];
-		
-	}
+	//}
 
-		if ($gebruiker==$dbusername&&$passencrypt==$dbpassword){
+		//if ($gebruiker==$dbusername&&$passencrypt==$dbpassword){
 		//$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		//$_SESSION['gebruiker'] = $gebruiker;
-		header("location:lol.php");
-		}
+		//header("location:lol.php");
+		//}
 		//else{
 		//echo 'Incorrect username or password';
 		
