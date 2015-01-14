@@ -20,6 +20,30 @@ include ("nav.php");
 <body>
 
 
+
+<?php
+	if (!empty($_POST['submitform'])) {
+		$id = $_POST['id'];
+			$username = $_POST['username'];
+			$Password = $_POST['password'];
+
+			$asql = 'INSERT INTO users (id, username, password)
+					VALUES (\'' . $id .'\',\'' . $username .'\', SHA1(\'' . $password .'\'))';
+
+			@mysql_query($asql);
+				if(!mysql_error())
+									{
+									
+										echo '<br><br><br>Account has been made.';
+									}
+									else
+									{
+										die('Error: ' . mysql_error()); 
+										
+									}
+	} else {
+?>
+
 <form name="submitform"  action="account.php" method="POST">
 	<table class='submittable'  >
 		<tr>
@@ -42,25 +66,7 @@ include ("nav.php");
 	
 </form>
 <?php
-
-$id = $_POST['id'];
-$username = $_POST['username'];
-$Password = $_POST['password'];
-
-$asql = 'INSERT INTO users (id, username, password)
-		VALUES (\'' . $id .'\',\'' . $username .'\', SHA1(\'' . $password .'\'))';
-
-@mysql_query($asql);
-	if(!mysql_error())
-						{
-						
-							echo '<br><br><br>Account has been made.';
-						}
-						else
-						{
-							die('Error: ' . mysql_error()); 
-							
-						}
+}
 ?>
 
 </body>
