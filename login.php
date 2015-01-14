@@ -13,7 +13,7 @@
 	$query = mysql_query("SELECT * FROM users WHERE username='$gebruiker'");
 	$numrows = mysql_num_rows($query);
 	
-	echo $numrows;
+	
 	/*if(isset($gebruiker) && isset($passencrypt))
 	{
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
@@ -26,14 +26,14 @@
 	*/
 	
 //
-	//if($numrows!=0){
-		//header("location:lol.php");
+	if($numrows!=0){
+		header("location:lol.php");
 		//while ($row = mysql_fetch_assoc($result)){
 		//$dbusername = $row['username'];
 		//$dbpassword = $row['password'];
 		//echo $dbusername;
 		//echo $dbpassword;
-	//}
+	}
 		//if ($gebruiker==$dbusername&&$wachtwoord==$dbpassword){
 		//$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		//$_SESSION['gebruiker'] = $gebruiker;
