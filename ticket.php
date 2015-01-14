@@ -108,7 +108,7 @@ $ticket = $_GET['ticket'];
 </form>
 </tr>-->
 <div class="information">
-test ofzo
+Add some feedback in description after fixing the problem and change the status to closed if the problem is fixed.
 </div>
 
 <form name="submitform"  action="editticket.php" method="POST">
