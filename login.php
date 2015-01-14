@@ -11,8 +11,8 @@
 	$passencrypt = sha1($wachtwoord);
 	
 	$query = "SELECT * FROM users WHERE username='$gebruiker'";
-	//$result = mysql_query($query);
-	$count = mysql_num_rows($query);
+	$result = mysql_query($query);
+	$count = mysql_num_rows($result);
 	
 	
 	/*if(isset($gebruiker) && isset($passencrypt))
@@ -27,7 +27,8 @@
 	*/
 	
 
-	if($count==1){
+	if($count!=1){
+	
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
