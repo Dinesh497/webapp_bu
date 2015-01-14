@@ -6,7 +6,7 @@ include ("nav.php");
 		header('Location:index.php');
 		exit;
 	}
-	
+require ('fpdf.php');
 
 
 ?>
@@ -17,10 +17,15 @@ include ("nav.php");
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <body>
 
+<?php
 
+$pdf = new FPDF();
+$pdf->AddPage();
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(40,10,'Hello World!');
+$pdf->Output();
 
-
-
+?>
 
 </body>
 
