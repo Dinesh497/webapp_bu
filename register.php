@@ -14,13 +14,13 @@
 				if(!mysql_error())
 									{
 									
-										echo '<br><br><br>Account has been made.';
-										header("location:account.php");
+										echo '<br><br><br>Account has been made, returning....';
+										header("refresh:5; url=account.php");
 									}
 									else
 									{
 										die('Error: ' . mysql_error()); 
-										
+										header("refresh:5; url=location.php");
 									}
 	} else 
 ?>
