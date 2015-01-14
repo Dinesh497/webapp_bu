@@ -44,7 +44,7 @@ $ticket = $_GET['ticket'];
 		td { 
 			/* Behave  like a "row" */
 			border: none;
-			border-bottom: 1px solid ; 
+			border-bottom:; 
 			position: relative;
 			padding-left: 50%; 
 		}
