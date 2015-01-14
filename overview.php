@@ -1,11 +1,12 @@
 <!--<!doctype html>-->
 <?php
-include ("session.php");
-include ("nav.php");
+//include ("session.php");
+/*include ("nav.php");
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
 		exit;
 	}
+	*/
 require ('fpdf17/fpdf.php');
 
 
