@@ -27,7 +27,8 @@
 	
 //
 	if($numrows==1){
-		header("location:lol.php");
+		header("location:homepage.php");
+		$_SESSION['gebruiker'] = $gebruiker;
 		//while ($row = mysql_fetch_assoc($query)){
 		//$dbusername = $row['username'];
 		//$dbpassword = $row['password'];
