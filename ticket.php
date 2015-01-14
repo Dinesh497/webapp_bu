@@ -107,6 +107,9 @@ $ticket = $_GET['ticket'];
 	</td>
 </form>
 </tr>-->
+<div class="information">
+test ofzo
+</div>
 
 <form name="submitform"  action="editticket.php" method="POST">
 <?php
