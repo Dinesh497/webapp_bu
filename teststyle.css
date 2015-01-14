@@ -166,6 +166,14 @@ div.desc {
     width: 120px;
     margin: 5px;
 }
+div.information{
+background: rgba(255,255,255,0.5);
+margin: 36px;
+margin-left: 50px;
+width: 241px;
+line-height: 33px;
+padding: 5px;
+}
 .submittable {
     background: rgba(238, 238, 238, 1);
     margin: 40px;
@@ -277,6 +285,14 @@ div.desc {
     width: 120px;
     margin: 5px;
 }
+div.information{
+background: rgba(255,255,255,0.5);
+margin: 36px;
+margin-left: 50px;
+width: 370px;
+line-height: 33px;
+padding: 5px;
+}
 .submittable {
 	background: rgba(238, 238, 238, 1);
 	margin: 40px;
@@ -290,7 +306,7 @@ div.desc {
 	margin: 40px;
 	margin-top: 55px;
 	
-	width: 254px;
+	width: 395px;
 	line-height: 23px;
     padding:5px;
 }
