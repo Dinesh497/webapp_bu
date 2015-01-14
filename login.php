@@ -49,7 +49,7 @@
 	}
 else{
 		echo 'Username not found';
-		
+		echo $passencrypt;
 }
 	//*/
 
