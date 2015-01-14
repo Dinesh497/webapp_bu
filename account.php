@@ -22,13 +22,12 @@ include ("nav.php");
 
 
 <?php
-	if (isset($_GET['id']) &&  isset($_GET['username']) && isset($_GET['password'])) {
-			$id = $_GET['id'];
+	if (isset($_GET['username']) && isset($_GET['password'])) {
 			$username = $_GET['username'];
 			$Password = $_GET['password'];
 
-			$asql = 'INSERT INTO users (id, username, password)
-					VALUES (\'' . $id .'\',\'' . $username .'\', SHA1(\'' . $password .'\'))';
+			$asql = 'INSERT INTO users (username, password)
+					VALUES (\'' . $username .'\', SHA1(\'' . $password .'\'))';
 
 			@mysql_query($asql);
 				if(!mysql_error())
@@ -46,11 +45,6 @@ include ("nav.php");
 
 <form name="submitform"  action="account.php" method="get">
 	<table class='submittable'  >
-		<tr>
-		<td>ID :</td>
-		<td><input name="id" type="text" value=""></td>
-		</tr>
-		<tr>
 		<td>Username :</td>
 		<td><input name="username" type="text" value=""></td>
 		</tr>
