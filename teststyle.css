@@ -73,12 +73,12 @@ div.desc {
     padding:5px;
 }
 div.information{
-	background: rgba(255,255,255,0.5);
-    margin: 40px;
-	margin-left: 50px;
-	width: 27px;
-    line-height:40px;
-    padding:5px;
+background: rgba(255,255,255,0.5);
+margin: 36px;
+margin-left: 50px;
+width: 241px;
+line-height: 33px;
+padding: 5px;
 }
 
 div.locationtable {
