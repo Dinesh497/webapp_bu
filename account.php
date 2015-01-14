@@ -25,7 +25,7 @@ include ("nav.php");
 	if (isset($_GET['username']) && isset($_GET['password'])) {
 			$username = stripslashes($_GET['username']);
 			$password = stripslashes($_GET['password']);
-			$hash = sha1($password);
+			$hash = md5(sha1($password));
 
 			$asql = 'INSERT INTO users (username, password)
 					VALUES (\'' . $username .'\', (\'' . $hash .'\'))';
