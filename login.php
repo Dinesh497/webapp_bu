@@ -15,7 +15,7 @@
 	$count = mysql_num_rows($result);
 	
 	
-	if(!isset($gebruiker) && !isset($passencrypt))
+	/*if(isset($gebruiker) && isset($passencrypt))
 	{
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
@@ -24,8 +24,9 @@
 	} else{
 		echo 'Incorrect username or password';
 	}
+	*/
 	
-/*
+
 	if(!$count==1){
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
@@ -33,6 +34,6 @@
 	} else{
 		echo 'Incorrect username or password';
 	}
-	*/
+
 	
 ?>
