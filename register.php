@@ -19,7 +19,7 @@
 									}
 									else
 									{
-										die('Error: ' . mysql_error()); 
+										echo('Error: ' . mysql_error()); 
 										header("refresh:5; url=location.php");
 									}
 	} else 
