@@ -27,7 +27,7 @@
 	
 //
 	if($numrows!=0){
-		header("location:lol.php");
+		
 		while ($row = mysql_fetch_assoc($query)){
 		$dbusername = $row['username'];
 		$dbpassword = $row['password'];
