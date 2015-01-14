@@ -50,7 +50,7 @@ include ("nav.php");
 		</tr>
 		<tr>
 		<td>Password :</td>
-		<td><input name="password" type="text" value=""></td>
+		<td><input name="password" type="password" value=""></td>
 		</tr>
 
 
