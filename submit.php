@@ -28,7 +28,7 @@
 					
 @mysql_query($sSQL);
 	if(!mysql_error()){
-		echo '<br><br><br>You are now registerd.';
+		echo '<br><br><br>Ticket has been created. Redirecting...';
 		header("refresh:5; url=location.php");
 		}
 	else
