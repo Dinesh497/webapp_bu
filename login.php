@@ -37,7 +37,7 @@
 		if ($gebruiker==$dbusername&&$passencrypt==$dbpassword){
 		$_SESSION['gebruiker'] = mysql_fetch_assoc($result);
 		$_SESSION['gebruiker'] = $gebruiker;
-		header("location:homepage.php");
+		header("location:lol.php");
 		}
 		else{
 		echo 'Incorrect username or password';
