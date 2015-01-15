@@ -148,7 +148,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='open'", $dbcon);
 		<td data-title="Status"> <?php echo $row['status']; ?></td>
 		<td data-title="Description"> <?php echo $row['description']; ?></td>	
 		<td data-title="Handle before"> <?php echo $row['handle_before']; ?></td>
-		<td data-title="edit"> <a href='ticket.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
+		<td data-title="edit"> <a href='overview.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
 	
 		</tr>
 		</tbody>
@@ -190,7 +190,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE known_problems='$input'", $d
 		<td data-title="Status"> <?php echo $row['status']; ?></td>
 		<td data-title="Description"> <?php echo $row['description']; ?></td>	
 		<td data-title="Handle before"> <?php echo $row['handle_before']; ?></td>
-		<td data-title="edit"> <a href='ticket.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
+		<td data-title="edit"> <a href='overview.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
 	
 		</tr>
 		</tbody>
