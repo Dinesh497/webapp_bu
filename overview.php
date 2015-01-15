@@ -12,7 +12,7 @@ function LoadData($file)
     $lines = file($file);
     $data = array();
     foreach($lines as $line)
-        $data[] = explode(';',trim($line));
+        $data[] = explode('|',trim($line));
     return $data;
 }
 
