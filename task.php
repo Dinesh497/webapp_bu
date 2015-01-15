@@ -200,7 +200,7 @@ elseif ($input=='Closed') { ?>
 </thead>
 <?php
 
-$result = mysql_query("SELECT * FROM  `tickets1` WHERE STATUS ='$input' ORDER BY DATE ASC LIMIT 25", $dbcon);
+$result = mysql_query("SELECT * FROM  `tickets1` WHERE STATUS ='$input' ORDER BY DATE DESC LIMIT 25", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		?>
 		<tbody>
