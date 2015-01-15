@@ -1,13 +1,5 @@
 <!doctype html>
-<?php
-require ("session.php");
-	if(isset($_SESSION['gebruiker'])){
-	
-		header('Location:homepage.php');
-		exit;
-	}
-	else{
-?>
+
 <title>Westcord Fashion Hotel</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,9 +47,7 @@ require ("session.php");
 
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-<?php
-}
-?>
+
 </body>
 <div id="footer">
 
