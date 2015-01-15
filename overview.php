@@ -172,7 +172,7 @@ $pdf = new PDF();
 
 
 // Column headings
-$header = array('Ticket ID', 'Created by', 'Priority', 'Location', 'Status', 'Description', 'Handle before', 'Edit');
+$header = array('Ticket ID', 'date', 'Location', 'known_problems', 'Handle before');
 // Data loading
 $data = $pdf->LoadData('Naamloos.txt');
 $pdf->SetFont('Arial','',14);
