@@ -180,7 +180,8 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='open'", $dbcon);
 
 <?php
 }
-elseif ($input=='closed') { ?>
+
+elseif ($input=='Closed') { ?>
 
 <table class='tasktable'>
 
