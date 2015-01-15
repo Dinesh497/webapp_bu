@@ -1,4 +1,11 @@
 <!doctype html>
+<?php
+include ("session.php");
+	if(isset($_SESSION['gebruiker'])){
+		header('Location:homepage.php');
+		exit;
+	}
+?>
 <title>Westcord Fashion Hotel</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
