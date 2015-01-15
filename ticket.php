@@ -167,7 +167,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE id=$ticket", $dbcon);
 		</tr>
 		<tr>
 		<th>Description:</th>
-		<td data-title="Description:"><textarea  name="description" maxlength="1000" cols="25" rows="25" style="margin: 0px; width: 100%; height: 100%;"><?php echo $row['description']; ?></textarea></td>
+		<td data-title="Description:"><textarea  name="description" maxlength="1000" cols="25" rows="6" style="margin: 0px; width: 100%; height: 100%;"><?php echo $row['description']; ?></textarea></td>
 		</tr>
 		<tr>
 		<th>Image:</th>
