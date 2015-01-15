@@ -18,7 +18,7 @@ include ("nav.php");
 <body>
 
 <div class="img">
-      <a target="" href="overview.php"> 
+      <a target="" href="check.php"> 
       <img src="images\task.png" class="img-responsive" alt="Cinque Terre" width="220" height="200"> 
 	  </a>
 	  <div class="desc">Add a description of the image here</div>
