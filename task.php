@@ -151,7 +151,7 @@ if (empty ($input)){ ?>
 <th>Edit &nbsp;</th>
 </tr>
 </thead>
-<div class="scrollit">
+
 <?php
 
 $result = mysql_query("SELECT * FROM tickets1 WHERE status='open'", $dbcon);
@@ -177,7 +177,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='open'", $dbcon);
 	}
 ?>
 </table>
-</div>
+
 <?php
 }
 else { ?>
