@@ -135,7 +135,7 @@ if (empty ($input)){ ?>
 </thead>
 <?php
 
-$result = mysql_query("SELECT * FROM tickets1 WHERE known_problems='$input'", $dbcon);
+$result = mysql_query("SELECT * FROM tickets1 WHERE status='open'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		?>
 		<tbody>
