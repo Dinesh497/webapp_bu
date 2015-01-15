@@ -613,6 +613,10 @@ div.information{
     line-height:40px;
     padding:5px;
 }
+.scrollit {
+    overflow:scroll;
+    height:100px;
+}
 
 .logout {
     background: rgba(255,255,255,0.5);

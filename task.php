@@ -137,7 +137,7 @@ if (empty ($input)){ ?>
 
 
 <table class='tasktable'>
-
+<div class="scrollit">
 <form>
 <thead>
 <tr>
@@ -174,6 +174,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='open'", $dbcon);
 		
 		<?php
 	}
+echo "<div class="scrollit">";
 echo "</table>";//tabel sluiten
 }
 else { ?>
