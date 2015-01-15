@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-include ("session.php");
+require ("session.php");
 	if(isset($_SESSION['gebruiker'])){
 		header('Location:homepage.php');
 		exit;
