@@ -1,7 +1,6 @@
 <?php
 
 require ('fpdf17/fpdf.php');
-require ('check.php');
 
 class PDF extends FPDF
 {
@@ -161,7 +160,6 @@ function PrintChapter($num, $title, $file)
 // Instanciation of inherited class
 $pdf = new PDF();
 
-
 //$pdf->AliasNbPages();
 //for($i=1;$i<=40;$i++)
 //	$pdf->Cell(0,10,'Printing line number '.$i,0,1);
@@ -174,7 +172,7 @@ $pdf = new PDF();
 
 
 // Column headings
-$header = array('Country', 'Capital', 'Area (sq km)', 'Pop. (thousands)');
+$header = array('Ticket ID', 'Created by', 'Priority', 'Location', 'Status', 'Description', 'Handle before', 'Edit');
 // Data loading
 $data = $pdf->LoadData('Naamloos.txt');
 $pdf->SetFont('Arial','',14);
