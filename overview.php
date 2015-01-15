@@ -174,7 +174,7 @@ $pdf = new PDF();
 // Column headings
 $header = array('Ticket ID', 'date', 'Location', 'known_problems', 'Handle before');
 // Data loading
-$data = $pdf->LoadData('Naamloos.txt');
+$data = $pdf->LoadData('tickets1.txt');
 $pdf->SetFont('Arial','',14);
 $pdf->AddPage();
 $pdf->BasicTable($header,$data);
