@@ -22,12 +22,19 @@ include ("nav.php");
 
 <select name="input">
 	<option value=""></option>
-	<option value="Open">Open</option>
-	<option value="Pending">Pending</option>
-	<option value="Closed">Closed</option>
+	<option value="lamp">Lamp</option>
+	<option value="mini-bar">Minibar</option>
+	<option value="remote control">Remote control</option>
+	<option value="Television">Television</option>
+	<option value="sink">Sink</option>
+	<option value="shower">Shower</option>
+	<option value="bathtub">Bathtub</option>
+	<option value="window">Window</option>
+	<option value="chair/couch">Chair/couch</option>
 </select>
 <br>
 <button input type="submit" class="pure-button pure-button-primary">Search status</button>
+
 
 </div>
 </form>
