@@ -72,6 +72,8 @@ function PrintChapter($num, $title, $file)
     $this->ChapterBody($file);
 }
 }
+
+
 // Instanciation of inherited class
 $pdf = new FPDF();
 //$pdf->AliasNbPages();
@@ -79,14 +81,12 @@ $pdf->AddPage();
 $pdf->SetFont('Arial','B',16);
 //for($i=1;$i<=40;$i++)
 //	$pdf->Cell(0,10,'Printing line number '.$i,0,1);
-	
-
 //$pdf->Cell(50,10,'Hello World!');*/
 $title = '20000 Leagues Under the Seas';
 $pdf->SetTitle($title);
 $pdf->SetAuthor('Jules Verne');
-$pdf->PrintChapter(1,'A RUNAWAY REEF','20k_c1.txt');
-$pdf->PrintChapter(2,'THE PROS AND CONS','20k_c2.txt');
+$pdf->PrintChapter(1,'A RUNAWAY REEF','Naamloos.rtf');
+$pdf->PrintChapter(2,'THE PROS AND CONS','Naamloos.rtf');
 $pdf->Output();
 
 ?>
