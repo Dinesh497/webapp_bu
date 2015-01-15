@@ -17,8 +17,7 @@ include ("nav.php");
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 <style type="text/css">
-    textarea { border: none;
-background-color: rgb(238, 238, 238)	}
+   
 </style>
 	<style>
 	

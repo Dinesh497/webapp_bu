@@ -9,6 +9,8 @@ ul{
  margin: 0;
  padding: 0;
  }
+ textarea { border: 1px;
+background-color: rgb(238, 238, 238)	}
 div.img {
 margin-top: 71px;
 margin-bottom: 190px;
@@ -141,6 +143,8 @@ div.img {
 	text-align: center;
 	background-color:  #CCFFCC;
 }
+textarea { border: 1px;
+background-color: rgb(238, 238, 238)	}
 
 div.img2 {
 	margin-top: -163px;
@@ -244,6 +248,8 @@ margin-top: -74px;
 	font-family: calibri;
 	width: 100%;
 }
+ textarea { border: 1px;
+background-color: rgb(238, 238, 238)	}
 ul{
  margin: 0;
  padding: 0;
@@ -381,6 +387,8 @@ ul{
  margin: 0;
  padding: 0;
  }
+  textarea { border: none;
+background-color: rgb(238, 238, 238)	}
 div.img {
 margin-top: 188px;
 margin-bottom: 188px;
@@ -542,6 +550,8 @@ div.information{
     line-height:40px;
     padding:5px;
 }
+ textarea { border: none;
+background-color: rgb(238, 238, 238)	}
 .tasktable {
    
      background: transparent;
