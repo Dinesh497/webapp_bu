@@ -3,8 +3,8 @@
 	require ('connection.php');
 
 	
-	$gebruiker = mysql_real_escape_string $_POST['username'];
-	$wachtwoord = mysql_real_escape_string $_POST['password'];
+	$gebruiker = $_POST['username'];
+	$wachtwoord = $_POST['password'];
 	
 	$gebruiker = stripslashes($gebruiker);
 	$wachtwoord = stripslashes($wachtwoord);
