@@ -36,6 +36,8 @@ include ("nav.php");
 <button input type="submit" class="pure-button pure-button-primary">Search status</button>
 
 
+
+
 </div>
 </form>
 
