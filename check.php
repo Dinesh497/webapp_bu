@@ -128,7 +128,7 @@ if (empty ($input)){ ?>
 <th>Priority &nbsp;</th>
 <th>Location &nbsp;</th>
 <th>Status &nbsp;</th>
-<th>Description &nbsp;</th>
+<th>Known problems &nbsp;</th>
 <th>Handle before &nbsp;</th>
 <th>Edit &nbsp;</th>
 </tr>
@@ -146,7 +146,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='open'", $dbcon);
 		<td data-title="Priority"> <?php echo $row['priority']; ?></td>
 		<td data-title="Location"> <?php echo $row['location']; ?> </td>
 		<td data-title="Status"> <?php echo $row['status']; ?></td>
-		<td data-title="Description"> <?php echo $row['description']; ?></td>	
+		<td data-title="Known problems"> <?php echo $row['known_problems']; ?></td>	
 		<td data-title="Handle before"> <?php echo $row['handle_before']; ?></td>
 		<td data-title="edit"> <a href='overview.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
 	
@@ -170,7 +170,7 @@ else { ?>
 <th>Priority &nbsp;</th>
 <th>Location &nbsp;</th>
 <th>Status &nbsp;</th>
-<th>Description &nbsp;</th>
+<th>Known Problems &nbsp;</th>
 <th>Handle before &nbsp;</th>
 <th>Edit &nbsp;</th>
 </tr>
@@ -188,7 +188,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE known_problems='$input'", $d
 		<td data-title="Priority"> <?php echo $row['priority']; ?></td>
 		<td data-title="Location"> <?php echo $row['location']; ?> </td>
 		<td data-title="Status"> <?php echo $row['status']; ?></td>
-		<td data-title="Description"> <?php echo $row['description']; ?></td>	
+		<td data-title="Known problems"> <?php echo $row['known_problems']; ?></td>	
 		<td data-title="Handle before"> <?php echo $row['handle_before']; ?></td>
 		<td data-title="edit"> <a href='overview.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
 	
