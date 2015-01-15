@@ -257,7 +257,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
 		<td data-title="Priority"> <?php echo $row['priority']; ?></td>
 		<td data-title="Location"> <?php echo $row['location']; ?> </td>
 		<td data-title="Status"> <?php echo $row['status']; ?></td>
-		<td data-title="Description"><textarea name="description" maxlength="1000" cols="25" rows="6" style="margin: 0px; width: 100%; height: 100%;"readonly><?php echo $row['description']; ?></textarea></td>	
+		<td data-title="Description"><textarea name="description" maxlength="1000" cols="25" rows="6" style="margin: 0px; width: 100%;"readonly><?php echo $row['description']; ?></textarea></td>	
 		<td data-title="Handle before"> <?php echo $row['handle_before']; ?></td>
 		<td data-title="edit"> <a href='ticket.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
 	
