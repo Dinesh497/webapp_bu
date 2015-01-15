@@ -203,6 +203,7 @@ echo "</table>";//tabel sluiten
 ?>
 
 <?php
+/*
 $F = fopen('myfile.txt' , 'w'); // open for write
 $delim = "\t"; //set delim eg tab
 $res = mysql_query("SELECT id, date, location, known_problems, handle_before FROM tickets1 WHERE known_problems='$input'");
@@ -210,7 +211,7 @@ while ($row=mysql_fetch_row($res)){
 	fwrite($F, join($delim, $row). "\n");
 }
 fclose($F);
-
+*/
 ?>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
