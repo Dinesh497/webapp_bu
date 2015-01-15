@@ -85,8 +85,8 @@ $pdf->SetFont('Arial','B',16);
 $title = '20000 Leagues Under the Seas';
 $pdf->SetTitle($title);
 $pdf->SetAuthor('Jules Verne');
-$pdf->PrintChapter(1,'A RUNAWAY REEF','Naamloos.rtf');
-$pdf->PrintChapter(2,'THE PROS AND CONS','Naamloos.rtf');
+$pdf->PrintChapter(1,'A RUNAWAY REEF','Naamloos.txt');
+$pdf->PrintChapter(2,'THE PROS AND CONS','Naamloos.txt');
 $pdf->Output();
 
 ?>
