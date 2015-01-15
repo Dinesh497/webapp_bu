@@ -8,7 +8,7 @@ class PDF extends FPDF
 function Header()
 {
     // Logo
-    $this->Image('images/logo.png',10,6,30);
+    $this->Image('images/logo.jpg',10,6,30);
     // Arial bold 15
     $this->SetFont('Arial','B',15);
     // Move to the right
@@ -37,6 +37,7 @@ $pdf->SetFont('Arial','B',16);
 for($i=1;$i<=40;$i++)
 	$pdf->Cell(0,10,'Printing line number '.$i,0,1);
 	
+
 $pdf->Cell(50,10,'Hello World!');
 $pdf->Output();
 
