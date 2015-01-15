@@ -2,7 +2,7 @@
 <?php
 
 	if(isset($_SESSION['gebruiker'])){
-	require ("session.php");
+		include ("session.php");
 		header('Location:homepage.php');
 		exit;
 	}
