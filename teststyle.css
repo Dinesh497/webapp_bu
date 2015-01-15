@@ -501,6 +501,7 @@ ul{
  padding: 0;
  }
 div.img {
+	display: none;
     margin-top: 130px;
 	margin-bottom: 187px;
 	margin-right: 515px;
@@ -523,6 +524,7 @@ div.img2 {
 	float: right;
 	text-align: center;
 	background-color: ;
+	display: none;
 }
 div.desc {
     text-align: center;
