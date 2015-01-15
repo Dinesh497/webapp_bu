@@ -1,11 +1,12 @@
 <!doctype html>
 <?php
-
+require ("session.php");
 	if(isset($_SESSION['gebruiker'])){
-		include ("session.php");
+	
 		header('Location:homepage.php');
 		exit;
 	}
+	else{
 ?>
 <title>Westcord Fashion Hotel</title>
 
@@ -54,7 +55,9 @@
 
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-
+<?php
+}
+?>
 </body>
 <div id="footer">
 
