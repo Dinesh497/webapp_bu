@@ -65,11 +65,11 @@ function ChapterBody($file)
     $this->Cell(0,5,'(end of excerpt)');
 }
 
-function PrintChapter($num, $title)
+function PrintChapter($num, $title, $file)
 {
     $this->AddPage();
     $this->ChapterTitle($num,$title);
-    //$this->ChapterBody($file);
+    $this->ChapterBody($file);
 }
 }
 
@@ -85,8 +85,8 @@ $pdf->SetFont('Arial','B',16);
 $title = '20000 Leagues Under the Seas';
 $pdf->SetTitle($title);
 $pdf->SetAuthor('Jules Verne');
-$pdf->PrintChapter(1,'A RUNAWAY REEF');
-$pdf->PrintChapter(2,'THE PROS AND CONS');
+$pdf->PrintChapter(1,'A RUNAWAY REEF','Naamloos.txt');
+$pdf->PrintChapter(2,'THE PROS AND CONS','Naamloos.txt');
 $pdf->Output();
 
 ?>
