@@ -1,6 +1,7 @@
 <?php
 
 require ('fpdf17/fpdf.php');
+require ('check.php');
 
 class PDF extends FPDF
 {
