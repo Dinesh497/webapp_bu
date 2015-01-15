@@ -75,7 +75,7 @@ function PrintChapter($num, $title, $file)
 
 
 // Instanciation of inherited class
-$pdf = new FPDF();
+$pdf = new PDF();
 //$pdf->AliasNbPages();
 //$pdf->AddPage();
 //$pdf->SetFont('Arial','B',16);
