@@ -135,7 +135,7 @@ if (empty ($input)){ ?>
 </thead>
 <?php
 
-$result = mysql_query("SELECT * FROM tickets1 WHERE known_problems=$input", $dbcon);
+$result = mysql_query("SELECT * FROM tickets1 WHERE known_problems='$input'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		?>
 		<tbody>
@@ -177,7 +177,7 @@ else { ?>
 </thead>
 <?php
 
-$result = mysql_query("SELECT * FROM tickets1 WHERE status='$input'", $dbcon);
+$result = mysql_query("SELECT * FROM tickets1 WHERE known_problems='$input'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		?>
 		<tbody>
