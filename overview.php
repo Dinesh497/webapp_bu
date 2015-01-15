@@ -37,7 +37,7 @@ $pdf->SetFont('Arial','B',16);
 for($1=1;$1<=40;$i++){
 	$pdf->Cell(0,10,'Printing line number '.$i,0,1);
 }
-$pdf->Cell(50,10,'Hello World!');
+//$pdf->Cell(50,10,'Hello World!');
 $pdf->Output();
 
 ?>
