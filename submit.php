@@ -5,16 +5,17 @@
 	
 
 	
-	$ticket = mysql_real_escape_string $_POST['ticket'];
-	$date = mysql_real_escape_string $_POST['date'];
-	$user = mysql_real_escape_string $_SESSION['gebruiker'];
-	$status = mysql_real_escape_string $_POST['status'];
-	$priority = mysql_real_escape_string $_POST['priority'];
-	$location = mysql_real_escape_string $_POST['location'];
-	$room = mysql_real_escape_string $_POST['room'];
-	$KP = mysql_real_escape_string $_POST['known'];
-	$description = mysql_real_escape_string $_POST['description'];
-	$handledate = mysql_real_escape_string $_POST['hdate'];
+	$ticket = $_POST['ticket'];
+	$date = $_POST['date'];
+	$user = $_SESSION['gebruiker'];
+	$status = $_POST['status'];
+	$priority = $_POST['priority'];
+	$location = $_POST['location'];
+	$room = $_POST['room'];
+	$KP = $_POST['known'];
+	$description = $_POST['description'];
+	$handledate = $_POST['hdate'];
+	//$map = addslashes(file_get_contents($_FILES[$row['room_map']]);
 	$imgName = mysql_real_escape_string($_FILES["image"]["name"]);
 	$imgData = mysql_real_escape_string(file_get_contents($_FILES["image"]["tmp_name"]));
 	$imgtype = mysql_real_escape_string($_FILES["image"]["type"]);
