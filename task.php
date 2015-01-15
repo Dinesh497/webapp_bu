@@ -16,9 +16,7 @@ include ("nav.php");
 <link rel='stylesheet' href='teststyle.css' />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-<style type="text/css">
-   
-</style>
+
 	<style>
 	
 	/* 
