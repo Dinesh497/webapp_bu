@@ -1,4 +1,11 @@
 <!doctype html>
+<?php
+if(isset($_SESSION['gebruiker'])){
+	header('Location:homepage.php');
+		exit;
+	}
+	else{
+?>
 
 <title>Westcord Fashion Hotel</title>
 
