@@ -1,12 +1,12 @@
 <!doctype html>
 <?php
-include ("session.php");
+session_start();
 	if(isset($_SESSION['gebruiker'])){
 	
 		header('Location:homepage.php');
 		exit;
 	}
-else {	
+
 ?>
 
 <title>Westcord Fashion Hotel</title>
@@ -62,9 +62,6 @@ else {
 <div id="footer">
 
 </div>
-<?
 
-}
-?>
 
 </html>
