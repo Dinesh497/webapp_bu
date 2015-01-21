@@ -6,7 +6,7 @@ include ("session.php");
 		header('Location:homepage.php');
 		exit;
 	}
-	
+else {	
 ?>
 
 <title>Westcord Fashion Hotel</title>
@@ -62,4 +62,9 @@ include ("session.php");
 <div id="footer">
 
 </div>
+<?
+
+}
+?>
+
 </html>
