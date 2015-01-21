@@ -1,7 +1,9 @@
 <!doctype html>
 <?php
-if(isset($_SESSION['gebruiker'])){
-	header('Location:homepage.php');
+require ("session.php");
+	if(isset($_SESSION['gebruiker'])){
+	
+		header('Location:homepage.php');
 		exit;
 	}
 	else{
