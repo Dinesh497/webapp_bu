@@ -58,6 +58,8 @@ include ("session.php");
 
 
 </body>
+<?php}
+?>
 <div id="footer">
 
 </div>
