@@ -49,8 +49,8 @@
 	//} 
 	}
 else{
-		echo 'Username not found';
-		echo $passencrypt;
+		echo 'Username and/or password incorrect';
+		
 		
 }
 	//*/
