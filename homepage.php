@@ -2,9 +2,9 @@
 <?php
 include ("session.php");
 include ("nav.php");
-	if(  isset($_SESSION['gebruiker'])){
+	/*if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
-		exit;
+		exit;*/
 	}
 
 
