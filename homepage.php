@@ -2,9 +2,9 @@
 <?php
 include ("session.php");
 include ("nav.php");
-	/*if( ! isset($_SESSION['gebruiker'])){
+	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
-		exit;*/
+		exit;
 	}
 
 
@@ -23,7 +23,7 @@ include ("nav.php");
 	<td>
 	<table class='logout' >
 		<tr>
-		<td><?php echo $_SESSION['gebruiker']; ?> is logged in!</td>
+		<td><?php //echo $_SESSION['gebruiker']; ?> is logged in!</td>
 		<tr>
 		
 		<td><button input type="submit" class="pure-button pure-button-primary">Logout</button></td>
