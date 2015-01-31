@@ -32,6 +32,10 @@ include ("nav.php");
 		<td>Password :</td>
 		<td><input name="password" type="password" value=""></td>
 		</tr>
+		<tr>
+		<td>Department :</td>
+		<td><input name="department" type="text" value=""></td>
+		</tr>
 
 
 
