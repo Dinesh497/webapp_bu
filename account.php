@@ -34,7 +34,12 @@ include ("nav.php");
 		</tr>
 		<tr>
 		<td>Department :</td>
-		<td><input name="department" type="text" value=""></td>
+		<td><select name="department">
+			<option value=""></option>
+			<option value="Technische Dienst">Technische Dienst</option>
+			<option value="Housekeeping">Housekeeping</option>
+			</select>
+		</td>
 		</tr>
 
 
