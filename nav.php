@@ -12,7 +12,7 @@ include ("session.php");
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 
-<?
+<?php
 		$department = "Technische Dienst"; 
 		if ($_SESSION['department'] ==$department){
 		?>
@@ -54,7 +54,7 @@ include ("session.php");
     </div>
 </div>
 </body>
-<?
+<?php
 }
 else {
 ?>
