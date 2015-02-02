@@ -12,7 +12,10 @@ include ("session.php");
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 
-
+<?
+		$department = "Technische Dienst"; 
+		if ($_SESSION['department'] ==$department){
+		?>
 <script>
     $(document).ready(function(){
         $("#nav-mobile").html($("#nav-main").html());
@@ -28,10 +31,7 @@ include ("session.php");
     });
 </script>
 <body>
-<?
-		$department = "Technische Dienst"; 
-		if ($_SESSION['department'] ==$department){
-		?>
+
 <div id="main">
     <div class="container1">
         <div id="nav-trigger">
@@ -53,6 +53,7 @@ include ("session.php");
         </section>
     </div>
 </div>
+</body>
 <?
 }
 else {
@@ -79,10 +80,11 @@ else {
         </section>
     </div>
 </div>
+</body>
 <?
 }
 ?>
-</body>
+
 
 
 
