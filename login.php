@@ -28,7 +28,9 @@
 //
 	if($numrows==1){
 		header("location:homepage.php");
+		$_SESSION['department'] = $numrows['department'];
 		$_SESSION['gebruiker'] = $gebruiker;
+		
 		//while ($row = mysql_fetch_assoc($query)){
 		//$dbusername = $row['username'];
 		//$dbpassword = $row['password'];
