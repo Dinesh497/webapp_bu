@@ -28,11 +28,7 @@ include ("session.php");
     });
 </script>
 <body>
-<?php
-		$department = "Technische Dienst";
-		$userDP =$_SESSION['department']; 
-		if ($userDP==$department){
-		?>
+
 <div id="main">
     <div class="container1">
         <div id="nav-trigger">
@@ -55,36 +51,9 @@ include ("session.php");
     </div>
 </div>
 </body>
-<?php
-}
-else {
-?>
-<div id="main">
-    <div class="container1">
-        <div id="nav-trigger">
-            <span>Menu</span>
-        </div>
-        <nav id="nav-main">
-            <ul>
-                <li><a href="homepage.php">Home</a></li>
-                <li><a href="location.php">Add Task</a></li>
-				<li><a href="task.php">Check task</a></li>
-                <li><a href="settings.php">Settings</a></li>
-                <li><a href="logout.php">Logout</a></li>
-                
-            </ul>
-        </nav>
-        <nav id="nav-mobile"></nav>
 
-        <section>
-        
-        </section>
-    </div>
-</div>
-</body>
-<?
-}
-?>
+
+
 
 
 
