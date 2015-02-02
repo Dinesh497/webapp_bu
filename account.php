@@ -28,8 +28,8 @@ exit;
 
 
 
-<form name="form1"  action="register.php" method="POST">
-	<table class='submittable'  >
+<form name="submitform"  action="register.php" method="POST">
+	<table class='table'  >
 		<td>Username :</td>
 		<td><input name="username" type="text" value=""></td>
 		</tr>
