@@ -27,10 +27,11 @@
 	
 //
 	if($numrows==1){
-		header("location:homepage.php");
-		$_SESSION['department'] = $numrows['department'];
-		$_SESSION['gebruiker'] = $gebruiker;
 		
+		$_SESSION['department'] = $numrows['department'];
+		echo $_SESSION['department'];
+		$_SESSION['gebruiker'] = $gebruiker;
+		header("location:homepage.php");
 		//while ($row = mysql_fetch_assoc($query)){
 		//$dbusername = $row['username'];
 		//$dbpassword = $row['password'];
