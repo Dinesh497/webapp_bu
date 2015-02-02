@@ -1,7 +1,7 @@
 <!doctype html>
 <?php
 include ("session.php");
-require ("nav.php");
+include ("nav.php");
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
 		exit;
