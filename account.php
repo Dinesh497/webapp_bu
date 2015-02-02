@@ -28,9 +28,9 @@ exit;
 
 
 
-
+<table class='table'>
 <form name="submitform"  action="register.php" method="POST">
-	<table class='table'  >
+	
 		<td>Username :</td>
 		<td><input name="username" type="text" value=""></td>
 		</tr>
@@ -51,9 +51,9 @@ exit;
 
 
 		<td><button input type="submit" class="pure-button pure-button-primary">Apply</button></td>
+		</form>
 	</table>
 	
-</form>
 
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
