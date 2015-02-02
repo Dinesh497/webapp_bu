@@ -1,4 +1,8 @@
 <!doctype html>
+<?php 
+include ("session.php");
+
+?>
 
 
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
@@ -24,6 +28,35 @@
     });
 </script>
 <body>
+<?
+		$department = "Technische Dienst"; 
+		if ($_SESSION['department'] ==$department){
+		?>
+<div id="main">
+    <div class="container1">
+        <div id="nav-trigger">
+            <span>Menu</span>
+        </div>
+        <nav id="nav-main">
+            <ul>
+                <li><a href="homepage.php">Home</a></li>
+                <li><a href="location.php">Add Task</a></li>
+				<li><a href="task.php">Check task</a></li>
+                <li><a href="logout.php">Logout</a></li>
+                
+            </ul>
+        </nav>
+        <nav id="nav-mobile"></nav>
+
+        <section>
+        
+        </section>
+    </div>
+</div>
+<?
+}
+else {
+?>
 <div id="main">
     <div class="container1">
         <div id="nav-trigger">
@@ -46,6 +79,9 @@
         </section>
     </div>
 </div>
+<?
+}
+?>
 </body>
 
 
