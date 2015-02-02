@@ -114,7 +114,7 @@ else {
 	Description:
 	</td>
 	<td>
-	<textarea  name="description" maxlength="1000" cols="25" rows="6" style="margin: 0px; width: 100%; height: 100%;">></textarea>
+	<textarea  name="description" maxlength="1000" cols="25" rows="6" style="margin: 0px; width: 100%; height: 100%; background-color: white;"></textarea>
 	</td>
 	</tr>
 	<tr>
