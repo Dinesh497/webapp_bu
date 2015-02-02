@@ -1,7 +1,13 @@
 <!doctype html>
 <?php
 include ("session.php");
+if($_SESSION['department']=="Technische Dienst"){
 include ("nav.php");
+}
+else {
+header('Location:index.php');
+exit;
+}
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
 		exit;

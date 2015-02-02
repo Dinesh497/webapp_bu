@@ -1,12 +1,18 @@
 <!doctype html>
 <?php
 include ("session.php");
-include ("nav.php");
+
 
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
 		exit;
 	}
+if($_SESSION['department']=="Technische Dienst"){
+include ("nav.php");
+}
+else {
+include ("hknav.php");
+}
 
 
 $ticket = $_GET['ticket'];

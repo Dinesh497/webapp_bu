@@ -1,11 +1,17 @@
 <!doctype html>
 <?php
 include ("nav.php");
-include ("session.php");
+
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
 		exit;
 	}
+if($_SESSION['department']=="Technische Dienst"){
+	include ("nav.php");
+}
+else {
+	include ("hknav.php");
+}
 	$room_id = $_POST['location'];
 ?>
 <title>Westcord Fashion Hotel</title>
@@ -108,7 +114,7 @@ include ("session.php");
 	Description:
 	</td>
 	<td>
-	<textarea  name="description" maxlength="1000" cols="25" rows="6" width="100%"></textarea>
+	<textarea  name="description" maxlength="1000" cols="25" rows="6" style="margin: 0px; width: 100%; height: 100%;">></textarea>
 	</td>
 	</tr>
 	<tr>
