@@ -40,7 +40,7 @@ exit;
 		<td><input name="password" type="password" value=""></td>
 		</tr>
 		<tr>
-		<td>Department :</td>
+		<td>Department:</td>
 		<td><select name="department">
 			<option value=""></option>
 			<option value="Technische Dienst">Technische Dienst</option>
