@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-include ("nav.php");
+include ("session.php");
 
 	if( ! isset($_SESSION['gebruiker'])){
 		header('Location:index.php');
