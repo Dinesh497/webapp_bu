@@ -9,6 +9,9 @@ include ("session.php");
 if($_SESSION['department']=="Technische Dienst"){
 include ("nav.php");
 }
+else {
+include ("hknav.php");
+}
 
 ?>
 <title>Westcord Fashion Hotel</title>
