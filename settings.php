@@ -27,14 +27,14 @@ exit;
       <a target="" href="check.php"> 
       <img src="images\task.png" class="img-responsive" alt="Cinque Terre" width="220" height="200"> 
 	  </a>
-	  
+	  <div class="desc"></div>
 </div>
 <div class="img2">
 	<a target="" href="account.php">
 	<img src="images\adduser.png" class="img-responsive" width="220" height="200">
     
 	</a>
-	
+	<div class="desc" ></div>
 </div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
