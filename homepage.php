@@ -54,7 +54,7 @@ include ("nav.php");
       <a target="" href="task.php"> 
       <img src="images\task.png" class="img-responsive" alt="Cinque Terre" width="220" height="200"> 
 	  </a>
-	  <div class="desc">Add a description of the image here</div>
+	  <div class="desc"><?php echo $_SESSION['department']; ?></div>
 </div>
 <div class="img2">
 	<a target="" href="settings.php">

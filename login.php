@@ -28,8 +28,7 @@
 //
 	if($numrows==1){
 		
-		$_SESSION['department'] = $numrows['department'];
-		echo $_SESSION['department'];
+	
 		$_SESSION['gebruiker'] = $gebruiker;
 		header("location:homepage.php");
 		//while ($row = mysql_fetch_assoc($query)){
