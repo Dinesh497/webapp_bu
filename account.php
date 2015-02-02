@@ -14,6 +14,7 @@ include ("nav.php");
 else {
 header('Location:index.php');
 exit;
+}
 
 ?>
 <title>Westcord Fashion Hotel</title>
