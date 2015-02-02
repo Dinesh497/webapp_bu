@@ -13,8 +13,9 @@ include ("session.php");
 <script src="js/modernizr.custom.js"></script>
 
 <?php
-		$department = "Technische Dienst"; 
-		if ($_SESSION['department'] ==$department){
+		$department = "Technische Dienst";
+		$userDP =$_SESSION['department']; 
+		if ($userDP==$department){
 		?>
 <script>
     $(document).ready(function(){
