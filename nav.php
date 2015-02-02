@@ -12,11 +12,7 @@ include ("session.php");
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 
-<?php
-		$department = "Technische Dienst";
-		$userDP =$_SESSION['department']; 
-		if ($userDP==$department){
-		?>
+
 <script>
     $(document).ready(function(){
         $("#nav-mobile").html($("#nav-main").html());
@@ -32,7 +28,11 @@ include ("session.php");
     });
 </script>
 <body>
-
+<?php
+		$department = "Technische Dienst";
+		$userDP =$_SESSION['department']; 
+		if ($userDP==$department){
+		?>
 <div id="main">
     <div class="container1">
         <div id="nav-trigger">
