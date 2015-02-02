@@ -27,14 +27,14 @@ exit;
       <a target="" href="check.php"> 
       <img src="images\task.png" class="img-responsive" alt="Cinque Terre" width="220" height="200"> 
 	  </a>
-	  <div class="desc">Add a description of the image here</div>
+	  <div class="desc">Tickets uitdraaien</div>
 </div>
 <div class="img2">
 	<a target="" href="account.php">
-	<img src="images\gear.png" class="img-responsive" width="220" height="200">
+	<img src="images\adduser.png" class="img-responsive" width="220" height="200">
     
 	</a>
-	<div class="desc">Add a description of the image here</div>
+	<div class="desc">Account aanmaken</div>
 </div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
