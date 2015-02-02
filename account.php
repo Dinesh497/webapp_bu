@@ -12,8 +12,8 @@ if($_SESSION['department']=="Technische Dienst"){
 include ("nav.php");
 }
 else {
-include ("hknav.php");
-}
+header('Location:index.php');
+exit;
 
 ?>
 <title>Westcord Fashion Hotel</title>
@@ -28,7 +28,7 @@ include ("hknav.php");
 
 
 
-<form name="submitform"  action="register.php" method="POST">
+<form name="form1"  action="register.php" method="POST">
 	<table class='submittable'  >
 		<td>Username :</td>
 		<td><input name="username" type="text" value=""></td>
