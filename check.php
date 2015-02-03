@@ -119,7 +119,7 @@ include ("nav.php");
 </form>
 <?php 
 $input1 = $_POST['input1'];
-if (empty ($input)){ ?>
+if (empty ($input1)){ ?>
 
 <table class='tasktable'>
 
