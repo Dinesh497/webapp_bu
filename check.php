@@ -111,6 +111,7 @@ include ("nav.php");
 </select>
 <br>
 <button input type="submit" class="pure-button pure-button-primary">Search status</button>
+<td><a href='overview.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
 
 </div>
 </form>
