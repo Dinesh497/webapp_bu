@@ -2,6 +2,8 @@
 //include("../check.php");
 require('mysql_table.php');
 
+$input = $_GET['input'];
+
 class PDF extends PDF_MySQL_Table
 {
 function Header()
