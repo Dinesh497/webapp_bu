@@ -112,7 +112,7 @@ include ("nav.php");
 <br>
 <button input type="submit" class="pure-button pure-button-primary">Search status</button>
 <br>
-<td><a href='overview.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
+<td><a href='overview.php?ticket="<?php echo $row['id']; ?>"'>Get overview</a></td>
 </br>
 
 </div>
