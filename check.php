@@ -118,7 +118,7 @@ include ("nav.php");
 </div>
 </form>
 <?php 
-$input1 = $_POST['input'];
+$input = $_POST['input'];
 if (empty ($input)){ ?>
 
 <table class='tasktable'>
@@ -180,7 +180,7 @@ else { ?>
 </thead>
 <?php
 
-$result = mysql_query("SELECT * FROM tickets1 WHERE known_problems='$input1'", $dbcon);
+$result = mysql_query("SELECT * FROM tickets1 WHERE known_problems='$input'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		?>
 		<tbody>
