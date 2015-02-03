@@ -14,7 +14,7 @@ function Header()
 	parent::Header();
 }
 }
-$input = 'Television';
+
 //Connect to database
 mysql_connect('localhost','Beheerder','P@ssw0rd');
 mysql_select_db('webdb');
