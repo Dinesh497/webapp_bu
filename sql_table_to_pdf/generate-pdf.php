@@ -38,6 +38,6 @@ $pdf->Table('select id,  date, location, known_problems, handle_before from tick
 //$pdf->Output("C:\Users\John\Desktop/somename.pdf",'F'); 
 
 
-$pdf->Output($downloadfilename.".pdf"); 
-header('Location: '.$downloadfilename.".pdf");
+//$pdf->Output($downloadfilename.".pdf"); 
+//header('Location: '.$downloadfilename.".pdf");
 ?>
