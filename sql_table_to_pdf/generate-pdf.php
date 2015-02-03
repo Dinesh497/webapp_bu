@@ -1,6 +1,5 @@
 <?php
 include("check.php");
-include("session.php");
 require('mysql_table.php');
 
 class PDF extends PDF_MySQL_Table
@@ -25,7 +24,7 @@ mysql_select_db('webdb');
 $pdf=new PDF();
 $pdf->AddPage();
 //First table: put all columns automatically
-$pdf->Table("SELECT `id`, `date`, `location`, `known_problems`, `handle_before`  from tickets1 where known_problems ='$_SESSION['input']' order by `id`");
+$pdf->Table("SELECT `id`, `date`, `location`, `known_problems`, `handle_before`  from tickets1 where known_problems ='$input1' order by `id`");
 //$pdf->Table($result);
 $pdf->AddPage();
 //Second table: specify 3 columns

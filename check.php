@@ -97,7 +97,7 @@ include ("nav.php");
 <form action="check.php" method="POST">
 <div class ='searchtable'>
 
-<select name="input">
+<select name="input1">
 	<option value=""></option>
 	<option value="lamp">Lamp</option>
 	<option value="mini-bar">Minibar</option>
@@ -118,8 +118,7 @@ include ("nav.php");
 </div>
 </form>
 <?php 
-$input = $_POST['input'];
-$input = $_SESSION['input'];
+$input1 = $_POST['input'];
 if (empty ($input)){ ?>
 
 <table class='tasktable'>
@@ -181,7 +180,7 @@ else { ?>
 </thead>
 <?php
 
-$result = mysql_query("SELECT * FROM tickets1 WHERE known_problems='$input'", $dbcon);
+$result = mysql_query("SELECT * FROM tickets1 WHERE known_problems='$input1'", $dbcon);
 	while($row = mysql_fetch_array($result)){
 		?>
 		<tbody>
