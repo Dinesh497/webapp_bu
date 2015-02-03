@@ -1,5 +1,5 @@
 <?php
-include("../check.php");
+//include("../check.php");
 require('mysql_table.php');
 
 class PDF extends PDF_MySQL_Table
