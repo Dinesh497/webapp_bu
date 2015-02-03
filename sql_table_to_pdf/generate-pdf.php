@@ -25,10 +25,10 @@ $pdf->Table('SELECT `id`, `date`, `location`, `known_problems`, `handle_before` 
 $pdf->AddPage();
 //Second table: specify 3 columns
 $pdf->AddCol('id',40,'','C');
-$pdf->AddCol('date',40,'employees','C');
-$pdf->AddCol('location',40,'Email','C');
-$pdf->AddCol('known_problems',40,'Email','C');
-$pdf->AddCol('handle_before',40,'Email','C');
+$pdf->AddCol('date',40,'date','C');
+$pdf->AddCol('location',40,'location','C');
+$pdf->AddCol('known_problems',40,'known_problems','C');
+$pdf->AddCol('handle_before',40,'handle_before','C');
 $prop=array('HeaderColor'=>array(255,150,100),
 			'color1'=>array(210,245,255),
 			'color2'=>array(255,255,210),
