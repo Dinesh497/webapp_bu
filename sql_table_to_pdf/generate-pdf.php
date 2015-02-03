@@ -1,5 +1,6 @@
 <?php
 require('mysql_table.php');
+require('check.php');
 
 class PDF extends PDF_MySQL_Table
 {
