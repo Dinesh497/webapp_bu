@@ -1,6 +1,5 @@
 <?php
 require('mysql_table.php');
-require('check.php');
 
 class PDF extends PDF_MySQL_Table
 {
@@ -34,7 +33,7 @@ $prop=array('HeaderColor'=>array(255,150,100),
 			'color1'=>array(210,245,255),
 			'color2'=>array(255,255,210),
 			'padding'=>2);
-$pdf->Table('select id,  date, location, known_problems, handle_before from tickets1 order by id limit 0,10',$prop);
+$pdf->Table('select id,  date, location, known_problems, handle_before from tickets1 order by id limit 0,20',$prop);
 
 //$pdf->Output("C:\Users\John\Desktop/somename.pdf",'F'); 
 
