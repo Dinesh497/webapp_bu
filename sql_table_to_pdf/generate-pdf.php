@@ -21,7 +21,7 @@ mysql_select_db('webdb');
 $pdf=new PDF();
 $pdf->AddPage();
 //First table: put all columns automatically
-$pdf->Table('SELECT `id`, `date`, `location`, `known_problems`, `handle_before`  from tickets1 order by `id`');
+$pdf->Table('SELECT `id`, `date`, `location`, `known_problems`, `handle_before`  from tickets1 where known_problems = `lamp` order by `id`');
 $pdf->AddPage();
 //Second table: specify 3 columns
 $pdf->AddCol('id',40,'','C');
@@ -33,7 +33,7 @@ $prop=array('HeaderColor'=>array(255,150,100),
 			'color1'=>array(210,245,255),
 			'color2'=>array(255,255,210),
 			'padding'=>2);
-$pdf->Table('select id,  date, location, known_problems, handle_before from tickets1 order by id limit 0,20',$prop);
+$pdf->Table('select id,  date, location, known_problems, handle_before from tickets1 where known_problems = `lamp` order by id limit 0,20',$prop);
 
 //$pdf->Output("C:\Users\John\Desktop/somename.pdf",'F'); 
 
