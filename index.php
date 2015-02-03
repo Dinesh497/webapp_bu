@@ -59,9 +59,7 @@ session_start();
 
 </body>
 
-<div id="footer">
 
-</div>
 
 
 </html>
