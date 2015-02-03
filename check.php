@@ -118,7 +118,7 @@ include ("nav.php");
 </div>
 </form>
 <?php 
-$input1 = $_POST['input'];
+$input1 = $_POST['input1'];
 if (empty ($input)){ ?>
 
 <table class='tasktable'>
