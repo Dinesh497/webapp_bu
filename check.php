@@ -151,7 +151,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE status='open'", $dbcon);
 		<td data-title="Status"> <?php echo $row['status']; ?></td>
 		<td data-title="Known problems"> <?php echo $row['known_problems']; ?></td>	
 		<td data-title="Handle before"> <?php echo $row['handle_before']; ?></td>
-		<td data-title="edit"> <a href='overview.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
+		<td data-title="edit"> <a href='sql_table_to_pdf/generate-pdf.php?input="<?php echo $row['known_problems']; ?>"'>Get overview</a></td>
 	
 		</tr>
 		</tbody>
@@ -193,7 +193,7 @@ $result = mysql_query("SELECT * FROM tickets1 WHERE known_problems='$input'", $d
 		<td data-title="Status"> <?php echo $row['status']; ?></td>
 		<td data-title="Known problems"> <?php echo $row['known_problems']; ?></td>	
 		<td data-title="Handle before"> <?php echo $row['handle_before']; ?></td>
-		<td data-title="edit"> <a href='overview.php?ticket="<?php echo $row['id']; ?>"'>More Information</a></td>
+		<td data-title="edit"> <a href='sql_table_to_pdf/generate-pdf.php?input="<?php echo $row['known_problems']; ?>"'>Get overview</a></td>
 	
 		</tr>
 		</tbody>
