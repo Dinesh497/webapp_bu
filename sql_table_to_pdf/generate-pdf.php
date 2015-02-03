@@ -1,5 +1,5 @@
 <?php
-include('check.php');
+include("check.php");
 require('mysql_table.php');
 
 class PDF extends PDF_MySQL_Table
@@ -24,7 +24,7 @@ $input = $_POST['input'];
 $pdf=new PDF();
 $pdf->AddPage();
 //First table: put all columns automatically
-$pdf->Table("SELECT `id`, `date`, `location`, `known_problems`, `handle_before`  from tickets1 where known_problems ='$input' order by `known_problems`");
+$pdf->Table("SELECT `id`, `date`, `location`, `known_problems`, `handle_before`  from tickets1 where known_problems ='$input' order by `id`");
 //$pdf->Table($result);
 $pdf->AddPage();
 //Second table: specify 3 columns
