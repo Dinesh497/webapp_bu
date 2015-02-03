@@ -119,6 +119,7 @@ include ("nav.php");
 </form>
 <?php 
 $input = $_POST['input'];
+$input = $_SESSION['input'];
 if (empty ($input)){ ?>
 
 <table class='tasktable'>
