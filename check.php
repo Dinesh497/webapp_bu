@@ -110,7 +110,7 @@ function selectVideo(obj){
 </head>
 <body>
 
-<form action="check.php" method="POST">
+<!--<form action="check.php" method="POST">-->
 <div class ='searchtable'>
 
 <select name="input" id="input" onchange="updatevariable(this.value)">
@@ -134,7 +134,7 @@ function selectVideo(obj){
 
 
 </div>
-</form>
+<!--</form>-->
 <?php 
 $input = $_POST['input'];
 if (empty ($input)){ ?>
