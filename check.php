@@ -10,6 +10,7 @@ include ("nav.php");
 
 
 ?>
+<head>
 <title>Westcord Fashion Hotel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
@@ -92,6 +93,21 @@ include ("nav.php");
 	}
 	
 	</style>
+	
+<script  type="text/javascript">
+function updatevariable(selected) { 
+        var input = selected;
+}
+
+function selectVideo(obj){
+ 		var urlString = "sql_table_to_pdf/generate-pdf.php?input=";
+        var selectedVideo = obj.options[obj.selectedIndex];
+        if (selectedVideo.value != "nothing"){
+                window.location = urlString + selectedVideo.value;
+        }
+}
+</script>
+</head>
 <body>
 
 <form action="check.php" method="POST">
@@ -109,19 +125,6 @@ include ("nav.php");
 	<option value="window">Window</option>
 	<option value="chair/couch">Chair/couch</option>
 </select>
-<script  type="text/javascript">
-function updatevariable(selected) { 
-        var input = selected;
-}
-
-function selectVideo(obj){
- 		var urlString = "sql_table_to_pdf/generate-pdf.php?input=";
-        var selectedVideo = obj.options[obj.selectedIndex];
-        if (selectedVideo.value != "nothing"){
-                window.location = urlString + selectedVideo.value;
-        }
-}
-</script>
 <br>
 <button input type="submit" class="pure-button pure-button-primary">Search status</button>
 <br>
