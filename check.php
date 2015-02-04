@@ -97,7 +97,7 @@ include ("nav.php");
 <form action="check.php" method="POST">
 <div class ='searchtable'>
 
-<select name="input">
+<select name="input" id="input">
 	<option value=""></option>
 	<option value="lamp">Lamp</option>
 	<option value="mini-bar">Minibar</option>
@@ -109,11 +109,16 @@ include ("nav.php");
 	<option value="window">Window</option>
 	<option value="chair/couch">Chair/couch</option>
 </select>
+<script  type="text/javascript">
+var element = document.getElementById("input");
+var value = element.options[e.selectedIndex].value;
+</script>
 <br>
 <button input type="submit" class="pure-button pure-button-primary">Search status</button>
 <br>
-<td><a href='sql_table_to_pdf/generate-pdf.php?input="<?php echo $row['known_problems']; ?>"'>Get overview</a></td>
+<td><a onclick="location.href='sql_table_to_pdf/generate-pdf.php?input='+value;return false;">Get overview</a></td>
 </br>
+
 
 </div>
 </form>
