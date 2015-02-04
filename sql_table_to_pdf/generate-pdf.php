@@ -32,7 +32,7 @@ $pdf->Image($image1, 5, $pdf->GetY(), 33.78);
 $pdf->Table("SELECT `id`, `date`, `location`, `known_problems`, `handle_before`  from tickets1 where known_problems ='$input' order by `id`");
 //$pdf->Table($result);
 $pdf->AddPage();
-//Second table: specify 3 columns
+//Second table: specify columns
 $pdf->AddCol('id',40,'','C');
 $pdf->AddCol('date',40,'date','C');
 $pdf->AddCol('location',40,'location','C');
