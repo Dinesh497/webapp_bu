@@ -24,6 +24,10 @@ mysql_select_db('webdb');
 
 $pdf=new PDF();
 $pdf->AddPage();
+//Dus eerst je plaatje kiezen
+$image1 = "logo.png";
+//en dan plaatsen
+$pdf->Image($image1, 5, $pdf->GetY(), 33.78);
 //First table: put all columns automatically
 $pdf->Table("SELECT `id`, `date`, `location`, `known_problems`, `handle_before`  from tickets1 where known_problems ='$input' order by `id`");
 //$pdf->Table($result);
