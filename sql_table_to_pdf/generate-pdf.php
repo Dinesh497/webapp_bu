@@ -25,7 +25,7 @@ mysql_select_db('webdb');
 $pdf=new PDF();
 $pdf->AddPage();
 //Dus eerst je plaatje kiezen
-$image1 = "logo.png";
+$image1 = "images/logo.jpg";
 //en dan plaatsen
 $pdf->Image($image1, 5, $pdf->GetY(), 33.78);
 //First table: put all columns automatically
