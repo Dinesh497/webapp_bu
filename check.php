@@ -97,7 +97,7 @@ include ("nav.php");
 <form action="check.php" method="POST">
 <div class ='searchtable'>
 
-<select name="input" id="input">
+<select name="input" id="input" onchange="updatevariable(this.value)">
 	<option value=""></option>
 	<option value="lamp">Lamp</option>
 	<option value="mini-bar">Minibar</option>
@@ -110,14 +110,23 @@ include ("nav.php");
 	<option value="chair/couch">Chair/couch</option>
 </select>
 <script  type="text/javascript">
-//var element = document.getElementById("input");
-//var value = element.options[e.selectedIndex].value;
-var value = document.getElementById("input").value;
+function updatevariable(selected) { 
+        var input = selected;
+}
+
+function selectVideo(obj){
+        var urlString = "./generate-pdf.php?input=";
+        var selectedVideo = obj.options[obj.selectedIndex];
+        if (selectedVideo.value != "nothing"){
+                window.location = urlString + selectedVideo.value;
+        }
+}
 </script>
 <br>
 <button input type="submit" class="pure-button pure-button-primary">Search status</button>
 <br>
-<td><a onclick="location.href='sql_table_to_pdf/generate-pdf.php?input='+value;return false;">Get overview</a></td>
+<td><a onclick="selectVideo(input)">Get overview</a></td>
+<!---<td><a onclick="location.href='sql_table_to_pdf/generate-pdf.php?input='+value;return false;">Get overview</a></td>-->
 </br>
 
 
