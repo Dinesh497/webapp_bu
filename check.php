@@ -115,7 +115,7 @@ function selectVideo(obj){
 
 <select name="input" id="input" onchange="updatevariable(this.value)">
 	<option value=""></option>
-	<option value="lamp" selected="selected">Lamp</option>
+	<option value="lamp">Lamp</option>
 	<option value="mini-bar">Minibar</option>
 	<option value="remote control">Remote control</option>
 	<option value="Television">Television</option>
