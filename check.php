@@ -110,7 +110,7 @@ function selectVideo(obj){
 </head>
 <body>
 
-<!--<form action="check.php" method="POST">-->
+<form action="check.php" method="POST">
 <div class ='searchtable'>
 
 <select name="input" id="input" onchange="updatevariable(this.value)">
@@ -128,6 +128,7 @@ function selectVideo(obj){
 <br>
 <button input type="submit" class="pure-button pure-button-primary">Search status</button>
 <br>
+</form>
 <td><a onclick="selectVideo(input)">Get overview</a></td>
 <!---<td><a onclick="location.href='sql_table_to_pdf/generate-pdf.php?input='+value;return false;">Get overview</a></td>-->
 </br>
