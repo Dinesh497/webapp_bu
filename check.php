@@ -115,7 +115,7 @@ function updatevariable(selected) {
 }
 
 function selectVideo(obj){
-        var urlString = "./generate-pdf.php?input=";
+ 		var urlString = "sql_table_to_pdf/generate-pdf.php?input=";
         var selectedVideo = obj.options[obj.selectedIndex];
         if (selectedVideo.value != "nothing"){
                 window.location = urlString + selectedVideo.value;
