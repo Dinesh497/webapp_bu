@@ -110,8 +110,9 @@ include ("nav.php");
 	<option value="chair/couch">Chair/couch</option>
 </select>
 <script  type="text/javascript">
-var element = document.getElementById("input");
-var value = element.options[e.selectedIndex].value;
+//var element = document.getElementById("input");
+//var value = element.options[e.selectedIndex].value;
+var value = document.getElementById("input").value;
 </script>
 <br>
 <button input type="submit" class="pure-button pure-button-primary">Search status</button>
