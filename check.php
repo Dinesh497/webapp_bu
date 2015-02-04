@@ -127,8 +127,8 @@ function selectVideo(obj){
 </select>
 <br>
 <button input type="submit" class="pure-button pure-button-primary">Search status</button>
-<br>
 </form>
+<br>
 <td><a onclick="selectVideo(input)">Get overview</a></td>
 <!---<td><a onclick="location.href='sql_table_to_pdf/generate-pdf.php?input='+value;return false;">Get overview</a></td>-->
 </br>
