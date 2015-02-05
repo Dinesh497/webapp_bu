@@ -15,7 +15,7 @@ include ("hknav.php");
 }
 
 
-$ticketid = $_GET['ticket'];
+$ticket= $_GET['ticket'];
 ?>
 <title>Westcord Fashion Hotel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
