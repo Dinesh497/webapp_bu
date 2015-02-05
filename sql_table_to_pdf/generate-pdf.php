@@ -27,7 +27,7 @@ $pdf->AddPage();
 //Dus eerst je plaatje kiezen
 $image1 = "../images/logo.jpg";
 //en dan plaatsen
-$pdf->Image($image1, 3, $pdf->GetY(), 33.78);
+$pdf->Image($image1, 5, $pdf->GetY(), 44.78);
 //First table: put all columns automatically
 $pdf->Table("SELECT `id`, `date`, `location`, `known_problems`, `handle_before`  from tickets1 where known_problems ='$input' order by `id`");
 //$pdf->Table($result);
