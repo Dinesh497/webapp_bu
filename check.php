@@ -120,7 +120,7 @@ $input = $_POST['input'];
 
 //selected="selected">
 
-switch(empty ($input)){
+switch($input){
 	case 1:
 	echo 	"<option value=""></option>";
 	break;
