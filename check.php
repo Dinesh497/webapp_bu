@@ -112,19 +112,39 @@ function selectVideo(obj){
 
 <form action="check.php" method="POST">
 <div class ='searchtable'>
-
+ 
 <select name="input" id="input" onchange="updatevariable(this.value)">
-	<option value=""></option>
-	<option value="lamp">Lamp</option>
-	<option value="mini-bar">Minibar</option>
-	<option value="remote control">Remote control</option>
+
+<?php
+$input = $_POST['input'];
+
+selected="selected">
+
+switch(empty ($input)){
+	case 1:
+	echo 	"<option value=""></option>";
+	break;
+	case 2:
+	echo 	"<option value=" . "lamp" . "selected=" . "selected" . ">Lamp</option>";
+	break;
+	case 3:
+	echo "<option value=" . "mini-bar" . "selected=" . "selected" . ">Minibar</option>";
+	break;
+	default:
+	echo 	"<option value=""></option>";
+	/*<option value="remote control">Remote control</option>
 	<option value="Television">Television</option>
 	<option value="sink">Sink</option>
 	<option value="shower">Shower</option>
 	<option value="bathtub">Bathtub</option>
 	<option value="window">Window</option>
-	<option value="chair/couch">Chair/couch</option>
+	<option value="chair/couch">Chair/couch</option>*/
+}
+?>
 </select>
+
+
+
 <br>
 <button input type="submit" class="pure-button pure-button-primary">Search status</button>
 </form>
@@ -137,7 +157,7 @@ function selectVideo(obj){
 </div>
 <!--</form>-->
 <?php 
-$input = $_POST['input'];
+//$input = $_POST['input'];
 if (empty ($input)){ ?>
 
 <table class='tasktable'>
