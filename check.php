@@ -118,7 +118,7 @@ function selectVideo(obj){
 <?php
 $input = $_POST['input'];
 
-selected="selected">
+//selected="selected">
 
 switch(empty ($input)){
 	case 1:
