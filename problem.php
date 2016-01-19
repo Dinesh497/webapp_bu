@@ -171,7 +171,7 @@ else {
 	
 
 	
-	<td><button input type="submit" class="pure-button pure-button-primary">jeffrey</button></td>
+	<td><button input type="submit" class="pure-button pure-button-primary">submit</button></td>
 	</table>
 	
 </form>
